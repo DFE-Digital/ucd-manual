@@ -1,0 +1,20 @@
+{% set pageTitle = "Accessibility statement" %}
+{% set pageDescription = "Template for the accessibility statement you need to use in your service." %}
+{% set pageSection = "Accessibility" %}
+{% set dateUpdated = "March 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block bodyContent %}
+
+<p>Depending on where your service is hosted, depends on the accessibility statement you are required to use.</p>
+
+<p>If your service is on a .service.gov.uk domain</p>
+<p>If your service is on education.gov.uk</p>
+
+<p>It is a legal requirement to publish an accessibility statement.</p>
+
+{% markdown "includes/content.md"%}
+
+{% endblock %}

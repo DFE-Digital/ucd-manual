@@ -1,0 +1,25 @@
+{% set pageTitle = "Tools" %}
+{% set pageDescription = "We use a variety of tools to help us create Interaction Design outputs depending on the purpose, time available and what's good enough to meet the intended purpose." %}
+{% set pageSection = "Interaction design" %}
+{% set dateUpdated = "March 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "interaction-design/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+  <p>Tools we use for IxD work depends on fidelity and working locations:</p>
+
+  <ul class="nhsuk-list nhsuk-list--bullet">
+              <li>High level: user journeys, anything that works (pen and paper, post-its, virtual whiteboard)</li>
+              <li>Mid level: representative mini pages, Figma or Lucid</li>  
+              <li>High level: concepts for problem solving and discussion, Figma or Lucid </li>
+              <li>Interactive prototypes, ready for UR, GDS prototyping kit and Visual Studio</li>
+            </ul>
+ 
+
+{% endblock %}

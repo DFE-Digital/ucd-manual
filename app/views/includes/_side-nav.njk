@@ -1,0 +1,156 @@
+{% set ucd = [
+  { title: "User-centered design in DfE", url: "/ucd/" }
+] %}
+
+{% set ucdstandards = [
+  { title: "Standards", url: "/ucd/standards" },
+  { title: "Services on service.gov.uk", url: "/ucd/gov-domain" },
+  { title: "Services on education.gov.uk", url: "/ucd/education-domain" }
+] %}
+
+
+{% set ur = [
+  { title: "No pages added", url: "/user-research/" }
+] %}
+
+{% set contentdesign = [
+  { title: "No pages added", url: "/content-design/" }
+] %}
+
+{% set servicedesign = [
+  { title: "No pages added", url: "/service-design/" }
+] %}
+
+{% set ixd = [
+  { title: "Interaction design", url: "/interaction-design/" },
+  { title: "Being an interaction designer in DfE", url: "/interaction-design/being-an-interaction-designer-in-dfe" },
+  { title: "Our design stages", url: "/interaction-design/our-design-stages" },
+  { title: "Tools", url: "/interaction-design/tools" },
+  { title: "Design documentaion", url: "/interaction-design/design-documentation" },
+  { title: "Collaboration across UCD", url: "/interaction-design/collaboration" }
+] %}
+
+{% set ixdassurance = [
+  { title: "Design for success", url: "/interaction-design/design-for-success" },    
+  { title: "Accessible design", url: "/interaction-design/assurance-and-assessments" },
+  { title: "Evidence based design", url: "/interaction-design/evidence-based-design" },
+  { title: "Assurance and assessments", url: "/interaction-design/assurance-and-assessments" }
+] %}
+
+{% set accessibility = [
+  { title: "No pages added", url: "/accessibility/" }
+] %}
+
+{% set accessibilitytemplates = [
+  { title: "Acessibility statement", url: "/accessibility/accessibility-statement" }
+] %}
+
+
+{% set communities = [
+  { title: "No pages added", url: "/community/" }
+] %}
+
+
+<nav class="app-side-nav">
+
+ {%- if pageSection == "User-centered design in DfE" %}
+ <h2 class="app-side-nav__heading">How we do {{ucd | ucd }} in DfE</h2>
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in ucd %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+     <h2 class="app-side-nav__heading">Standards</h2>
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in ucdstandards %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {%- if pageSection == "User research" %}
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in ur %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {%- if pageSection == "Content design" %}
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in contentdesign %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {%- if pageSection == "Service design" %}
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in servicedesign %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {%- if pageSection == "Interaction design" %}
+    <h2 class="app-side-nav__heading">Principles and ways of working</h2>
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in ixd %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="app-side-nav__heading">Assuring good design</h2>
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in ixdassurance %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+    {%- if pageSection == "Accessibility" %}
+     <h2 class="app-side-nav__heading">Principles and ways of working</h2>
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in accessibility %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+ <h2 class="app-side-nav__heading">Templates</h2>
+     <ul class="nhsuk-list app-side-nav__list">
+      {% for item in accessibilitytemplates %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
+  {%- if pageSection == "Community" %}
+    <ul class="nhsuk-list app-side-nav__list">
+      {% for item in communities %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>  
+  {% endif %}
+
+</nav>

@@ -1,0 +1,79 @@
+{
+  "name": "nhsuk-service-manual",
+  "version": "5.7.2",
+  "description": "NHS digital service manual",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "browserslist": [
+    "> 0.25%",
+    "not dead",
+    "IE 11"
+  ],
+  "scripts": {
+    "build": "npm run build:css && npm run build:js && npm run build:assets",
+    "build:css": "node-sass --recursive --output-style compressed app/styles/ -o public/css/",
+    "build:js": "npm run webpack",
+    "build:assets": "cpx 'app/assets/*' public/assets/",
+    "clean": "touch public/tmp.txt && rm -rf public/*",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint . --ignore-pattern '/public'",
+    "lint:css": "sass-lint 'app/styles/**/*.scss' -v -q",
+    "nuke": "npm run clean && rm -rf node_modules/",
+    "postinstall": "npm run build",
+    "start": "node app",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "jest",
+    "watch": "concurrently \"npm run watch:scss\" \"npm run watch:js\" \"npm run watch:assets\" \"npm start\"",
+    "watch:scss": "npm run build:css && npm run build:css -- -w",
+    "watch:js": "webpack -w",
+    "watch:assets": "cpx 'app/assets/*' public/assets/ --watch",
+    "webpack": "webpack"
+  },
+  "author": "https://github.com/nhsuk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhsuk/nhsuk-service-manual.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "accessible-autocomplete": "^2.0.3",
+    "axios": "^0.21.2",
+    "basic-auth": "^2.0.1",
+    "browser-sync": "^2.27.5",
+    "cheerio": "^1.0.0-rc.10",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "highlight.js": "^11.2.0",
+    "js-beautify": "^1.14.0",
+    "lunr": "^2.3.9",
+    "marked": "^4.0.12",
+    "nhsuk-frontend": "^6.1.0",
+    "nunjucks": "^3.2.3",
+    "nunjucks-markdown": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.2.1",
+    "cpx": "^1.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-mocha": "^9.0.0",
+    "iframe-resizer": "^4.3.2",
+    "jest": "^27.1.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "sass-lint": "^1.13.1",
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0"
+  },
+  "volta": {
+    "node": "14.18.3"
+  }
+}

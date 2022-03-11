@@ -1,0 +1,109 @@
+{% set pageTitle = "Standards" %}
+{% set pageDescription = "Standards for how we deliver user-centered services." %}
+{% set pageSection = "User-centered design in DfE" %}
+{% set subSection = "Standards" %}
+{% set theme = "Standards" %}
+{% set dateUpdated = "March 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block bodyContent %}
+
+{% markdown %}
+
+Teams building DfE services must meet the <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noopner noreferrer">Service Standard (opens in new tab)</a>
+
+Additional DfE Standards must also be met and will be assessed at all DfE service assessments.
+
+## DfE Standards
+
+You can download tghe full list of DfE Standards as a [Google Document]() or [Word Document]().
+
+<div class="nhsuk-table__panel-with-heading-tab">
+    <h3 class="nhsuk-table__heading-tab">General Design Standards</h3>
+    <p>All services must meet these general design standards.</p>
+  <table class="nhsuk-table">
+    <caption class="nhsuk-table__caption nhsuk-u-visually-hidden">Other possible causes of your symptoms</caption>
+    <thead role="rowgroup" class="nhsuk-table__head">
+    <tr role="row">
+        <th role="columnheader" class="" scope="col">
+          Reference
+        </th>
+        <th role="columnheader" class="" scope="col">
+          Measure
+        </th>
+    </tr>
+    </thead>
+    <tbody class="nhsuk-table__body">
+      <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell"><a href="/ucd/education-domain">DFE-G1</a></td>
+              <td class="nhsuk-table__cell ">Ensure the service has the correct branding and typeface for the domain it is hosted on.</td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
+
+<div class="nhsuk-table__panel-with-heading-tab">
+    <h3 class="nhsuk-table__heading-tab">User research Standards</h3>
+  <table class="nhsuk-table">
+    <caption class="nhsuk-table__caption nhsuk-u-visually-hidden">Other possible causes of your symptoms</caption>
+    <thead role="rowgroup" class="nhsuk-table__head">
+    <tr role="row">
+        <th role="columnheader" class="" scope="col">
+          Reference
+        </th>
+        <th role="columnheader" class="" scope="col">
+          Measure
+        </th>
+    </tr>
+    </thead>
+    <tbody class="nhsuk-table__body">
+      <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell"><a href="/ucd/education-domain">DFE-UR1</a></td>
+              <td class="nhsuk-table__cell ">User needs, insight and evidence has been shared into the DfE User Research Library</td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
+
+<div class="nhsuk-table__panel-with-heading-tab">
+    <h3 class="nhsuk-table__heading-tab">Accessibility Standards</h3>
+    <p>These standards must be met and will be assesed at private and public beta assessments only.</p>
+  <table class="nhsuk-table">
+    <caption class="nhsuk-table__caption nhsuk-u-visually-hidden">Other possible causes of your symptoms</caption>
+    <thead role="rowgroup" class="nhsuk-table__head">
+    <tr role="row">
+        <th role="columnheader" class="" scope="col">
+          Reference
+        </th>
+        <th role="columnheader" class="" scope="col">
+          Measure
+        </th>
+    </tr>
+    </thead>
+    <tbody class="nhsuk-table__body">
+      <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell"><a href="/ucd/education-domain">DFE-A1</a></td>
+              <td class="nhsuk-table__cell ">Accessibility audit completed and provided prior to assessment.</td>
+      </tr>
+         <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell"><a href="/ucd/education-domain">DFE-A2</a></td>
+              <td class="nhsuk-table__cell ">Accessibility statement is published on the service and is factually correct. </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% endmarkdown %}
+
+{{ pagination({
+  "previousUrl": "/ucd/",
+  "previousPage": "User-centered design in DfE",
+  "nextUrl": "#",
+  "nextPage": "Services on service.gov.uk"
+}) }}
+
+{% endblock %}

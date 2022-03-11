@@ -1,0 +1,77 @@
+{% set pageTitle = "Services on education.gov.uk" %}
+{% set pageDescription = "Providing services to users on education.gov.uk" %}
+{% set pageSection = "User-centered design in DfE" %}
+{% set subSection = "Standards" %}
+{% set theme = "Standards" %}
+{% set dateUpdated = "March 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block bodyContent %}
+
+{% markdown %}
+
+{{ warningCallout({
+  "heading": "You'll be assessed on this - DFE-G1",
+  "HTML": "<p>Compliance with this DfE Standard will be checked during an <a href=\"/assessments\">assessment</a>.</p>"
+}) }}
+
+Services and websites hosted on non-GOV.UK domain names must still meet the <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noopner noreferrer">Service Standard (opens in new tab)</a>.
+
+## If your service is not on service.gov.uk
+
+For example, your service is being provided on education.gov.uk.
+
+{{ list({
+  "title": "Don't",
+  "type": "cross",
+  "items": [
+    {
+      "item": "use the GDS Transport typeface"
+    },
+    {
+      "item": "use the crown or GOV.UK logotype"
+    },
+    {
+      "item": "identify your service as being part of GOV.UK"
+    }
+  ]
+}) }}
+
+{{ list({
+  "title": "Do",
+  "type": "tick",
+  "items": [
+    {
+      "item": "use the DfE header"
+    },
+    {
+      "item": "use the Arial, Helvetical typeface font-stack"
+    }
+  ]
+}) }}
+
+## Prototyping
+
+Find out how to [make your GOV.UK prototype kit look like a DfE service](/interaction-design/prototyping).
+
+{{ insetText({
+  "HTML": "<p>There is additional guidance on this in the GOV.UK Service Manual <a href=\"https://www.gov.uk/service-manual/design/making-your-service-look-like-govuk#if-your-service-isnt-on-govuk\" title=\"External website\" target=\"_blank\">If your service isn't on GOV.UK (opens in a new tab)</a>.</p>"
+}) }}
+
+{{ actionLink({
+  "text": "GOV.UK Service Manual guidance - If your service isn't on GOV.UK",
+  "href": "https://www.gov.uk/service-manual/design/making-your-service-look-like-govuk#if-your-service-isnt-on-govuk"
+}) }}
+
+{% endmarkdown %}
+
+
+{{ pagination({
+  
+  "nextUrl": "/ucd/standards",
+  "nextPage": "Symptoms"
+}) }}
+
+{% endblock %}

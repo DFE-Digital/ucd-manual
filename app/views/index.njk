@@ -1,0 +1,185 @@
+{% set pageDescription = "Design and build digital services for the NHS. Things you need to make consistent, usable services that put people first." %}
+{% set pageLayout = "Homepage" %}
+
+{% extends "includes/layout.njk" %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block outerBody %}
+
+  <main id="maincontent" role="main">
+
+    <section class="nhsuk-hero">
+      <div class="nhsuk-width-container nhsuk-hero--border app-width-container">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-hero__wrapper app-hero__wrapper">
+              <h1 class="nhsuk-u-margin-bottom-4">User centered design in Department for Education</h1>
+              <p class="nhsuk-body-l nhsuk-u-margin-bottom-1">How to <a href="/ucd">design and build user-centered services</a> for Department for Education users.</p>
+            </div>
+          </div>
+          <div class="nhsuk-grid-column-one-third app-latest-update">
+            <div class="nhsuk-card app-card--transparent nhsuk-u-margin-bottom-0 nhsuk-u-margin-top-0">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a href="/whats-new">What's new</a>
+                </h2>
+                <p class="nhsuk-card__description">
+                  <a href="/standards/">Ways of working and standards</a> for Interaction Design across DfE updated.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nhsuk-section">
+      <div class="nhsuk-width-container app-width-container">
+
+        <div class="nhsuk-grid-row">
+
+          <div class="nhsuk-grid-column-two-thirds">
+
+            <ul class="nhsuk-grid-row nhsuk-card-group">
+              <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable">
+                  <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a href="/user-research">User research</a>
+                    </h2>
+                    <p class="nhsuk-card__description">How to do user research in DfE and the research library</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable">
+                  <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a href="/content-design">Content design</a>
+                    </h2>
+                    <p class="nhsuk-card__description">How to write for DfE services</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable">
+                  <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a href="/service-design">Service design</a>
+                    </h2>
+                    <p class="nhsuk-card__description">How to ensure services are usable and understandable</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable">
+                  <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a href="/interaction-design">Interaction design</a>
+                    </h2>
+                    <p class="nhsuk-card__description">Designing user interfaces that make services easy to use</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable">
+                  <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a href="/accessibility">Accessibility</a>
+                    </h2>
+                    <p class="nhsuk-card__description">Make DfE services accessible for everyone</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable">
+                  <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a href="/community">Community</a>
+                    </h2>
+                    <p class="nhsuk-card__description">Help grow and improve the user centered design guidance</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="nhsuk-grid-column-one-third">
+
+            {{ card({
+  "href": "/ucd",
+  "clickable": "true",
+  "classes": "app-card--transparent nhsuk-card--invert",
+  "heading": "User centered design in DfE",
+  "headingClasses": "nhsuk-heading-m",
+  "description": "Find out what user centered design is and why it's important in designing services that work for our users."
+}) }}
+
+            {{ card({
+  "href": "#",
+  "clickable": "true",
+  "classes": "app-card--transparent nhsuk-card--invert",
+  "heading": "Design histories",
+  "headingClasses": "nhsuk-heading-m",
+  "description": "Find out how to write and publish design histories for digital services."
+}) }}
+
+
+          </div>
+        </div>
+
+        <hr class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-6 dfeuk-hr">
+
+        <div class="nhsuk-width-container app-width-container">
+
+          <h2 class="">Other manuals and guidance</h2>
+
+          <ul class="nhsuk-grid-row nhsuk-card-group">
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable">
+                <div class="nhsuk-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a href="/service-standard">DfE Service Manual</a>
+                  </h2>
+                  <p class="nhsuk-card__description">Understanding spending, governance, assurance and the team you need to run services.</p>
+                </div>
+              </div>
+            </li>
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable">
+                <div class="nhsuk-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a href="/design-system">DfE Architecture</a>
+                  </h2>
+                  <p class="nhsuk-card__description">Architectural principles, standards and guidance to follow when designing services.</p>
+                </div>
+              </div>
+            </li>
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable">
+                <div class="nhsuk-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a href="/content">DfE Technical</a>
+                  </h2>
+                  <p class="nhsuk-card__description">Guidance and information on how to build and host services. </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+
+            <h2>Contributions</h2>
+            <p>The manual is maintained by the <a href="/community">UCD Community at DfE</a>. If you've got a question or want to feedback, you can <a href="https://ukgovernmentdfe.slack.com/archives/C035WMESFFF" target="_blank">get in touch through Slack</a>.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+{% endblock %}

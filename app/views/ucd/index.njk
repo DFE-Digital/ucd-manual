@@ -1,0 +1,31 @@
+{% set pageTitle = "User-centered design in DfE" %}
+{% set pageDescription = "The Design principles, standards and guidance that we expect teams working within the Department for Education (DfE) to follow when designing services." %}
+{% set pageSection = "User-centered design in DfE" %}
+{% set dateUpdated = "March 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block bodyContent %}
+
+{% markdown %}
+
+All DfE's online services must:
+
+- meet the <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noopner noreferrer">Service Standard (opens in new tab)</a>
+- meet level AA of the <a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20" target="_blank" rel="noopner noreferrer">Web Content Accessibility Guidelines (WCAG 2.1)  (opens in new tab)</a> as a minimum
+- work on the most commonly used <a href="https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies" target="_blank" rel="noopner noreferrer">assistive technologies  (opens in new tab)</a> - including screen magnifiers, screen readers and speech recognition tools
+- include disabled people in [user research](/user-research)
+- have an [accessibility statement](/accessibility/accessibility-statement) that explains how accessible the service is - you need to publish this when the service moves into public beta
+
+{% endmarkdown %}
+
+
+
+{{ pagination({
+  
+  "nextUrl": "/ucd/standards",
+  "nextPage": "Symptoms"
+}) }}
+
+{% endblock %}

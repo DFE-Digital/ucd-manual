@@ -1,0 +1,36 @@
+trigger:
+  branches:
+    include:
+    - master
+    - ia-site
+    - refs/tags/v*
+    - refs/heads/review/*
+    - refs/heads/dev/*
+    - refs/heads/user/*
+  paths:
+    exclude:
+    - CHANGELOG.md
+    - README.md
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+  - script: npm ci
+    displayName: 'Install'
+
+  - script: npm run build
+    displayName: 'Build'
+
+  - script: npm test
+    displayName: 'Test'
+
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+      includeRootFolder: false
+    displayName: 'Create file archive to publish'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish files to Azure Pipelines'
