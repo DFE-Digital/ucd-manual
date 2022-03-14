@@ -6,13 +6,17 @@
 
 {% extends "includes/app-layout.njk" %}
 
+{% block breadcrumb %}
+  {% include "ucd/_breadcrumb.njk" %}
+{% endblock %}
+
 {% block bodyContent %}
 
 {% markdown %}
 
 All DfE's online services must:
 
-- meet the <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noopner noreferrer">Service Standard (opens in new tab)</a>
+- meet the [GOV Service Standards](/ucd/gov-service-standards).
 - meet level AA of the <a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20" target="_blank" rel="noopner noreferrer">Web Content Accessibility Guidelines (WCAG 2.1)  (opens in new tab)</a> as a minimum
 - work on the most commonly used <a href="https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies" target="_blank" rel="noopner noreferrer">assistive technologies  (opens in new tab)</a> - including screen magnifiers, screen readers and speech recognition tools
 - include disabled people in [user research](/user-research)

@@ -1,5 +1,5 @@
-{% set pageTitle = "Services on education.gov.uk" %}
-{% set pageDescription = "Providing services to users on education.gov.uk" %}
+{% set pageTitle = "Branding your service" %}
+{% set pageDescription = "How to make sure your service has the correct look and feel for where it is being provided." %}
 {% set pageSection = "User-centered design in DfE" %}
 {% set subSection = "Standards" %}
 {% set theme = "Standards" %}
@@ -7,6 +7,10 @@
 {% set backlog_issue_id = "" %}
 
 {% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "ucd/_breadcrumb.njk" %}
+{% endblock %}
 
 {% block bodyContent %}
 
