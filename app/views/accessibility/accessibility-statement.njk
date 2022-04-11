@@ -4,17 +4,23 @@
 {% set dateUpdated = "March 2022" %}
 {% set backlog_issue_id = "" %}
 
+
 {% extends "includes/app-layout.njk" %}
 
 {% block bodyContent %}
 
-<p>Depending on where your service is hosted, depends on the accessibility statement you are required to use.</p>
+{{ insetText({
+  "HTML": "<p>It is a legal requirement to publish an accessibility statement.</p>"
+}) }}
 
-<p>If your service is on a .service.gov.uk domain</p>
-<p>If your service is on education.gov.uk</p>
+{% markdown %}
 
-<p>It is a legal requirement to publish an accessibility statement.</p>
+## Statement templates
 
-{% markdown "includes/content.md"%}
+If your service is on a [.service.gov.uk](gov) domain.
+
+If your service is on the [education.gov.uk](education) domain.
+
+{% endmarkdown %}
 
 {% endblock %}

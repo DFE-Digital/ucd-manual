@@ -296,3 +296,16 @@ h1 + .nhsuk-lede-text {
 .featured-list--item__content {
   width: 99.99%;
 }
+
+.nhsuk-lede-text{margin-bottom: 30px;}
+
+@media (min-width: 40.0625em){
+.nhsuk-inset-text {
+    margin-top: 15px;
+}}
+
+
+
+.nhsuk-table__heading-tab {
+    background-color: #003078;
+}

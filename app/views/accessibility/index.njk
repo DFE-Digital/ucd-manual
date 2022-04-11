@@ -6,6 +6,48 @@
 
 {% extends "includes/app-layout.njk" %}
 
+
+{% block breadcrumb %}
+  {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
 {% block bodyContent %}
+
+{% markdown %}
+
+{{ insetText({
+  "HTML": "<p>GDS definition:</p><p>Accessibility means ensuring your services and content can be used and understood by the widest possible audience.</p>"
+}) }}
+
+{{ insetText({
+  "HTML": "<p>W3C defintion:</p><p>Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them.</p>"
+}) }}
+
+
+More specifically, people can:
+
+- perceive, understand, navigate, and interact with the Web
+- contribute to the Web
+
+Web accessibility encompasses all disabilities that affect access to the Web, including:
+
+- auditory
+- cognitive
+- neurological
+- physical
+- speech
+- visual
+
+Web accessibility also benefits people without disabilities, for example:
+
+- people using mobile phones, smart watches, smart TVs, and other devices with small screens, different input modes, for example by providing clearer, less cluttered user interfaces
+- older people with changing abilities due to ageing, who may not identify as having a disability, but would still experience the difficult associated with an impairment
+- people with “temporary disabilities” such as a broken arm or lost glasses, by removing the barriers that would also affect them
+- people with “situational limitations” such as in bright sunlight or in an environment where they cannot listen to audio, for example, by providing subtitles or transcripts
+- people using a slow Internet connection, or who have limited or expensive bandwidth
+
+
+
+{% endmarkdown %}
 
 {% endblock %}

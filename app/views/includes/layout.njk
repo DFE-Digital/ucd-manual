@@ -31,6 +31,7 @@
 {%- from 'textarea/macro.njk' import textarea %}
 {%- from 'includes/design-example.njk' import designExample %}
 {%- from 'card/macro.njk' import card %}
+{% from 'tag/macro.njk' import tag %}
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -106,6 +107,22 @@
       <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent" role="main">
         {% block body %}{% endblock %}
       </main>
+
+    </div>
+
+     <div class="nhsuk-width-container app-width-container">
+      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent" role="main">
+      <div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <h3 class="nhsuk-card__heading">
+     Is there something wrong with this content?
+
+    </h3>
+    <p class="nhsuk-card__description"><a href="#">Suggest a change or improvement to this content</a>.</p>
+  </div>
+</div>
+      </main>
+
     </div>
 
     {% endif %}

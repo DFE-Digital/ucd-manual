@@ -1,6 +1,15 @@
 {% from 'header/macro.njk' import header %}
 
-{% set mainNav = [{ title: "Standards", url: "/ucd" },
+{% if mtype === "sm" %}
+
+{% set mainNav = [{ title: "Standards", url: "/standards" },
+  { title: "Service manual", url: "/Service manual" },
+  { title: "Design manual", url: "/Design manual" },
+  { title: "Assurance", url: "/assurance" }
+] %}
+{% else %}
+
+{% set mainNav = [{ title: "Standards", url: "/standards" },
   { title: "User research", url: "/user-research" },
   { title: "Content design", url: "/content-design" },
   { title: "Service design", url: "/service-design" },
@@ -8,6 +17,8 @@
   { title: "Accessibility", url: "/accessibility" },
   { title: "Community", url: "/community" }
 ] %}
+
+{% endif %}
 
 
 <header class="nhsuk-header" role="banner">

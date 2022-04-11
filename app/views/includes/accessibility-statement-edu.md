@@ -217,4 +217,3 @@
 <div class="call-to-action">
 <p>[Note: publishing the test report is optional, but doing so may allow you to make your accessibility statement shorter and more focused.]</p>
 </div>
-</div>

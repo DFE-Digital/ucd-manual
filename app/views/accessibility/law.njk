@@ -1,0 +1,31 @@
+{% set pageTitle = "The law" %}
+{% set pageDescription = "Accessibility is a part of several laws and standards we must follow. Each of the standards feed into the Equality Act 2010 and the Public Sector Equality Duty." %}
+{% set pageSection = "Accessibility" %}
+{% set subSection = "Accessibility" %}
+{% set theme = "Accessibility" %}
+{% set dateUpdated = "March 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+{% markdown %}
+
+
+If you are building anything which runs in a browser, you will need to meet the <a href="https://www.legislation.gov.uk/uksi/2018/952/made" target="_blank" rel="noopener noreferrer" >Public Sector Bodies Accessibility Regulations 2018</a>.
+
+If you are procuring hardware or software you will need to meet the EN 301 549 Accessibility Requirements for ICT products and services.
+
+If you are working to the GOV.UK Service Standard you will also need to meet the Government Accessibility Requirements.
+
+
+{% endmarkdown %}
+
+
+
+{% endblock %}

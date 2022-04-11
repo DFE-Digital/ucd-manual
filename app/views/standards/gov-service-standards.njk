@@ -1,6 +1,6 @@
 {% set pageTitle = "GOV Service Standards" %}
 {% set pageDescription = "The core GOV Service Standards all teams building DfE services must meet." %}
-{% set pageSection = "User-centered design in DfE" %}
+{% set pageSection = "Standards" %}
 {% set subSection = "Standards" %}
 {% set theme = "Standards" %}
 {% set dateUpdated = "March 2022" %}
@@ -9,7 +9,7 @@
 {% extends "includes/app-layout.njk" %}
 
 {% block breadcrumb %}
-    {% include "ucd/_breadcrumb.njk" %}
+    {% include "standards/_breadcrumb.njk" %}
 {% endblock %}
 
 {% block bodyContent %}
@@ -158,11 +158,5 @@ Additional DfE Standards must also be met and will be assessed at all DfE servic
 
     {% endmarkdown %}
 
-    {{ pagination({
-  "previousUrl": "/ucd/",
-  "previousPage": "User-centered design in DfE",
-  "nextUrl": "#",
-  "nextPage": "Services on service.gov.uk"
-}) }}
-
+   
 {% endblock %}

@@ -1,0 +1,28 @@
+{% set pageTitle = "Inclusive design" %}
+{% set pageDescription = "" %}
+{% set pageSection = "Interaction design" %}
+{% set subSection = "Accessibility" %}
+{% set theme = "Accessibility" %}
+{% set dateUpdated = "March 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+    {% include "interaction-design/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+    {% markdown %}
+
+    {% endmarkdown %}
+
+    {{ pagination({
+  "previousUrl": "/interaction-design/accessible-design",
+  "previousPage": "Accessible design",
+  "nextUrl": "/interaction-design/design-for-success",
+  "nextPage": "Design for success"
+}) }}
+
+{% endblock %}

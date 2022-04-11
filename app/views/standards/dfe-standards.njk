@@ -1,6 +1,6 @@
 {% set pageTitle = "DfE standards" %}
-{% set pageDescription = "DfE-specific standards all teams delivering DfE services must meet." %}
-{% set pageSection = "User-centered design in DfE" %}
+{% set pageDescription = "DfE Standards are in addition to the <a href='gov-service-standards'>GOV Service Standards</a>. which all teams must meet." %}
+{% set pageSection = "Standards" %}
 {% set subSection = "Standards" %}
 {% set theme = "Standards" %}
 {% set dateUpdated = "March 2022" %}
@@ -9,20 +9,16 @@
 {% extends "includes/app-layout.njk" %}
 
 {% block breadcrumb %}
-  {% include "ucd/_breadcrumb.njk" %}
+  {% include "standards/_breadcrumb.njk" %}
 {% endblock %}
 
 {% block bodyContent %}
 
 {% markdown %}
 
-Teams building DfE services must meet the [GOV Service Standards](/ucd/gov-service-standards).
+## Standards
 
-Additional DfE Standards must also be met and will be assessed at all DfE service assessments.
-
-## DfE Standards
-
-You can download tghe full list of DfE Standards as a [Google Document]() or [Word Document]().
+You can download the full list of DfE Standards as a [Google Document]() or [Word Document]().
 
 <div class="nhsuk-table__panel-with-heading-tab">
     <h3 class="nhsuk-table__heading-tab">General Design Standards</h3>
@@ -41,9 +37,12 @@ You can download tghe full list of DfE Standards as a [Google Document]() or [Wo
     </thead>
     <tbody class="nhsuk-table__body">
       <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell"><a href="/ucd/branding">DFE-G1</a></td>
-              <td class="nhsuk-table__cell ">Ensure the service has the correct branding and typeface for the domain it is hosted on.</td>
-      </tr>
+              <td class="nhsuk-table__cell"><a href="/standards/branding">DFE-G1</a></td>
+              <td class="nhsuk-table__cell ">Ensure the service has the correct branding and typeface for the domain it is hosted on.
+              <br/><br/>Assessed at: {{ tag({
+          text: "Beta",
+          classes: "nhsuk-tag--blue"
+        })}}</td>      </tr>
     
     </tbody>
   </table>
@@ -65,9 +64,19 @@ You can download tghe full list of DfE Standards as a [Google Document]() or [Wo
     </thead>
     <tbody class="nhsuk-table__body">
       <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell"><a href="/ucd/education-domain">DFE-UR1</a></td>
-              <td class="nhsuk-table__cell ">User needs, insight and evidence has been shared into the DfE User Research Library</td>
-      </tr>
+              <td class="nhsuk-table__cell"><a href="/standards/education-domain">DFE-UR1</a></td>
+              <td class="nhsuk-table__cell ">User needs, insight and evidence has been shared into the DfE User Research Library
+               <br/><br/>Assessed at: {{ tag({
+          text: "Discovery",
+          classes: "nhsuk-tag--blue"
+        })}}{{ tag({
+          text: "Alpha",
+          classes: "nhsuk-tag--blue"
+        })}}{{ tag({
+          text: "Beta",
+          classes: "nhsuk-tag--blue"
+        })}}</td>
+            </tr>
     
     </tbody>
   </table>
@@ -90,12 +99,18 @@ You can download tghe full list of DfE Standards as a [Google Document]() or [Wo
     </thead>
     <tbody class="nhsuk-table__body">
       <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell"><a href="/ucd/education-domain">DFE-A1</a></td>
-              <td class="nhsuk-table__cell ">Accessibility audit completed and provided prior to assessment.</td>
+              <td class="nhsuk-table__cell"><a href="/standards/education-domain">DFE-A1</a></td>
+              <td class="nhsuk-table__cell ">Accessibility audit completed and provided prior to assessment.<br/><br/>Assessed at: {{ tag({
+          text: "Beta",
+          classes: "nhsuk-tag--blue"
+        })}}</td>
       </tr>
          <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell"><a href="/ucd/education-domain">DFE-A2</a></td>
-              <td class="nhsuk-table__cell ">Accessibility statement is published on the service and is factually correct. </td>
+              <td class="nhsuk-table__cell"><a href="/standards/education-domain">DFE-A2</a></td>
+              <td class="nhsuk-table__cell ">Accessibility statement is published on the service and is factually correct.<br/><br/>Assessed at: {{ tag({
+          text: "Beta",
+          classes: "nhsuk-tag--blue"
+        })}}</td>
       </tr>
     </tbody>
   </table>
@@ -103,11 +118,5 @@ You can download tghe full list of DfE Standards as a [Google Document]() or [Wo
 
 {% endmarkdown %}
 
-{{ pagination({
-  "previousUrl": "/ucd/",
-  "previousPage": "User-centered design in DfE",
-  "nextUrl": "#",
-  "nextPage": "Services on service.gov.uk"
-}) }}
 
 {% endblock %}

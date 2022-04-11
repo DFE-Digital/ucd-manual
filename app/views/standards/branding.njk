@@ -1,15 +1,19 @@
 {% set pageTitle = "Branding your service" %}
 {% set pageDescription = "How to make sure your service has the correct look and feel for where it is being provided." %}
-{% set pageSection = "User-centered design in DfE" %}
+{% set pageSection = "Standards" %}
 {% set subSection = "Standards" %}
 {% set theme = "Standards" %}
 {% set dateUpdated = "March 2022" %}
 {% set backlog_issue_id = "" %}
 
+{% block extraMeta %}
+  <meta name="page-index" content="DFE-G1">
+{% endblock %}
+
 {% extends "includes/app-layout.njk" %}
 
 {% block breadcrumb %}
-  {% include "ucd/_breadcrumb.njk" %}
+  {% include "standards/_breadcrumb.njk" %}
 {% endblock %}
 
 {% block bodyContent %}
@@ -21,7 +25,7 @@
   "HTML": "<p>Compliance with this DfE Standard will be checked during an <a href=\"/assessments\">assessment</a>.</p>"
 }) }}
 
-Services and websites hosted on non-GOV.UK domain names must still meet the <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noopner noreferrer">Service Standard (opens in new tab)</a>.
+Services and websites hosted on non-GOV.UK domain names must still meet the [GOV Service Standard](gov-service-standards).
 
 ## If your service is not on service.gov.uk
 
@@ -72,10 +76,5 @@ Find out how to [make your GOV.UK prototype kit look like a DfE service](/intera
 {% endmarkdown %}
 
 
-{{ pagination({
-  
-  "nextUrl": "/ucd/standards",
-  "nextPage": "Symptoms"
-}) }}
 
 {% endblock %}
