@@ -41,36 +41,27 @@
   {
     title: "Accessibility",
     url: "/accessibility/"
-  }, {
-    title: "The law",
-    url: "/accessibility/law"
-  }, {
-    title: "Statistics",
-    url: "/accessibility/stats"
-  }, {
-    title: "Roles and responsibilites",
-    url: "/accessibility/roles"
-  }, {
-    title: "Accessibility in Agile delivery",
-    url: "/accessibility/agile"
-  }, {
-    title: "Assessing and reporting",
-    url: "/accessibility/assurance"
   }
 ] %}
 
 {% set accessibilityresources = [
   {
-    title: "Training resources",
-    url: "/accessibility/training"
+    title: "User research",
+    url: "/accessibility/roles/ur"
   }, {
-    title: "Tools, services and useful links",
-    url: "/accessibility/resources"
+    title: "Service design",
+    url: "/accessibility/roles/sd"
   }
 ] %}
 
-{% set accessibilitytemplates = [
+{% set accessibilityassurance = [ 
+{ title: "Discovery", url: "/accessibility/phase/discovery" },
+{ title: "Alpha", url: "/accessibility/phase/alpha" },
+{ title: "Beta", url: "/accessibility/phase/beta" },
+{ title: "LIve", url: "/accessibility/phase/live" },
+{ title: "External testing", url: "/accessibility/external-testing" },
   { title: "Acessibility statement", url: "/accessibility/accessibility-statement" }
+
 ] %}
 
 {% set communities = [
@@ -125,7 +116,7 @@
   {% endif %}
 
   {%- if pageSection == "Interaction design" %}
-    <h2 class="app-side-nav__heading">Principles and ways of working</h2>
+    <h2 class="app-side-nav__heading">What everyone should know</h2>
     <ul class="nhsuk-list app-side-nav__list">
       {% for item in ixd %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -134,7 +125,7 @@
       {% endfor %}
     </ul>
 
-    <h2 class="app-side-nav__heading">Accessibility</h2>
+    <h2 class="app-side-nav__heading">How to apply accessibility in your role</h2>
     <ul class="nhsuk-list app-side-nav__list">
       {% for item in ixdaccessibility %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -154,7 +145,7 @@
   {% endif %}
 
   {%- if pageSection == "Accessibility" %}
-    <h2 class="app-side-nav__heading">Principles and ways of working</h2>
+    <h2 class="app-side-nav__heading">What everyone needs to know</h2>
     <ul class="nhsuk-list app-side-nav__list">
       {% for item in accessibility %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -163,7 +154,7 @@
       {% endfor %}
     </ul>
 
-    <h2 class="app-side-nav__heading">Tools and resources</h2>
+    <h2 class="app-side-nav__heading">How to apply accessibility in your role</h2>
     <ul class="nhsuk-list app-side-nav__list">
       {% for item in accessibilityresources %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -172,9 +163,9 @@
       {% endfor %}
     </ul>
 
-    <h2 class="app-side-nav__heading">Templates</h2>
+    <h2 class="app-side-nav__heading">Assuring accessibility is being met</h2>
     <ul class="nhsuk-list app-side-nav__list">
-      {% for item in accessibilitytemplates %}
+      {% for item in accessibilityassurance %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
