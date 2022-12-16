@@ -1,0 +1,135 @@
+
+{% set pageTitle = "Draft WCAG 2.2 changes" %}
+{% set pageDescription = "Summary of the new Success Criteria in WCAG 2.2 describing them in simple terms." %}
+{% set pageSection = "Accessibility" %}
+{% set dateUpdated = "16 December 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block bodyContent %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
+    <p>These are draft guidelines and currently at candidate release. The guidelines are unlikely to change, except for <a href="#2-4-11">2.4.11 - Focus Appearance</a> which is marked "<a href="https://www.w3.org/TR/WCAG22/#items-at-risk" target="_blank">at risk</a>". </p>
+    <div class="govuk-inset-text">These do not need to be adhered to now, but have awareness of what is changing now, so any design decisions, especially around authentication and help, are considered now.</div>
+    <p>There are nine new Success Criteria: two at Level A, five at Level AA, and two at Level AAA. Guidance is provided for Criteria at Level A and AA only.</p>
+    <p>The nine Success Criteria are:</p>
+    <ul class="govuk-list">
+      <li>
+        <a href="#2-4-11">2.4.11 - Focus Appearance (Level AA)</a>
+      </li>
+      <li>
+        <a href="#2-4-12">2.4.12 - Focus Not Obscured (Minimum) (Level AA)</a>
+      </li>
+      <li>
+        <a href="#2-4-13">2.4.13 - Focus Not Obscured (Enhanced) (Level AAA)</a>
+      </li>
+      <li>
+        <a href="#2-5-7">2.5.7 - Dragging Movements (Level AA)</a>
+      </li>
+      <li>
+        <a href="#2-5-8">2.5.8 - Target Size (Minimum) (Level AA)</a>
+      </li>
+      <li>
+        <a href="#3-2-6">3.2.6 - Consistent Help (Level A)</a>
+      </li>
+      <li>
+        <a href="#3-3-7">3.3.7 - Accessible Authentication (Level AA)</a>
+      </li>
+      <li>
+        <a href="#3-3-8">3.3.8 - Accessible Authentication (No Exception) (Level AAA)</a>
+      </li>
+      <li>
+        <a href="#3-3-9">3.3.9 - Redundant Entry (Level A)</a>
+      </li>
+    </ul>
+    <h2 id="2-4-11" class="govuk-heading-l">2.4.11 - Focus Appearance</h2>
+    <strong class="govuk-tag govuk-tag--yellow">Level AA</strong>
+    <div class="govuk-inset-text">This Criteria is <a href="https://www.w3.org/TR/WCAG22/#items-at-risk" target="_blank">at risk</a> - it could be changed or removed before it is published.</div>
+    <p>This Success Criteria is about how visible focus is on a component. It includes aspects of two existing Criteria:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <a href="/accessibility/understanding-wcag/perceivable.html#1-4-11">1.4.11 Non-Text Contrast</a> which requires that focus indicators must have a minimum 3:1 contrast ratio against its background
+      </li>
+      <li>
+        <a href="/accessibility/understanding-wcag/operable.html#2-4-7">2.4.7 Focus Visible</a> which requires a component to have a visible focus state
+      </li>
+    </ul>
+    <p>This new Criteria also has requirements for the contrast between focused and unfocused states, and potentially, for the shape or thickness of the focus indicator. So, it goes beyond criteria 1.4.11 and 2.4.7, by requiring not just visibility, but a minimum level of visibility.</p>
+    <p>This helps people who rely on or only use a keyboard to interact with a page, and particularly benefits low-vision keyboard users.</p>
+    <p>People with attention limitations, short term memory limitations, or limitations in <a href="https://en.wikipedia.org/wiki/Executive_functions" target="_blank">executive processes</a> benefit by being able to discover where the focus is located. </p>
+    <p><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html" target="_blank">Understanding Success Criterion 2.4.11: Focus Appearance</a>
+    </p>
+    <h2 id="2-4-12" class="govuk-heading-l">2.4.12 - Focus Not Obscured (Minimum)</h2>
+    <strong class="govuk-tag govuk-tag--yellow">Level AA</strong>
+    <p>This Success Criteria is about ensuring a component that currently has focus is not entirely obscured by another element. It applies to the initial state of focus, for example, when the element gets focus, it must be in view.</p>
+    <p>Failure example: a button or link having focus and being obscured by a modal or pop-up window, or a sticky header or footer will be a failure.</p>
+    <p>However, if a component has visible focus and then the user moves a modal window over the focused component, this is not a failure as the original focus state was visible to the user. See <a href="#2-4-13">2.4.13 - Focus Not Obscured (Enhanced)</a> for partial obscurity conformance.</p>
+    <p>Partial obscurity does not result in a failure of this Criteria. For example, if a sticky header stays at the top of the page and a focused element is partially obscured (for example, half a button) then this is not a failure.</p>
+    <p><a href="https://w3c.github.io/wcag/understanding/focus-not-obscured-minimum.html" target="_blank">Understanding Success Criterion 2.4.12: Focus Not Obscured (Minimum)</a>
+    </p>
+    <h2 id="2-4-13" class="govuk-heading-l">2.4.13 - Focus Not Obscured (Enhanced)</h2>
+    <strong class="govuk-tag govuk-tag--purple">Level AAA</strong>
+    <p>This enhanced Criteria extends <a href="#2-4-12">2.4.12</a> to make partial obscurity of a component with focus, a failure.</p>
+    <p>As this is Level AAA, we are not obliged to meet this Criteria. See the published guidance <a href="https://w3c.github.io/wcag/understanding/focus-not-obscured-enhanced.html" target="_blank">Understanding Success Criterion 2.4.13: Focus Not Obscured (Enhanced)</a> for full details.
+    </p>
+    <h2 id="2-5-7" class="govuk-heading-l">2.5.7 - Dragging Movements</h2>
+    <strong class="govuk-tag govuk-tag--yellow">Level AA</strong>
+    <p>This Success Criteria is about ensuring users can interact with components that can be dragged, for example a slider or moving something from one part of a page to another, using only a pointer device.</p>
+    <p>Keyboard accessibility is not applicable for this Criteria.</p>
+    <p>Some users may not use a mouse, but instead another means to interact with a pointer device, such as head or eye tracker or voice control.</p>
+    <p>To meet this Criteria, a user should be able to select an element and instead of drag and drop they should be able to point and click. A user could for example, use a mouse to click select, drag, and then drop a component, or click to select, release, and then click on the destination to drop the component.</p>
+    <p><a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements" target="_blank">Understanding Success Criterion 2.5.7 - Dragging Movements</a>
+    </p>
+    <h2 id="2-5-8" class="govuk-heading-l">2.5.8 - Target Size (Minimum)</h2>
+    <strong class="govuk-tag govuk-tag--yellow">Level AA</strong>
+    <div class="govuk-inset-text">This is a downgrade of <a href="https://www.w3.org/WAI/WCAG21/Understanding/target-size.html" target="_blank">2.5.5: Target Size (Enhanced)</a> (Level AAA).</div>
+    <p>Success Criteria 2.5.5 concerns itself with a minimum target size of interactive components of 44 by 44 pixels to aid users who have hand tremors or dexterity issues.</p>
+    <p>Success Criteria 2.5.8 allows a smaller size of 24 by 24 pixels, this could be an element being 20 pixels wide with 4 pixel spacing between, or 10 pixels with 14 pixel spacing.</p>
+    <p>There is ambiguity in this guideline, as it states that as long as there is a minimum spacing of 24 pixels between elements, essentially, the target element could be 0 pixels. This doesn't really make sense, so assume an element should be a minimum of 24 by 24 pixels or up to 24 pixels between them.</p>
+    <p>Additionally, this Criteria only applies to components that are not native components such as checkboxes, inputs or sentences. Where custom components have been designed, these are in scope. There are several exemptions to this Criteria which are detailed on the <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum" target="_blank">Understanding Success Criterion 2.5.8 - Target Size (Minimum)</a> page.</p>
+    <h2 id="3-2-6" class="govuk-heading-l">3.2.6 - Consistent Help</h2>
+    <strong class="govuk-tag govuk-tag--red">Level A</strong>
+    <p>Success Criteria 3.2.6 concerns itself with how you present information about getting help from a person like a call centre, or automated contact process like a chatbot.</p>
+    <p>This Criteria is helpful to everyone on how to get help, but especially for people who have cognitive or memory problems.</p>
+    <p>For example, if you have a phone number or email address in a header or footer of a page, then that needs to be in the same place on every page.</p>
+    <p>It is not the intent of this Success Criteria to require us to provide help or access to help. The Criteria only requires that when one of the listed forms of help is available across multiple pages that it be in a consistent location.</p>
+    <p>This Criteria does not apply where the details of an email address or phone number are on a contact page.</p>
+    <p><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help" target="_blank">Understanding Success Criterion 3.2.6 - Consistent Help</a>
+    </p>
+    <h2 id="3-3-7" class="govuk-heading-l">3.3.7 - Accessible Authentication</h2>
+    <strong class="govuk-tag govuk-tag--yellow">Level AA</strong>
+    <div class="govuk-inset-text">If you are building services which make use of authentication methods, take time to understand if this Success Criteria will impact your service, now.</div>
+    <p>Success Criteria 3.3.7 relates to the use of cognitive function (memory) tests to authenticate a user, for example, remembering a password or solving a puzzle such as "What does 1+2 equal" or using <a href="https://en.wikipedia.org/wiki/CAPTCHA" target="_blank">CAPTCHA</a> tests which ask you to identify a word or other characters.</p>
+    <p>CAPTCHA involving identifying common objects are an exception, for example, "Select all images of chimneys"</p>
+    <p>To meet this Criteria all inputs used in authenticating a user should support copy and pasting values so include <code>autocomplete</code> on inputs and allow password managers to store and retrieve passwords and credentials for a service.</p>
+    <p>If there is more than one step in the authentication process, such as with multi-factor authentication, all steps should comply with this Success Criterion. There should be a path through authentication that does not rely on cognitive function tests.</p>
+    <p>If a code is sent to a user's device and requires them to retype this into a service, then this is a failure of this Criteria.</p>
+    <p>Often referred to as "<a href="https://auth0.com/docs/authenticate/passwordless/authentication-methods/email-magic-link" target="_blank">Magic Links</a>", you could send a link to the user's email address which can sign them in without having to type in a password. This would successfully meet this Criteria.</p>
+    <p><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication" target="_blank">Understanding Success Criterion 3.3.7 - Accessible Authentication</a>
+    </p>
+    <h2 id="3-3-8" class="govuk-heading-l">3.3.8 - Accessible Authentication (No Exception) (Level AAA)</h2>
+    <strong class="govuk-tag govuk-tag--purple">Level AAA</strong>
+    <p>Success Criteria 3.3.8 is the same as <a href="#3-3-7">3.3.7</a> but also includes not requiring any image or text-based tests.</p>
+    <p><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-no-exception" target="_blank">Understanding Success Criterion 3.3.8 - Accessible Authentication (No Exception)</a>
+    </p>
+    <h2 id="3-3-9" class="govuk-heading-l">3.3.9 - Redundant Entry (Level A)</h2>
+    <strong class="govuk-tag govuk-tag--red">Level A</strong>
+    <div class="govuk-inset-text">If you are building services which ask users for the same information multiple times, think about what changes you need to make, to meet this Success Criteria.</div>
+    <p>Success Criteria 3.3.9 ensures that users are not asked to enter the same information twice, in the same session.</p>
+    <p>This reduces cognitive load on the user but also makes forms and services easier to use for everyone, and removes the frustration of "Why are you asking for this again, I've already entered this information".</p>
+    <p>To meet this Criteria, you should:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>prepopulate the field with the information previously entered in a previous step</li>
+      <li>or allow the user to select the information from a select list or radio list</li>
+      <li>or use a checkbox to confirm information is the same as previously entered, such as ticking a box to confirm the school's correspondence address is the same as the school's main address.</li>
+    </ul>
+    <p>This Criterion does not apply to essential duplication, such as where confirming a password is needed, or where information has been provided in a different format, for example, a document with their name on has been uploaded, you can ask them to type their name out into a field.</p>
+    <p><a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry" target="_blank">Understanding Success Criterion 3.3.9 - Redundant Entry</a>
+    </p>
+  </div>
+</div>
+
+{% endblock %}
