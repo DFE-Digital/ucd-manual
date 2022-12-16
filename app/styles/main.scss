@@ -242,7 +242,7 @@ h1 + .nhsuk-lede-text {
 .nhsuk-header,
 .nhsuk-header__navigation,
 .nhsuk-hero {
-  background-color: #003078;
+  background-color: #003a69;
 }
 
 .nhsuk-card__content {
@@ -262,11 +262,11 @@ h1 + .nhsuk-lede-text {
 }
 
 .dfeuk-hr {
-  border-bottom: 10px solid #003078;
+  border-bottom: 10px solid #003a69;
 }
 
 .nhsuk-card__heading--feature, .nhsuk-do-dont-list__label, .nhsuk-card.nhsuk-card--invert {
-  background: #003078;
+  background: #003a69;
 }
 
 .nhsuk-card--invert.nhsuk-card--clickable:hover .nhsuk-card__heading a,
@@ -307,5 +307,25 @@ h1 + .nhsuk-lede-text {
 
 
 .nhsuk-table__heading-tab {
-    background-color: #003078;
+    background-color: #003a69;
 }
+
+.nhsuk-header__logo-img{height: 90px !important; padding: 0px 15px 0px 0px;}
+.nhsuk-header__service-name{margin-left: 20px; padding-top: 72px; font-weight: 600;}
+
+@media (max-width: 61.865em){
+  .nhsuk-header__service-name{margin-left: 10px; padding-top: 0px; max-width: 100%; font-weight: 600;}
+}
+
+body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr {
+  font-family: 
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen-Sans,
+      Ubuntu,
+      Cantarell,
+      'Helvetica Neue',
+      sans-serif !important;
+}
+

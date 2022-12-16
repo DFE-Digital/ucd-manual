@@ -1,7 +1,7 @@
 {
-  "name": "nhsuk-service-manual",
+  "name": "dfe-user-centred-design-manual",
   "version": "5.7.2",
-  "description": "NHS digital service manual",
+  "description": "DfE User-Centred Design Manual",
   "main": "app.js",
   "directories": {
     "test": "tests"

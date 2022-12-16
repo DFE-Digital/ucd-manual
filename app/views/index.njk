@@ -1,5 +1,6 @@
-{% set pageDescription = "Design and build digital services for the NHS. Things you need to make consistent, usable services that put people first." %}
+{% set pageDescription = "A framework of principles, guidance, and standards to enable and support teams to deliver joined-up, effective, user-centred services for users of Department for Education services." %}
 {% set pageLayout = "Homepage" %}
+{% set pageTitle = "User-Centred Design in DfE"%}
 
 {% extends "includes/layout.njk" %}
 
@@ -14,8 +15,8 @@
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
             <div class="nhsuk-hero__wrapper app-hero__wrapper">
-              <h1 class="nhsuk-u-margin-bottom-4">User centered design in Department for Education</h1>
-              <p class="nhsuk-body-l nhsuk-u-margin-bottom-1">How to <a href="/ucd">design and build user-centered services</a> for Department for Education users.</p>
+              <h1 class="nhsuk-u-margin-bottom-4">{{pageTitle}}</h1>
+              <p class="nhsuk-body-l nhsuk-u-margin-bottom-1">{{pageDescription}}</p>
             </div>
           </div>
           <div class="nhsuk-grid-column-one-third app-latest-update">

@@ -44,6 +44,18 @@
   }
 ] %}
 
+{% set accessibility_wcag = [
+  { title: "Overview", url: "/accessibility/overview" },    
+  { title: "Perceivable", url: "/accessibility/perceivable" },
+  { title: "Operable", url: "/accessibility/operabale" },
+  { title: "Understandable", url: "/accessibility/understandable" },
+  { title: "Robust", url: "/accessibility/robust" },
+  { title: "Draft 2.2 Changes", url: "/accessibility/draft-2-2" },
+  { title: "Conformance and evaluation", url: "/accessibility/conformance" }
+] %}
+
+
+
 {% set accessibilityresources = [
   {
     title: "User research",
@@ -154,9 +166,9 @@
       {% endfor %}
     </ul>
 
-    <h2 class="app-side-nav__heading">How to apply accessibility in your role</h2>
+    <h2 class="app-side-nav__heading">Understanding WCAG</h2>
     <ul class="nhsuk-list app-side-nav__list">
-      {% for item in accessibilityresources %}
+      {% for item in accessibility_wcag %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
@@ -165,7 +177,7 @@
 
     <h2 class="app-side-nav__heading">Assuring accessibility is being met</h2>
     <ul class="nhsuk-list app-side-nav__list">
-      {% for item in accessibilityassurance %}
+      {% for item in accessibilityresources %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
