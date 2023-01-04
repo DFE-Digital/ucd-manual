@@ -80,5 +80,8 @@
   },
   "volta": {
     "node": "14.18.3"
-  }
+  },
+    "optionalDependencies": {
+      "fsevents": "^2.1.2"
+    }
 }
