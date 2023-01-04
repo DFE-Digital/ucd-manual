@@ -1,5 +1,5 @@
 {% set pageTitle = "Accessibility" %}
-{% set pageDescription = "How we ensure our services are accessible and inclusive for all." %}
+{% set pageDescription = "Everyone who works on Department for Education services has a role to play in making services accessible and inclusive." %}
 {% set pageSection = "Accessibility" %}
 {% set dateUpdated = "March 2022" %}
 {% set backlog_issue_id = "" %}
@@ -11,24 +11,44 @@
   {% include "accessibility/_breadcrumb.njk" %}
 {% endblock %}
 
+
 {% block bodyContent %}
 
 {% markdown %}
 
+<div class="dfeuk-warning-callout">
+  <h3 class="dfeuk-warning-callout__label">
+    <span role="text">
+      <span class="dfeuk-u-visually-hidden">Important: </span>
+      Changes to WCAG are coming
+    </span>
+  </h3>
+  <p>We have created guidance on understanding and applying the <a href="/accessibility/understanding-wcag/draft-2-2">9 new criteria in WCAG 2.2</a>.</p>
+</div>
 
-Your service must be accessible to everyone who needs it. If it is not, you may be breaking the law.
+When we talk about accessibility we must not think of it as just people with disabilities, it also means supporting everyone with temporary, situational and permenant access needs who may be using assisitve technology.
 
-Everyone who works on DfE digital services has a role to play in making them accessible and inclusive.
+In the UK, <a href="https://www.scope.org.uk/media/disability-facts-figures/" target="_blank">one in five people have a disability</a> and around <a href="https://adhdaware.org.uk/what-is-adhd/neurodiversity-and-other-conditions/" target="_blank">15% of people are thought to be neurodiverse</a> .
 
-## Accessibility and the law
-
-If your service isn't accessible to everyone who needs it, you may be breaking the <a href="https://www.legislation.gov.uk/ukpga/2010/15/contents" target="_blank">2010 Equality Act</a>.
-
-New accessibility regulations say that public sector websites must meet accessibility standards and publish an accessibility statement. You can find out <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps" target="_blank">more about the new regulations on GOV.UK</a>.
-
-
+<p><a href="https://how-many.herokuapp.com/" target="_blank">Estimate how many people using your website might be disabled</a>. This will help you consider the types of people who may be using your service and who you should be testing with.</p>
 
 
 {% endmarkdown %}
+
+<nav class="dfeuk-pagination" role="navigation" aria-label="Pagination">
+  <ul class="dfeuk-list dfeuk-pagination__list">
+   
+    <li class="dfeuk-pagination-item--next">
+      <a class="dfeuk-pagination__link dfeuk-pagination__link--next" href="/accessibility/standards">
+        <span class="dfeuk-pagination__title">Next</span>
+        <span class="dfeuk-u-visually-hidden">:</span>
+        <span class="dfeuk-pagination__page">Accessibility standards</span>
+        <svg class="dfeuk-icon dfeuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+          <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 {% endblock %}

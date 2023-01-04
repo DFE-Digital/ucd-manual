@@ -1,0 +1,88 @@
+{% set pageTitle = "Design Ops" %}
+{% set pageDescription = "The Design Ops team support designers across the Department for Education." %}
+{% set pageSection = "Design Ops" %}
+{% set dateUpdated = "December 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-ops/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+  <p>We support the following <a href="https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework#user-centred-design-job-family" target="_blank">user-centred design professions</a> across the department:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Content design</li>
+    <li>Interaction design</li>
+    <li>Service design</li>
+  </ul>
+
+  <h2 class="govuk-heading-m">What we do</h2>
+
+  <p>We support designers with:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>process and continuous improvement initiatives</li>
+    <li>working across services to identify and publish common components and patterns</li>
+    <li>creating tools and services to improve design processes</li>
+    <li>raising awareness and understanding of design in DfE</li>
+  </ul>
+
+  <p>How to <a href="/design-ops/contact">contact the Design Ops team</a>.</p>
+
+  <h2 class="govuk-heading-m">The team</h2>
+
+  <p>As a multi-disciplinary team, we identify process improvements, support the creation of common components and patterns, and ensure designers have the right tools and services to do their job.</p>
+
+  <ul class="dfeuk-grid-row dfeuk-card-group">
+    <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+      <div class="dfeuk-card">
+        <img class="dfeuk-card__img" src="/assets/profile.png" alt="">
+        <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+            Andy Jones
+          </h2>
+          <p class="dfeuk-card__description">Head of Design</p>
+        </div>
+      </div>
+    </li>
+    <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+      <div class="dfeuk-card">
+        <img class="dfeuk-card__img" src="/assets/profile.png" alt="">
+        <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+            Adam Dumbell
+          </h2>
+          <p class="dfeuk-card__description">User researcher</p>
+        </div>
+      </div>
+    </li>
+    <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+      <div class="dfeuk-card">
+        <img class="dfeuk-card__img" src="/assets/profile.png" alt="">
+        <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+            Kerry Lyons
+          </h2>
+          <p class="dfeuk-card__description">Content designer</p>
+        </div>
+      </div>
+    </li>
+    <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+      <div class="dfeuk-card">
+        <img class="dfeuk-card__img" src="/assets/profile.png" alt="">
+        <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+            Callum Mckay
+          </h2>
+          <p class="dfeuk-card__description">Delivery Manager</p>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
+{% endblock %}

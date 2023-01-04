@@ -1,68 +1,84 @@
-{% set standards = [
- { title: "Standards", url: "/standards/" },
-  { title: "GOV Service Standards", url: "/standards/gov-service-standards" },
-  { title: "DfE standards", url: "/standards/dfe-standards" },
-  { title: "Branding your service", url: "/standards/branding" }
-] %}
-
-{% set ur = [
-  { title: "No pages added", url: "/user-research/" }
-] %}
-
-{% set contentdesign = [
-  { title: "No pages added", url: "/content-design/" }
-] %}
-
-{% set servicedesign = [
-  { title: "No pages added", url: "/service-design/" }
-] %}
-
-{% set ixd = [
-  { title: "Interaction design", url: "/interaction-design/" },
-  { title: "Being an interaction designer in DfE", url: "/interaction-design/being-an-interaction-designer-in-dfe" },
-  { title: "Our design stages", url: "/interaction-design/our-design-stages" },
-  { title: "Tools", url: "/interaction-design/tools" },
-  { title: "Design documentaion", url: "/interaction-design/design-documentation" },
-  { title: "Collaboration across UCD", url: "/interaction-design/collaboration" }
-] %}
-
-{% set ixdaccessibility = [   
-  { title: "Accessible design", url: "/interaction-design/accessible-design" },
-  { title: "Inclusive design", url: "/interaction-design/inclusive-design" }
-] %}
-
-{% set ixdassurance = [
-  { title: "Design for success", url: "/interaction-design/design-for-success" },    
-  { title: "Evidence based design", url: "/interaction-design/evidence-based-design" },
-  { title: "Assurance and assessments", url: "/interaction-design/assurance-and-assessments" }
-] %}
-
 {% set accessibility = [
   {
     title: "Accessibility",
     url: "/accessibility/"
+  },{
+    title: "Accessibility standards",
+    url: "/accessibility/standards"
+  },{
+    title: "Understanding WCAG",
+    url: "/accessibility/understanding-wcag"
+  },{
+    title: "Roles and responsibilities",
+    url: "/accessibility/roles-and-responsibilities"
   }
 ] %}
 
+
 {% set accessibility_wcag = [
-  { title: "Overview", url: "/accessibility/overview" },    
-  { title: "Perceivable", url: "/accessibility/perceivable" },
-  { title: "Operable", url: "/accessibility/operabale" },
-  { title: "Understandable", url: "/accessibility/understandable" },
-  { title: "Robust", url: "/accessibility/robust" },
-  { title: "Draft WCAG 2.2 changes", url: "/accessibility/draft-2-2" },
-  { title: "Conformance and evaluation", url: "/accessibility/conformance" }
+  {
+    title: "Overview",
+    url: "/accessibility/understanding-wcag/"
+  }, {
+    title: "Perceivable",
+    url: "/accessibility/perceivable"
+  }, {
+    title: "Operable",
+    url: "/accessibility/operabale"
+  }, {
+    title: "Understandable",
+    url: "/accessibility/understandable"
+  }, {
+    title: "Robust",
+    url: "/accessibility/robust"
+  }, {
+    title: "Draft WCAG 2.2 changes",
+    url: "/accessibility/understanding-wcag/draft-2-2"
+  }
 ] %}
 
+{% set accessibility_assurance_top_level = [
+   {
+    title: "Testing and assurance",
+    url: "/accessibility/assurance"
+  },{
+    title: "Audits",
+    url: "/accessibility/audits"
+  },{
+    title: "Accessibility statements",
+    url: "/accessibility/accessibility-statements"
+  },{
+    title: "Conformance reports",
+    url: "/accessibility/conformance-reports"
+  }
+] %}
 
-
-{% set accessibilityresources = [
-  {
-    title: "User research",
-    url: "/accessibility/roles/ur"
+{% set accessibility_tools = [
+   {
+    title: "Tools and plugins",
+    url: "/accessibility/tools"
   }, {
-    title: "Service design",
-    url: "/accessibility/roles/sd"
+    title: "Training",
+    url: "/accessibility/training"
+  }, {
+    title: "Experience lab",
+    url: "/accessibility/lab"
+  }
+] %}
+
+{% set accessibility_assurance = [
+   {
+    title: "Conformance and evalulation methodology",
+    url: "/accessibility/conformance"
+  },{
+    title: "User testing",
+    url: "/accessibility/user-testing"
+  }, {
+    title: "Continuous integration",
+    url: "/accessibility/c-i"
+  }, {
+    title: "Acceptance criteria",
+    url: "/accessibility/acceptance-criteria"
   }
 ] %}
 
@@ -83,82 +99,133 @@
   }
 ] %}
 
+{% set ds_getting_started = [
+  {
+    title: "Design System",
+    url: "/design-system/"
+  }, {
+    title: "Contribute to the DfE Design System",
+    url: "/design-system/contribute/"
+  },{
+    title: "Branding standards",
+    url: "/design-system/branding-standards/"
+  }
+] %}
+
+{% set ds_design = [
+{
+    title: "DfE Frontend",
+    url: "/design-system/dfe-frontend/"
+  },
+  {
+    title: "Styles",
+    url: "/design-system/styles/"
+  },{
+    title: "Components",
+    url: "/design-system/components/"
+  },{
+    title: "Patterns",
+    url: "/design-system/patterns/"
+  }
+] %}
+
+{% set ds_prototyping = [
+  {
+    title: "GOV.UK prototype kit",
+    url: "/design-system/prototype-kit/"
+  },
+  {
+    title: "Installing the kit",
+    url: "/design-system/prototype-kit/install"
+  },
+  {
+    title: "Branding your prototype",
+    url: "/design-system/prototype-kit/branding"
+  },
+  {
+    title: "Hosting on Heroku",
+    url: "/design-system/prototype-kit/hosting"
+  },
+  {
+    title: "Example pages and code",
+    url: "/design-system/prototype-kit/examples"
+  },
+  {
+    title: "Troubleshooting and support",
+    url: "/design-system/prototype-kit/troubleshooting"
+  }
+] %}
+
+{% set design_ops = [
+  {
+    title: "Design Ops",
+    url: "/design-ops/"
+  },
+  {
+    title: "Vision and objectives",
+    url: "/design-ops/vision-and-objectives"
+  },
+  {
+    title: "Services we've built",
+    url: "/design-ops/services-weve-built"
+  }
+] %}
+
+
+
+{% set design_ops_contact = [
+  {
+    title: "Contact Design Ops",
+    url: "/design-ops/contact"
+  }
+] %}
+
+{% set styles = [
+  { title: "Colour", url: "/design-system/styles/colour" },
+  { title: "Focus state", url: "/design-system/styles/focus-state" },
+  { title: "Icons", url: "/design-system/styles/icons" },
+  { title: "Layout", url: "/design-system/styles/layout" },
+  { title: "Page template", url: "/design-system/styles/page-template" },
+  { title: "Spacing", url: "/design-system/styles/spacing" },
+  { title: "Typography", url: "/design-system/styles/typography" }
+] %}
+
 <nav class="app-side-nav">
 
-  {%- if pageSection == "Standards" %}
-    <h2 class="app-side-nav__heading">Standards</h2>
+  {%- if pageSection == "Design System" and subSection != "Styles"%}
 
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in standards %}
+    <h2 class="app-side-nav__heading">Overview</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in ds_getting_started %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endfor %}
     </ul>
+
+    <h2 class="app-side-nav__heading">Design</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in ds_design %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="app-side-nav__heading">Prototyping</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in ds_prototyping %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
   {% endif %}
 
-  {%- if pageSection == "User research" %}
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in ur %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {%- if pageSection == "Content design" %}
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in contentdesign %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {%- if pageSection == "Service design" %}
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in servicedesign %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {%- if pageSection == "Interaction design" %}
-    <h2 class="app-side-nav__heading">What everyone should know</h2>
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in ixd %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <h2 class="app-side-nav__heading">How to apply accessibility in your role</h2>
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in ixdaccessibility %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <h2 class="app-side-nav__heading">Assuring good design</h2>
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in ixdassurance %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {%- if pageSection == "Accessibility" %}
+  {%- if pageSection == "Accessibility" and subSection != "Understanding WCAG"%}
     <h2 class="app-side-nav__heading">What everyone needs to know</h2>
-    <ul class="nhsuk-list app-side-nav__list">
+    <ul class="dfeuk-list app-side-nav__list">
       {% for item in accessibility %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
@@ -166,27 +233,28 @@
       {% endfor %}
     </ul>
 
-    <h2 class="app-side-nav__heading">Understanding WCAG</h2>
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in accessibility_wcag %}
+    <h2 class="app-side-nav__heading">Assurance</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in accessibility_assurance_top_level %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endfor %}
     </ul>
 
-    <h2 class="app-side-nav__heading">Assuring accessibility is being met</h2>
-    <ul class="nhsuk-list app-side-nav__list">
-      {% for item in accessibilityresources %}
+    <h2 class="app-side-nav__heading">Tools, training and templates</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in accessibility_tools %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endfor %}
     </ul>
+
   {% endif %}
 
   {%- if pageSection == "Community" %}
-    <ul class="nhsuk-list app-side-nav__list">
+    <ul class="dfeuk-list app-side-nav__list">
       {% for item in communities %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
@@ -195,4 +263,55 @@
     </ul>
   {% endif %}
 
+  {%- if pageSection == "Design Ops" %}
+    <h2 class="app-side-nav__heading">About us</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in design_ops %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="app-side-nav__heading">Get in touch</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in design_ops_contact %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+
+    {%- if subSection == "Styles" %}
+    {{ backLink({
+      "href": "/design-system",
+      "text": "Design system",
+      "classes": "app-u-hide-mobile app-side-nav__back dfeuk-u-margin-bottom-4"
+    }) }}
+    <h2 class="app-side-nav__heading">Styles <span class="dfeuk-u-visually-hidden">navigation</span></h2>
+    <ul class="dfeuk-list app-side-nav__list">
+    {% for item in styles %}
+      <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+    {%- if subSection == "Understanding WCAG" %}
+    {{ backLink({
+      "href": "/accessibility/",
+      "text": "Accessibility",
+      "classes": "app-u-hide-mobile app-side-nav__back dfeuk-u-margin-bottom-4"
+    }) }}
+    <h2 class="app-side-nav__heading">Understanding WCAG <span class="dfeuk-u-visually-hidden">navigation</span></h2>
+    <ul class="dfeuk-list app-side-nav__list">
+    {% for item in accessibility_wcag %}
+      <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+
 </nav>
+

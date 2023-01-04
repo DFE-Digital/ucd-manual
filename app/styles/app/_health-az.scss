@@ -8,19 +8,19 @@
 
 .app-style-guide-a-z {
 
-  .nhsuk-a-z-list--results-items {
-    @include nhsuk-responsive-margin(9, 'bottom');
+  .dfeuk-a-z-list--results-items {
+    @include dfeuk-responsive-margin(9, 'bottom');
   }
 
-  .nhsuk-back-to-top__link {
+  .dfeuk-back-to-top__link {
     margin-left: 0;
   }
 
   h2 {
-    background: $color_nhsuk-blue;
-    color: $color_nhsuk-white;
+    background: $color_dfeuk-blue;
+    color: $color_dfeuk-white;
     display: inline-block;
-    padding: nhsuk-spacing(2) + $nhsuk-box-shadow-link;
+    padding: dfeuk-spacing(2) + $dfeuk-box-shadow-link;
   }
 
 }

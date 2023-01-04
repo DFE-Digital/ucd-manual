@@ -1,7 +1,7 @@
 // sass-lint:disable border-zero no-color-hex
 
 .code-snippet {
-  background-color: $color_nhsuk-grey-5;
+  background-color: $color_dfeuk-grey-5;
 
   .js-hidden {
     display: none;
@@ -10,8 +10,8 @@
   .app-link {
 
     &--copy {
-      border-bottom-color: $nhsuk-button-color;
-      box-shadow: 0 2px 0 $nhsuk-button-color;
+      border-bottom-color: $dfeuk-button-color;
+      box-shadow: 0 2px 0 $dfeuk-button-color;
       margin-bottom: 16px;
       padding: 2px 8px;
       position: absolute;
@@ -20,12 +20,12 @@
       top: 16px;
 
       &:hover {
-        background-color: $color_nhsuk-grey-5;
+        background-color: $color_dfeuk-grey-5;
       }
 
       &:focus {
-        @include nhsuk-focused-text;
-        border-color: $nhsuk-focus-color;
+        @include dfeuk-focused-text;
+        border-color: $dfeuk-focus-color;
       }
     }
 
@@ -33,7 +33,7 @@
       background-color: transparent;
       border: 0;
       bottom: 16px;
-      color: $color_nhsuk-blue;
+      color: $color_dfeuk-blue;
       cursor: pointer;
       font-size: 16px;
       margin-top: 16px;
@@ -43,15 +43,15 @@
       z-index: 1;
 
       &:hover {
-        color: $nhsuk-link-hover-color;
+        color: $dfeuk-link-hover-color;
         text-decoration: none;
       }
 
       &:focus {
-        @include nhsuk-focused-text;
+        @include dfeuk-focused-text;
 
         &:hover {
-          color: $nhsuk-focus-text-color;
+          color: $dfeuk-focus-text-color;
         }
       }
 
@@ -61,7 +61,7 @@
       }
 
       svg {
-        fill: $color_nhsuk-blue;
+        fill: $color_dfeuk-blue;
         height: 16px;
         margin: 5px 5px 0 0;
         transform: rotate(-90deg);
@@ -72,7 +72,7 @@
 
   &__preformatted {
     align-items: flex-end;
-    border-bottom: 1px solid $color_nhsuk-grey-3;
+    border-bottom: 1px solid $color_dfeuk-grey-3;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -84,8 +84,8 @@
 }
 
 .app-tabs {
-  background: $color_nhsuk-white;
-  border: 1px solid $color_nhsuk-grey-3;
+  background: $color_dfeuk-white;
+  border: 1px solid $color_dfeuk-grey-3;
   border-bottom: 0;
   $root: &;
   display: none;
@@ -110,16 +110,16 @@
       }
 
       &:hover {
-        color: $nhsuk-link-hover-color;
+        color: $dfeuk-link-hover-color;
         outline: 0;
         text-decoration: none;
       }
 
       &:focus {
-        background-color: $nhsuk-focus-color;
-        box-shadow: 0 $nhsuk-focus-width $nhsuk-focus-text-color;
-        color: $nhsuk-focus-text-color;
-        outline: $nhsuk-focus-width solid transparent;
+        background-color: $dfeuk-focus-color;
+        box-shadow: 0 $dfeuk-focus-width $dfeuk-focus-text-color;
+        color: $dfeuk-focus-text-color;
+        outline: $dfeuk-focus-width solid transparent;
         text-decoration: none;
       }
 
@@ -130,16 +130,16 @@
         text-decoration: none;
 
         @include mq($from: tablet) {
-          box-shadow: 0 $button-shadow-size 0 $color_nhsuk-blue;
+          box-shadow: 0 $button-shadow-size 0 $color_dfeuk-blue;
         }
 
         &:hover {
-          color: $nhsuk-link-color;
+          color: $dfeuk-link-color;
         }
 
         &:focus {
           &:hover {
-            color: $nhsuk-focus-text-color;
+            color: $dfeuk-focus-text-color;
           }
         }
 
@@ -147,8 +147,8 @@
     }
 
     &--mobile {
-      background-color: $color_nhsuk-white;
-      border: 1px solid $color_nhsuk-grey-3;
+      background-color: $color_dfeuk-white;
+      border: 1px solid $color_dfeuk-grey-3;
       border-width: 1px 0;
       display: block;
       margin: -1px 0;
@@ -161,14 +161,14 @@
     }
 
   &__container {
-    background-color: $color_nhsuk-white;
-    border: 1px solid $color_nhsuk-grey-3;
+    background-color: $color_dfeuk-white;
+    border: 1px solid $color_dfeuk-grey-3;
     border-bottom: 0;
     margin-top: 0;
 
     pre {
       align-self: stretch;
-      background-color: $color_nhsuk-white;
+      background-color: $color_dfeuk-white;
       padding: 0;
     }
 
@@ -185,7 +185,7 @@ $color-syntax--string: #025eb8;
 $color-syntax--selector: #330072;
 
 .hljs {
-  background-color: $color_nhsuk-white;
+  background-color: $color_dfeuk-white;
   color: $color-syntax--body;
   overflow-x: scroll;
   padding: 0;

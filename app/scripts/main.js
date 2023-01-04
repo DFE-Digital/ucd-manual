@@ -1,17 +1,17 @@
 /* eslint-disable no-new */
 // NHS.UK frontend components
-import MenuToggle from 'nhsuk-frontend/packages/components/header/menuToggle';
-import SearchToggle from 'nhsuk-frontend/packages/components/header/searchToggle';
-import SkipLink from 'nhsuk-frontend/packages/components/skip-link/skip-link';
-import Details from 'nhsuk-frontend/packages/components/details/details';
-import Checkboxes from 'nhsuk-frontend/packages/components/checkboxes/checkboxes';
-import Radios from 'nhsuk-frontend/packages/components/radios/radios';
-import Card from 'nhsuk-frontend/packages/components/card/card';
+import MenuToggle from 'dfeuk-frontend/packages/components/header/menuToggle';
+import SearchToggle from 'dfeuk-frontend/packages/components/header/searchToggle';
+import SkipLink from 'dfeuk-frontend/packages/components/skip-link/skip-link';
+import Details from 'dfeuk-frontend/packages/components/details/details';
+import Checkboxes from 'dfeuk-frontend/packages/components/checkboxes/checkboxes';
+import Radios from 'dfeuk-frontend/packages/components/radios/radios';
+import Card from 'dfeuk-frontend/packages/components/card/card';
 
 import AutoComplete from './autocomplete/autoCompleteConfig';
 
 // NHS.UK frontend polyfills
-import 'nhsuk-frontend/packages/polyfills';
+import 'dfeuk-frontend/packages/polyfills';
 
 // NHS digital service manual components
 import DesignExample from './design-example';

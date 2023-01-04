@@ -1,16 +1,16 @@
 {% extends "includes/layout.njk" %}
 
 {% block body %}
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full app-component-reading-width">
+  <div class="dfeuk-grid-row">
+    <div class="dfeuk-grid-column-full app-component-reading-width">
 
-      <div class="nhsuk-grid-row">
+      <div class="dfeuk-grid-row">
 
-        <div class="nhsuk-grid-column-two-thirds">
+        <div class="dfeuk-grid-column-two-thirds">
 
           <h1 class="app-page-heading">
 
-            <span class="nhsuk-caption-l">
+            <span class="dfeuk-caption-l">
               {%- if subSection %}
                 {%- if theme %}
                   {{theme}}
@@ -20,7 +20,7 @@
               {% else %}
                 {{pageSection}}
               {% endif %}
-              <span class="nhsuk-u-visually-hidden"> - </span>
+              <span class="dfeuk-u-visually-hidden"> - </span>
             </span>
 
             {{pageTitle}}
@@ -28,7 +28,7 @@
 
           {%- if hideDescription %}
           {% else %}
-            <p class="nhsuk-lede-text app-lede-text">{{pageDescription}}</p>
+            <p class="dfeuk-lede-text app-lede-text">{{pageDescription}}</p>
           {% endif %}
 
           {% block bodyContent %}{% endblock %}
@@ -36,12 +36,12 @@
           {% block afterContact %}{% endblock %}
 
           {%- if dateUpdated %}
-            <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-5 nhsuk-u-margin-bottom-0">Updated: {{dateUpdated}}</p>
+            <p class="dfeuk-body-s dfeuk-u-secondary-text-color dfeuk-u-margin-top-5 dfeuk-u-margin-bottom-0">Updated: {{dateUpdated}}</p>
           {% endif %}
 
         </div>
 
-        <div class="nhsuk-grid-column-one-third"></div>
+        <div class="dfeuk-grid-column-one-third"></div>
 
       </div>
 

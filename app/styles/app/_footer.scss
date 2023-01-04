@@ -7,19 +7,19 @@
  */
 
 .app-ogl-footer {
-  background-color: $color_nhsuk-grey-4;
+  background-color: $color_dfeuk-grey-4;
 }
 
 .app-ogl-footer--text {
-  @include nhsuk-font(16);
-  @include nhsuk-responsive-padding(5, 'bottom');
+  @include dfeuk-font(16);
+  @include dfeuk-responsive-padding(5, 'bottom');
 
-  color: $color_nhsuk-grey-1;
+  color: $color_dfeuk-grey-1;
   margin-bottom: 0;
-  padding-bottom: nhsuk-spacing(4);
+  padding-bottom: dfeuk-spacing(4);
 
   svg {
-    margin-right: nhsuk-spacing(2);
+    margin-right: dfeuk-spacing(2);
     position: relative;
     top: 2px;
   }

@@ -19,14 +19,14 @@
 
 {% block body %}
 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full app-component-reading-width">
+  <div class="dfeuk-grid-row">
+    <div class="dfeuk-grid-column-full app-component-reading-width">
 
       <h1>
         {%- if pageSection %}
-        <span class="nhsuk-caption-l">
+        <span class="dfeuk-caption-l">
           {{pageSection}}
-          <span class="nhsuk-u-visually-hidden"> - </span>
+          <span class="dfeuk-u-visually-hidden"> - </span>
         </span>
         {% else %}
         {% endif %}
@@ -35,7 +35,7 @@
 
       {% include "content/how-to-write-good-questions-for-forms/write-good-questions-nav.njk" %}
 
-      <p class="nhsuk-body-l">{{pageDescription}}</p>
+      <p class="dfeuk-body-l">{{pageDescription}}</p>
 
       {% block bodyContent %}
       {% endblock %}

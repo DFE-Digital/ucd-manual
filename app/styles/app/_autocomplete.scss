@@ -26,62 +26,62 @@
 }
 
 @include mq($until: tablet) {
-  /* duplicate of .nhsuk-search__input in _header.scss, for non javascript version */
+  /* duplicate of .dfeuk-search__input in _header.scss, for non javascript version */
   .autocomplete__input {
     -ms-flex-positive: 2; /* [1] */
     -webkit-appearance: listbox; // sass-lint:disable-line prefixes /* [2] */
-    border-bottom: 1px solid $color_nhsuk-grey-3;
-    border-bottom-left-radius: $nhsuk-border-radius;
+    border-bottom: 1px solid $color_dfeuk-grey-3;
+    border-bottom-left-radius: $dfeuk-border-radius;
     border-bottom-right-radius: 0;
-    border-left: 1px solid $color_nhsuk-grey-3;
+    border-left: 1px solid $color_dfeuk-grey-3;
     border-right: 0;
-    border-top: 1px solid $color_nhsuk-grey-3;
-    border-top-left-radius: $nhsuk-border-radius;
+    border-top: 1px solid $color_dfeuk-grey-3;
+    border-top-left-radius: $dfeuk-border-radius;
     border-top-right-radius: 0;
     flex-grow: 2;
     font-size: inherit;
     height: 52px; /* [3] */
     margin: 0;
     outline: none;
-    padding: 0 nhsuk-spacing(3);
+    padding: 0 dfeuk-spacing(3);
     width: 100%; /* [3] */
 
     &:focus {
-      border: $nhsuk-focus-width solid $nhsuk-focus-text-color;
-      box-shadow: 0 0 0 $nhsuk-focus-width $nhsuk-focus-color;
-      outline: $nhsuk-focus-width solid transparent;
-      outline-offset: $nhsuk-focus-width;
+      border: $dfeuk-focus-width solid $dfeuk-focus-text-color;
+      box-shadow: 0 0 0 $dfeuk-focus-width $dfeuk-focus-color;
+      outline: $dfeuk-focus-width solid transparent;
+      outline-offset: $dfeuk-focus-width;
       padding: 0 13px; /* [10] */
     }
   }
 }
 
 @include mq($from: tablet) {
-  /* duplicate of .nhsuk-search__input in _header.scss, for non javascript version */
+  /* duplicate of .dfeuk-search__input in _header.scss, for non javascript version */
   .autocomplete__input {
     -webkit-appearance: listbox; // sass-lint:disable-line prefixes /* [2] */
-    border: 1px solid $color_nhsuk-white;
-    border-bottom-left-radius: $nhsuk-border-radius;
+    border: 1px solid $color_dfeuk-white;
+    border-bottom-left-radius: $dfeuk-border-radius;
     border-bottom-right-radius: 0;
     border-right: 0;
-    border-top-left-radius: $nhsuk-border-radius;
+    border-top-left-radius: $dfeuk-border-radius;
     border-top-right-radius: 0;
-    font-size: $nhsuk-base-font-size;
+    font-size: $dfeuk-base-font-size;
     height: 40px; /* [3] */
     padding: 0 12px; /* [9] */
     width: 200px; /* [3] */
 
     &:focus {
-      border: 2px solid $nhsuk-focus-text-color;
-      box-shadow: 0 0 0 $nhsuk-focus-width $nhsuk-focus-color;
-      outline: $nhsuk-focus-width solid transparent;
-      outline-offset: $nhsuk-focus-width;
+      border: 2px solid $dfeuk-focus-text-color;
+      box-shadow: 0 0 0 $dfeuk-focus-width $dfeuk-focus-color;
+      outline: $dfeuk-focus-width solid transparent;
+      outline-offset: $dfeuk-focus-width;
       padding: 0 11px; /* [10] */
     }
 
     &::placeholder {
-      color: $color_nhsuk-grey-1;
-      font-size: $nhsuk-base-font-size;
+      color: $color_dfeuk-grey-1;
+      font-size: $dfeuk-base-font-size;
     }
   }
 }
@@ -94,20 +94,20 @@
 
 .autocomplete__menu {
   // sass-lint:disable-block no-vendor-prefixes, no-color-literals
-  -moz-box-shadow: 0 3px 5px rgba($nhsuk-box-shadow-color, $alpha-transparency-50); /* [6] */
-  -webkit-box-shadow: 0 3px 5px rgba($nhsuk-box-shadow-color, $alpha-transparency-50); /* [6] */
-  background-color: $color_nhsuk-white;
-  border-bottom: 1px solid $color_nhsuk-grey-4;
-  border-bottom-left-radius: $nhsuk-border-radius;
-  border-bottom-right-radius: $nhsuk-border-radius;
-  border-left: 1px solid $color_nhsuk-grey-4;
-  border-right: 1px solid $color_nhsuk-grey-4;
-  box-shadow: 0 0 ($nhsuk-box-shadow-spread - 1) 0 rgba($nhsuk-box-shadow-color, $alpha-transparency-50); /* [6] */
+  -moz-box-shadow: 0 3px 5px rgba($dfeuk-box-shadow-color, $alpha-transparency-50); /* [6] */
+  -webkit-box-shadow: 0 3px 5px rgba($dfeuk-box-shadow-color, $alpha-transparency-50); /* [6] */
+  background-color: $color_dfeuk-white;
+  border-bottom: 1px solid $color_dfeuk-grey-4;
+  border-bottom-left-radius: $dfeuk-border-radius;
+  border-bottom-right-radius: $dfeuk-border-radius;
+  border-left: 1px solid $color_dfeuk-grey-4;
+  border-right: 1px solid $color_dfeuk-grey-4;
+  box-shadow: 0 0 ($dfeuk-box-shadow-spread - 1) 0 rgba($dfeuk-box-shadow-color, $alpha-transparency-50); /* [6] */
   list-style: none;
   margin-top: 2px;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: nhsuk-spacing(3);
+  padding: dfeuk-spacing(3);
   position: absolute;
   top: 100%;
   width: 100%;
@@ -132,16 +132,16 @@
 }
 
 .autocomplete__option {
-  border-bottom: 1px solid $color_nhsuk-grey-5;
-  color: $color_nhsuk-blue;
+  border-bottom: 1px solid $color_dfeuk-grey-5;
+  color: $color_dfeuk-blue;
   cursor: pointer;
-  font-size: $nhsuk-base-font-size;
+  font-size: $dfeuk-base-font-size;
   padding-bottom: 12px; /* [8] */
   text-align: left;
   text-decoration: underline;
 
-  .nhsuk-icon__search {
-    fill: $color_nhsuk-grey-3;
+  .dfeuk-icon__search {
+    fill: $color_dfeuk-grey-3;
     float: left;
     height: 22px; /* [4] */
     margin: 2px 4px 0 0; /* [5] */
@@ -158,7 +158,7 @@
     text-decoration: none;
 
     a {
-      @include nhsuk-focused-text();
+      @include dfeuk-focused-text();
     }
   }
 
@@ -171,15 +171,15 @@
 
 .autocomplete__option--no-results {
   border-bottom: 0;
-  color: $color_nhsuk-black;
-  font-size: $nhsuk-base-font-size;
-  line-height: $nhsuk-base-line-height;
+  color: $color_dfeuk-black;
+  font-size: $dfeuk-base-font-size;
+  line-height: $dfeuk-base-line-height;
   margin: 0;
   padding: 0;
   text-align: left;
   text-decoration: none;
 
   @include mq($until: tablet) {
-    padding: nhsuk-spacing(3) 0;
+    padding: dfeuk-spacing(3) 0;
   }
 }

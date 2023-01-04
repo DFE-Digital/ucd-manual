@@ -2,37 +2,37 @@
    #RELATED-NAV
    ========================================================================== */
 
-.nhsuk-related-nav {
-  border-top: 2px solid $color_nhsuk-blue;
+.dfeuk-related-nav {
+  border-top: 2px solid $color_dfeuk-blue;
 
   @include mq($until: desktop) {
-    margin-top: nhsuk-spacing(7);
+    margin-top: dfeuk-spacing(7);
   }
 }
 
-.nhsuk-related-nav__heading {
-  @include nhsuk-typography-responsive(24, $override-line-height: 1.2);
+.dfeuk-related-nav__heading {
+  @include dfeuk-typography-responsive(24, $override-line-height: 1.2);
 
-  margin-bottom: nhsuk-spacing(3);
-  padding-top: nhsuk-spacing(3);
+  margin-bottom: dfeuk-spacing(3);
+  padding-top: dfeuk-spacing(3);
 }
 
-.nhsuk-related-nav__heading--small {
-  @include nhsuk-typography-responsive(19);
+.dfeuk-related-nav__heading--small {
+  @include dfeuk-typography-responsive(19);
 }
 
-.nhsuk-related-nav__list {
+.dfeuk-related-nav__list {
   list-style: none;
-  margin-bottom: nhsuk-spacing(3);
-  padding-left: nhsuk-spacing(0);
+  margin-bottom: dfeuk-spacing(3);
+  padding-left: dfeuk-spacing(0);
 }
 
-.nhsuk-related-nav__item {
-  @include nhsuk-typography-responsive(16);
+.dfeuk-related-nav__item {
+  @include dfeuk-typography-responsive(16);
 }
 
-.nhsuk-related-nav__sub-heading {
-  @include nhsuk-responsive-margin(2, 'bottom');
-  @include nhsuk-responsive-padding(2, 'top');
-  @include nhsuk-typography-responsive(19, $override-line-height: 1.2);
+.dfeuk-related-nav__sub-heading {
+  @include dfeuk-responsive-margin(2, 'bottom');
+  @include dfeuk-responsive-padding(2, 'top');
+  @include dfeuk-typography-responsive(19, $override-line-height: 1.2);
 }

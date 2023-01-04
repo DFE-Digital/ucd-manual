@@ -2,13 +2,23 @@
 {% set pageTitle = "Draft WCAG 2.2 changes" %}
 {% set pageDescription = "Summary of the new Success Criteria in WCAG 2.2 describing them in simple terms." %}
 {% set pageSection = "Accessibility" %}
+{% set subSection = "Understanding WCAG" %}
 {% set dateUpdated = "16 December 2022" %}
-{% set backlog_issue_id = "" %}
+{% set theme = "Accessibility" %}
+{% set hideContact = "true" %}
 
 {% extends "includes/app-layout.njk" %}
 
+{% block breadcrumb %}
+  {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
 {% block bodyContent %}
 
+
+  <div class="app-index-navigation app-u-hide-desktop">
+    {% include "includes/_side-nav.njk" %}
+  </div>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-three-quarters">

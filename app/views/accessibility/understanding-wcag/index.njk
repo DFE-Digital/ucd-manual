@@ -1,0 +1,23 @@
+{% set pageTitle = "Overview" %}
+{% set pageDescription = "A guide for understanding WCAG in the context of users of Department for Education services." %}
+{% set pageSection = "Accessibility" %}
+{% set subSection = "Understanding WCAG" %}
+{% set dateUpdated = "16 December 2022" %}
+{% set theme = "Accessibility" %}
+{% set hideContact = "true" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+  <p>These standards apply regardless of who the user is, internal to DfE (employees and contractors) or external (the public, local authorities, teachers etc).</p>
+  <p>
+    <a href="https://www.legislation.gov.uk/uksi/2022/1097/made" target="_blank">The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018</a> was amended on 26 October 2022 and now states that as a public body, we are required to conform to the latest version of WCAG, currently 2.1.</p>
+
+  <p>All guidelines for Level A and Level AA for the latest published version (2.1) are included. We have also made available the draft <a href="/accessibility/understanding-wcag/draft-2-2">WCAG 2.2 guidelines</a> to start to understand their impact on services you may be building now.</p>
+
+{% endblock %}

@@ -10,15 +10,15 @@
   { title: "Test your questions", url: "/content/how-to-write-good-questions-for-forms/test-your-questions" }
 ] %}
 
-<nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-  <h2 class="nhsuk-u-visually-hidden">Contents</h2>
-  <ol class="nhsuk-contents-list__list">
+<nav class="dfeuk-contents-list" role="navigation" aria-label="Pages in this guide">
+  <h2 class="dfeuk-u-visually-hidden">Contents</h2>
+  <ol class="dfeuk-contents-list__list">
     {% for item in writeGoodQuestionsNav %}
-    <li class="nhsuk-contents-list__item" {% if item.title == pageTitle %} aria-current="page"{% endif %}>
+    <li class="dfeuk-contents-list__item" {% if item.title == pageTitle %} aria-current="page"{% endif %}>
       {% if item.title == pageTitle %}
-      <span class="nhsuk-contents-list__current">{{ item.title }}</span>
+      <span class="dfeuk-contents-list__current">{{ item.title }}</span>
       {% else %}
-      <a class="nhsuk-contents-list__link" href="{{ item.url }}">{{ item.title }}</a>
+      <a class="dfeuk-contents-list__link" href="{{ item.url }}">{{ item.title }}</a>
       {% endif %}
     </li>
     {% endfor %}

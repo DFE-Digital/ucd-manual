@@ -2,7 +2,7 @@
  * WARNING: This file is intended for adding extra styles to the code snippet
  * examples and standalone examples.
  * Beware of adding too much in to this file, we should aim for our example
- * code to look as close to the unmodified nhsuk-frontend library as possible.
+ * code to look as close to the unmodified dfeuk-frontend library as possible.
  */
 
 html {
@@ -26,7 +26,7 @@ body {
   In order to show how the grid works, we need to have an element inside the
   grid that is visible and fills the available space with a background color.
 */
-.nhsuk-grid-row > .spacing-example div > p {
+.dfeuk-grid-row > .spacing-example div > p {
   background-color: #005eb8; // sass-lint:disable-line no-color-hex no-color-literals
   color: #ffffff; // sass-lint:disable-line no-color-hex no-color-literals
   padding: 20px;
@@ -48,7 +48,7 @@ body {
 /*
   Layout examples for on divs
 */
-.app-example-layout-page [class^='nhsuk-grid-column']>p {
+.app-example-layout-page [class^='dfeuk-grid-column']>p {
   background-color: #005eb8; // sass-lint:disable-line no-color-hex no-color-literals
   color: #ffffff; // sass-lint:disable-line no-color-hex no-color-literals
   padding: 20px;

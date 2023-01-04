@@ -24,21 +24,21 @@
     <li>simplify long questions (like <a href="/content/how-to-write-good-questions-for-forms/get-the-questions-into-order#watch-out-for-double-barrelled-questions">"double-barrelled" questions</a>) by breaking them up</li>
   </ul>
 
-  <img class="nhsuk-image__img nhsuk-u-margin-top-5 nhsuk-u-margin-bottom-7" src="/assets/filter-question-example.png" alt="">
+  <img class="dfeuk-image__img dfeuk-u-margin-top-5 dfeuk-u-margin-bottom-7" src="/assets/filter-question-example.png" alt="">
 
   <p>But often you need more than a simple "Yes" or "No". In the "Are you 18 or over?" example, for instance, you should think about what your service can offer younger users as an alternative and how you can support their user journey.</p>
 
   <h2>Spell out what "Yes" and "No" mean</h2>
   <p>Check how users react to your Yes/No question when you test it. Sometimes you will find you need to be clearer about what "Yes" and "No" mean.</p>
   <div class="app-example">
-    <strong class="nhsuk-tag app-example__heading">Example</strong>
+    <strong class="dfeuk-tag app-example__heading">Example</strong>
     {{ radios({
       "idPrefix": "example-research",
       "name": "example-research",
       "fieldset": {
         "legend": {
           "text": "Can we email you about research?",
-          "classes": "nhsuk-fieldset__legend--m"
+          "classes": "dfeuk-fieldset__legend--m"
         }
       },
       "items": [
@@ -66,17 +66,17 @@
   <p>We recommend that you always try out a 3rd option. Extra options can be challenging for the service, but you should consider them.</p>
 
   <div class="app-example">
-    <strong class="nhsuk-tag app-example__heading">Example</strong>
+    <strong class="dfeuk-tag app-example__heading">Example</strong>
 
     {% call fieldset({
       legend: {
         "text": "Do you know your NHS number?",
-        "classes": "nhsuk-fieldset__legend--m"
+        "classes": "dfeuk-fieldset__legend--m"
       }
       }) %}
       {{ hint({
         "text": "Your NHS number is a 10 digit number, like 485 777 3456.",
-        "classes": "nhsuk-u-margin-bottom-2"
+        "classes": "dfeuk-u-margin-bottom-2"
       }) }}
       {{ hint({
         "text": "You can find this on any letter the NHS has sent you, on a prescription or by logging in to a GP practice online service."
@@ -110,14 +110,14 @@
   <p>If you need people to enter details to continue and they cannot do this, for example, because they do not have key information to hand, consider whether you could add something to the "No" option to reassure them that there is an alternative.</p>
 
   <div class="app-example">
-    <strong class="nhsuk-tag app-example__heading">Example</strong>
+    <strong class="dfeuk-tag app-example__heading">Example</strong>
     {{ radios({
       "idPrefix": "example-registration-details",
       "name": "example-registration-details",
       "fieldset": {
         "legend": {
           "text": "Do you have your registration details?",
-          "classes": "nhsuk-fieldset__legend--m"
+          "classes": "dfeuk-fieldset__legend--m"
         }
       },
       "items": [

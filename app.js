@@ -44,8 +44,8 @@ app.use(
 
 // Middleware to serve static assets
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend/dist')));
-app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend/packages')));
+app.use('/dfeuk-frontend', express.static(path.join(__dirname, '/node_modules/dfeuk-frontend/dist')));
+app.use('/dfeuk-frontend', express.static(path.join(__dirname, '/node_modules/dfeuk-frontend/packages')));
 app.use('/iframe-resizer', express.static(path.join(__dirname, 'node_modules/iframe-resizer/')));
 
 // View engine (nunjucks)
@@ -54,7 +54,7 @@ app.set('view engine', 'njk');
 // Nunjucks configuration
 const appViews = [
   path.join(__dirname, '/app/views/'),
-  path.join(__dirname, '/node_modules/nhsuk-frontend/packages/components'),
+  path.join(__dirname, '/node_modules/dfeuk-frontend/packages/components'),
 ];
 
 const env = nunjucks.configure(appViews, {

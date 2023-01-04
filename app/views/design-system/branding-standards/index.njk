@@ -1,0 +1,54 @@
+{% set pageTitle = "Branding standards" %}
+{% set pageDescription = "Branding standards for Department for Education services." %}
+{% set pageSection = "Design System" %}
+{% set landingPage = true %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-system/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop">
+    {% include "includes/_side-nav.njk" %}
+  </div>
+
+    <h2 class="govuk-heading-m">When to use GOV.UK branding</h2>
+
+  <p>Use GOV.UK branding and styles if your service is: </p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>public facing and transactional</li>
+    <li>provided on gov.uk or service.gov.uk</li>
+  </ul>
+
+{{ actionLink({
+  "text": "Guidance for GOV.UK branding",
+  "href": "/design-system/branding-guidelines/govuk"
+}) }}
+
+  <h2 class="govuk-heading-m">When to use DfE branding</h2>
+
+  <p>Use DfE branding and styles if your service: </p>
+
+  <ul class="govuk-list govuk-list--bullet">
+       <li>is provided on the education.gov.uk domain (internal or external users)</li>
+       <li>an internal service such as an admin or caseworking service</li>
+       <li>falls outside the <a href="https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition" target="_blank">GOV.UK Proposition</a> criteria </li>
+    </ul>
+
+{{ actionLink({
+  "text": "Detailed guidance for using and applying DfE branding",
+  "href": "/design-system/branding-guidelines/dfe"
+}) }}
+
+
+{% endblock %}
+
+
+
+
+
+

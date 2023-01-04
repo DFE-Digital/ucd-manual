@@ -44,7 +44,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 }
 
 pre[class*="language-"] {
-  @include nhsuk-responsive-margin(4, 'bottom');
+  @include dfeuk-responsive-margin(4, 'bottom');
 
   padding: 1em;
   overflow: auto;

@@ -131,7 +131,7 @@ console.log(baseUrl + "/site-map")
     const h2 = this.getIndex($, 'h2');
     const h3 = this.getIndex($, 'h3');
     const extra = this.getAdditionalIndices(url).join(' ');
-    const parent = $('.nhsuk-breadcrumb__item').last().text();
+    const parent = $('.dfeuk-breadcrumb__item').last().text();
 
     // Add page data to docs array
     this.docs = [

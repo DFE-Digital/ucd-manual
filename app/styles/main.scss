@@ -1,6 +1,5 @@
-
 // NHS.UK Frontend
-@import "node_modules/nhsuk-frontend/packages/nhsuk";
+@import "node_modules/dfeuk-frontend/packages/dfefrontend";
 
 // App specific styles
 @import "app/app";
@@ -15,33 +14,42 @@
 // ADDED TO FRONTEND - AWAITING RELEASE
 // REMOVE ONCE RELEASED
 
+
+.app-header__navigation-item__item--current {
+    box-shadow: inset 0 -8px 0 $color_dfeuk-secondary-blue !important;
+}
+
+.dfeuk-breadcrumb {
+  background: $color_dfeuk-grey-4;
+}
+
 // Breadcrumb hotfix
 // To not have a visited state for back link
-.nhsuk-breadcrumb__backlink:visited {
-  color: $nhsuk-link-color;
+.dfeuk-breadcrumb__backlink:visited {
+  color: $dfeuk-link-color;
 }
 
 // Breadcrumb hotfix
 // To not have a visited state for breadcrumb link
-.nhsuk-breadcrumb__link:visited {
-  color: $color_nhsuk-blue;
+.dfeuk-breadcrumb__link:visited {
+  color: $color_dfeuk-blue;
 }
 
 // Breadcrumb hotfix
 // To change color on hover when visited
-.nhsuk-breadcrumb__link:hover {
-  color: $nhsuk-link-hover-color;
+.dfeuk-breadcrumb__link:hover {
+  color: $dfeuk-link-hover-color;
 }
 
 // Back link hotfix
 // To change color on hover when visited
-.nhsuk-back-link__link:hover {
-  color: $nhsuk-link-hover-color;
+.dfeuk-back-link__link:hover {
+  color: $dfeuk-link-hover-color;
 }
 
 // Pagination hotfix for icon colour on focus & hover
-.nhsuk-pagination__link:visited:focus .nhsuk-icon {
-  fill: $nhsuk-focus-text-color;
+.dfeuk-pagination__link:visited:focus .dfeuk-icon {
+  fill: $dfeuk-focus-text-color;
 }
 
 // NEED ADDING TO THE FRONTEND
@@ -50,58 +58,58 @@
  * Hotfix for an issue with nested list spacing in
  * the NHS.UK frontend library
  *
- * https://github.com/nhsuk/nhsuk-frontend/issues/430
+ * https://github.com/nhsuk/dfeuk-frontend/issues/430
  */
 
-.nhsuk-u-nested-list {
+.dfeuk-u-nested-list {
   margin-bottom: 0;
 }
 
-.nhsuk-u-nested-list > li {
-  @include nhsuk-responsive-margin(2, "top");
+.dfeuk-u-nested-list>li {
+  @include dfeuk-responsive-margin(2, "top");
 }
 
 // Nowrap hotfix
-.nhsuk-u-nowrap {
+.dfeuk-u-nowrap {
   white-space: nowrap;
 }
 
 // Frontend override
 // Should be refactored into the frontend
 // The font weight should be 400 by default
-.nhsuk-body-m,
-.nhsuk-body-s {
+.dfeuk-body-m,
+.dfeuk-body-s {
   font-weight: 400;
 }
 
 // Lede text + lede text
-.nhsuk-lede-text + .nhsuk-lede-text {
-  margin-top: -nhsuk-spacing(3);
+.dfeuk-lede-text+.dfeuk-lede-text {
+  margin-top: -dfeuk-spacing(3);
 }
 
-h1 + .nhsuk-lede-text {
+h1+.dfeuk-lede-text {
   margin-top: 0;
 }
 
 // Table bug hot fix
-.nhsuk-table__cell.nhsuk-body-s {
+.dfeuk-table__cell.dfeuk-body-s {
   display: table-cell;
 }
 
 // Hotfix menu item icon colour on hover/focus
-.nhsuk-header__navigation-link:hover .nhsuk-icon__chevron-right {
-  fill: $color_nhsuk-white;
+.dfeuk-header__navigation-link:hover .dfeuk-icon__chevron-right {
+  fill: $color_dfeuk-white;
 }
 
-.nhsuk-header__navigation-link:focus .nhsuk-icon__chevron-right {
-  fill: $nhsuk-focus-text-color;
+.dfeuk-header__navigation-link:focus .dfeuk-icon__chevron-right {
+  fill: $dfeuk-focus-text-color;
 }
 
 // HEADER + MAIN NAV
 
 // Remove main nav hover background colour on desktop
 @include mq($from: large-desktop) {
-  .nhsuk-header__navigation-link {
+  .dfeuk-header__navigation-link {
     &:hover {
       background-color: transparent;
     }
@@ -111,22 +119,22 @@ h1 + .nhsuk-lede-text {
 // Main nav active state
 .app-header__navigation-item__item--current {
   @include mq($from: large-desktop) {
-    box-shadow: inset 0 -4px 0 $color_nhsuk-grey-4;
+    box-shadow: inset 0 -4px 0 $color_dfeuk-grey-4;
   }
 
-  .nhsuk-header__navigation-link {
-    font-weight: $nhsuk-font-bold;
+  .dfeuk-header__navigation-link {
+    font-weight: $dfeuk-font-bold;
   }
 }
 
 // Removal of table cell element top and bottom margins
 // Remove bottom margin from a <p>
-.nhsuk-table__cell {
+.dfeuk-table__cell {
   @include top-and-bottom;
 }
 
 // Header menu button alignment for Safari
-.nhsuk-header__menu-toggle {
+.dfeuk-header__menu-toggle {
   @include mq($from: tablet, $until: large-desktop) {
     margin-top: 0;
   }
@@ -134,11 +142,11 @@ h1 + .nhsuk-lede-text {
 
 // The 'What's new' box in the home page hero
 .app-latest-update {
-  padding-bottom: nhsuk-spacing(8);
-  padding-top: nhsuk-spacing(8);
+  padding-bottom: dfeuk-spacing(8);
+  padding-top: dfeuk-spacing(8);
 
   @include mq($until: desktop) {
-    padding-bottom: nhsuk-spacing(6);
+    padding-bottom: dfeuk-spacing(6);
     padding-top: 0;
   }
 }
@@ -146,19 +154,19 @@ h1 + .nhsuk-lede-text {
 // Custom style for home page hero card
 .app-card--transparent {
   background: transparent;
-  border: 2px solid $nhsuk-secondary-border-color;
-  color: $color_nhsuk-white;
+  border: 2px solid $dfeuk-secondary-border-color;
+  color: $color_dfeuk-white;
 
   a {
-    color: $color_nhsuk-white;
+    color: $color_dfeuk-white;
 
     &:hover,
     &:visited {
-      color: $color_nhsuk-grey-5;
+      color: $color_dfeuk-grey-5;
     }
 
     &:focus {
-      color: $nhsuk-focus-text-color;
+      color: $dfeuk-focus-text-color;
     }
   }
 }
@@ -188,31 +196,31 @@ h1 + .nhsuk-lede-text {
 // Reducing the padding on smaller screens
 .app-hero__wrapper {
   @include mq($until: desktop) {
-    padding-bottom: nhsuk-spacing(5);
-    padding-top: nhsuk-spacing(5);
+    padding-bottom: dfeuk-spacing(5);
+    padding-top: dfeuk-spacing(5);
   }
 }
 
 // Page template annotation
 
 .app-annotate-block {
-  margin-bottom: nhsuk-spacing(4);
-  outline: 2px dashed $color_nhsuk-grey-1;
-  padding: nhsuk-spacing(3);
-  padding-top: nhsuk-spacing(7);
+  margin-bottom: dfeuk-spacing(4);
+  outline: 2px dashed $color_dfeuk-grey-1;
+  padding: dfeuk-spacing(3);
+  padding-top: dfeuk-spacing(7);
   position: relative;
 }
 
 .app-annotate-block__label {
-  border-bottom: 2px dashed $color_nhsuk-grey-1;
-  border-right: 2px dashed $color_nhsuk-grey-1;
+  border-bottom: 2px dashed $color_dfeuk-grey-1;
+  border-right: 2px dashed $color_dfeuk-grey-1;
   left: 0;
-  padding: nhsuk-spacing(1) nhsuk-spacing(2);
+  padding: dfeuk-spacing(1) dfeuk-spacing(2);
   position: absolute;
   top: 0;
 }
 
-.app-annotate-block + .nhsuk-main-wrapper {
+.app-annotate-block+.dfeuk-main-wrapper {
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -220,10 +228,10 @@ h1 + .nhsuk-lede-text {
 // Team pictures used for lists
 
 .app-team-pictures-list {
-  @include nhsuk-responsive-padding(0, "left");
+  @include dfeuk-responsive-padding(0, "left");
 
   img {
-    @include nhsuk-responsive-margin(3, "right");
+    @include dfeuk-responsive-margin(3, "right");
 
     border: 2px solid transparent;
     border-radius: 30px;
@@ -240,25 +248,25 @@ h1 + .nhsuk-lede-text {
   }
 }
 
-.nhsuk-header,
-.nhsuk-header__navigation,
-.nhsuk-hero {
+.dfeuk-header,
+.dfeuk-header__navigation,
+.dfeuk-hero {
   background-color: #003a69;
 }
 
-.nhsuk-card__content {
+.dfeuk-card__content {
   padding: 24px !important;
 }
 
 .app-width-container,
-.nhsuk-width-container,
+.dfeuk-width-container,
 .app-header__navigation,
 .app-width-container,
-.app-breadcrumb .nhsuk-width-container {
+.app-breadcrumb .dfeuk-width-container {
   max-width: 1200px;
 }
 
-.nhsuk-card--feature {
+.dfeuk-card--feature {
   margin-top: 0px;
 }
 
@@ -266,68 +274,104 @@ h1 + .nhsuk-lede-text {
   border-bottom: 10px solid #003a69;
 }
 
-.nhsuk-card__heading--feature, .nhsuk-do-dont-list__label, .nhsuk-card.nhsuk-card--invert {
+.dfeuk-card__heading--feature,
+.dfeuk-do-dont-list__label,
+.dfeuk-card.dfeuk-card--invert {
   background: #003a69;
 }
 
-.nhsuk-card--invert.nhsuk-card--clickable:hover .nhsuk-card__heading a,
-.nhsuk-card--invert.nhsuk-card--clickable:hover .nhsuk-card__link,
-.nhsuk-card--invert.nhsuk-card--clickable:active .nhsuk-card__heading a,
-.nhsuk-card--invert.nhsuk-card--clickable:active .nhsuk-card__link {
-  color: $color_nhsuk-white !important;
+.dfeuk-card--invert.dfeuk-card--clickable:hover .dfeuk-card__heading a,
+.dfeuk-card--invert.dfeuk-card--clickable:hover .dfeuk-card__link,
+.dfeuk-card--invert.dfeuk-card--clickable:active .dfeuk-card__heading a,
+.dfeuk-card--invert.dfeuk-card--clickable:active .dfeuk-card__link {
+  color: $color_dfeuk-white !important;
   text-decoration: none;
 }
 
 .call-to-action {
   margin: 2em 0;
-  background-color: $color_nhsuk-grey-4;
+  background-color: $color_dfeuk-grey-4;
   padding: 2em;
 }
 
-.nhsuk-hero__wrapper a:hover,
-.nhsuk-hero__wrapper a{
-  color: $color_nhsuk-white !important;
+.dfeuk-hero__wrapper a:hover,
+.dfeuk-hero__wrapper a {
+  color: $color_dfeuk-white !important;
 }
 
-.nhsuk-hero__wrapper a:focus,
-.nhsuk-hero__wrapper a:active{
-  color: $color_nhsuk-black !important;
+.dfeuk-hero__wrapper a:focus,
+.dfeuk-hero__wrapper a:active {
+  color: $color_dfeuk-black !important;
 }
 
 .featured-list--item__content {
   width: 99.99%;
 }
 
-.nhsuk-lede-text{margin-bottom: 30px;}
+.dfeuk-lede-text {
+  margin-bottom: 30px;
+}
 
-@media (min-width: 40.0625em){
-.nhsuk-inset-text {
+@media (min-width: 40.0625em) {
+  .dfeuk-inset-text {
     margin-top: 15px;
-}}
-
-
-
-.nhsuk-table__heading-tab {
-    background-color: #003a69;
+  }
 }
 
-.nhsuk-header__logo-img{height: 90px !important; padding: 0px 15px 0px 0px;}
-.nhsuk-header__service-name{margin-left: 20px; padding-top: 72px; font-weight: 600;}
 
-@media (max-width: 61.865em){
-  .nhsuk-header__service-name{margin-left: 10px; padding-top: 0px; max-width: 100%; font-weight: 600;}
+
+.dfeuk-table__heading-tab {
+  background-color: #003a69;
 }
 
-body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr {
-  font-family: 
-      BlinkMacSystemFont,
-      'Segoe UI',
-      Roboto,
-      Oxygen-Sans,
-      Ubuntu,
-      Cantarell,
-      'Helvetica Neue',
-      sans-serif !important;
+.dfeuk-header__logo-img {
+  height: 90px !important;
+  padding: 0px 15px 0px 0px;
 }
 
-.govuk-tag+p {margin-top: 24px !important;}
+.dfeuk-header__service-name {
+  margin-left: 20px;
+  padding-top: 72px;
+  font-weight: 600;
+}
+
+@media (max-width: 61.865em) {
+  .dfeuk-header__service-name {
+    margin-left: 10px;
+    padding-top: 0px;
+    max-width: 100%;
+    font-weight: 600;
+  }
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+table,
+th,
+td,
+blockquote,
+li,
+tr {
+  font-family:
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    'Helvetica Neue',
+    sans-serif !important;
+}
+
+.govuk-tag+p {
+  margin-top: 24px !important;
+}

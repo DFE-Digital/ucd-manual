@@ -1,0 +1,23 @@
+{% set pageTitle = "Contact Design Ops" %}
+{% set pageDescription = "Contact the Department for Education Design Ops team with ideas, queries or comments." %}
+{% set pageSection = "Design Ops" %}
+{% set dateUpdated = "December 2022" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-ops/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<p>You can contact us in the following ways:</p>
+
+<ul class="govuk-list">
+<li>Email: <a href="mailto:designops@digital.education.gov.uk">designops@digital.education.gov.uk</a></li>
+<li>DfE slack: <a href="https://ukgovernmentdfe.slack.com/archives/C0432A8JSV7" target="_blank">#design-ops</a></li>
+<li>Cross-government Slack: <a href="https://ukgovernmentdigital.slack.com/archives/C04GXQ0320Z" target="_blank">#dfe-design-ops</a></li>
+</ul>
+
+{% endblock %}

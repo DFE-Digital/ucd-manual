@@ -6,15 +6,15 @@
   { title: "Skin symptoms", url: "/content/inclusive-content/skin symptoms" }
 ] %}
 
-<nav class="nhsuk-contents-list app-contents-list app-u-hide-desktop" role="navigation" aria-label="Pages in this guide">
-  <h2 class="nhsuk-u-visually-hidden">Contents</h2>
-  <ol class="nhsuk-contents-list__list">
+<nav class="dfeuk-contents-list app-contents-list app-u-hide-desktop" role="navigation" aria-label="Pages in this guide">
+  <h2 class="dfeuk-u-visually-hidden">Contents</h2>
+  <ol class="dfeuk-contents-list__list">
     {% for item in inclusiveContentNav %}
-    <li class="nhsuk-contents-list__item" {% if item.title == pageTitle %} aria-current="page"{% endif %}>
+    <li class="dfeuk-contents-list__item" {% if item.title == pageTitle %} aria-current="page"{% endif %}>
       {% if item.title == pageTitle %}
-      <span class="nhsuk-contents-list__current">{{ item.title }}</span>
+      <span class="dfeuk-contents-list__current">{{ item.title }}</span>
       {% else %}
-      <a class="nhsuk-contents-list__link" href="{{ item.url }}">{{ item.title }}</a>
+      <a class="dfeuk-contents-list__link" href="{{ item.url }}">{{ item.title }}</a>
       {% endif %}
     </li>
     {% endfor %}

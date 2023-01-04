@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .app-beta__container {
-  border-bottom: 1px solid $nhsuk-border-color;
-  padding: nhsuk-spacing(2) 0;
+  border-bottom: 1px solid $dfeuk-border-color;
+  padding: dfeuk-spacing(2) 0;
 }
 
 .app-beta__content {
@@ -13,12 +13,12 @@
 
   .app-beta__tag {
     display: block;
-    margin-right: nhsuk-spacing(2);
+    margin-right: dfeuk-spacing(2);
   }
 }
 
 .app-beta__text {
-  @include nhsuk-font($size: 16, $line-height: 1.2);
+  @include dfeuk-font($size: 16, $line-height: 1.2);
   display: table-cell;
   vertical-align: baseline;
 }

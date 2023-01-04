@@ -40,7 +40,7 @@
   min-width: 0;
 
   @include mq($from: desktop) {
-    padding-left: nhsuk-spacing(9);
+    padding-left: dfeuk-spacing(9);
   }
 
 }
@@ -51,10 +51,10 @@
   .app-lede-text,
   .app-contents-list,
   .app-lede-text--sub {
-    margin-bottom: nhsuk-spacing(5);
+    margin-bottom: dfeuk-spacing(5);
   }
 
-  .app-contents-list .nhsuk-contents-list__list {
+  .app-contents-list .dfeuk-contents-list__list {
     margin-bottom: 0;
   }
 }
