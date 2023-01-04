@@ -5,6 +5,8 @@
   "main": "app.js",
   "directories": {
     "test": "tests"
+  }, "engines": {
+    "node": "16.x"
   },
   "browserslist": [
     "> 0.25%",
