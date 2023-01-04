@@ -5,7 +5,8 @@
   "main": "app.js",
   "directories": {
     "test": "tests"
-  }, "engines": {
+  },
+  "engines": {
     "node": "16.x"
   },
   "browserslist": [
@@ -71,7 +72,7 @@
     "eslint-plugin-mocha": "^9.0.0",
     "iframe-resizer": "^4.3.2",
     "jest": "^27.1.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.12",
     "sass-lint": "^1.13.1",
     "webpack": "^5.51.2",
