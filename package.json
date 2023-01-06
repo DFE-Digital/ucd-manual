@@ -6,6 +6,9 @@
   "directories": {
     "test": "tests"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "browserslist": [
     "> 0.25%",
     "not dead",
@@ -44,6 +47,7 @@
     "browser-sync": "^2.27.5",
     "cheerio": "^1.0.0-rc.10",
     "compression": "^1.7.4",
+    "dfeuk-frontend": "^2.1.4",
     "express": "^4.17.1",
     "govuk-frontend": "^4.4.0",
     "helmet": "^4.6.0",
@@ -68,11 +72,11 @@
     "eslint-plugin-mocha": "^9.0.0",
     "iframe-resizer": "^4.3.2",
     "jest": "^27.1.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.12",
     "sass-lint": "^1.13.1",
     "webpack": "^5.51.2",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
   },
   "volta": {
     "node": "14.18.3"
