@@ -47,22 +47,13 @@
   },{
     title: "Accessibility statements",
     url: "/accessibility/accessibility-statements"
-  },{
-    title: "Conformance reports",
-    url: "/accessibility/conformance-reports"
   }
 ] %}
 
 {% set accessibility_tools = [
    {
-    title: "Tools and plugins",
-    url: "/accessibility/tools"
-  }, {
     title: "Training",
     url: "/accessibility/training"
-  }, {
-    title: "Experience lab",
-    url: "/accessibility/lab"
   }
 ] %}
 
@@ -94,8 +85,15 @@
 
 {% set communities = [
   {
-    title: "No pages added",
+    title: "Community",
     url: "/community/"
+  }
+] %}
+
+{% set tl_assurance = [
+  {
+    title: "Assurance",
+    url: "/assurance/"
   }
 ] %}
 
@@ -247,6 +245,17 @@
       {% endfor %}
     </ul>
   {% endif %}
+
+    {%- if pageSection == "Assurance" %}
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in tl_assurance %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
 
    {%- if pageSection == "Content guidelines" %}
     <ul class="dfeuk-list app-side-nav__list">
