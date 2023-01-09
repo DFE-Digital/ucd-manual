@@ -147,7 +147,21 @@
   }
 ] %}
 
-
+{% set content_guidelines = [
+  {
+    title: "Content guidelines",
+    url: "/content-guidelines/"
+  },{
+    title: "Language we use",
+    url: "/content-guidelines/language-we-use"
+  },{
+    title: "Joining user journeys between GOV.UK and digital services",
+    url: "/content-guidelines/joining-services-to-govuk"
+  },{
+    title: "Publishing content on GOV.UK",
+    url: "/content-guidelines/publishing-content-on-govuk"
+  }
+] %}
 
 {% set design_ops_contact = [
   {
@@ -227,6 +241,16 @@
   {%- if pageSection == "Community" %}
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in communities %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+   {%- if pageSection == "Content guidelines" %}
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in content_guidelines %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>

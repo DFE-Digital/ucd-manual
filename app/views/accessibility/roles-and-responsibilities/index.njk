@@ -2,7 +2,7 @@
 {% set pageTitle = "Roles and responsibilities" %}
 {% set pageDescription = "It is the responsibility of everyone delivering Department for Education services, to ensure accessibility standards are being met." %}
 {% set pageSection = "Accessibility" %}
-{% set dateUpdated = "March 2022" %}
+{% set dateUpdated = "January 2023" %}
 {% set backlog_issue_id = "" %}
 
 {% extends "includes/app-layout.njk" %}
@@ -16,52 +16,87 @@
 {% block bodyContent %}
 
 {% markdown %}
-
-<p class="govuk-!-font-weight-bold">Page contents</p>
-
-<ul class="govuk-list">
-<li><a href="#senior-responsible-officers-sro">Senior Responsible Officers (SRO)</a></li>
-<li><a href="#delivery-manager">Delivery Manager</a></li>
-<li><a href="#product-manager">Product Manager</a></li>
-<li><a href="#user-researcher">User Researcher</a></li>
-<li><a href="#service-designer">Service Designer</a></li>
-<li><a href="#interaction-designer">Interaction Designer</a></li>
-<li><a href="#content-designer">Content Designer</a></li>
-<li><a href="#developers">Developers</a></li>
-<li><a href="#software-testers">Software Testers</a></li>
-<li><a href="#architects">Architects</a></li>
-<li><a href="#performance-analysts">Performance Analysts</a></li>
-<li><a href="#data-analysts-and-engineers">Data Analysts and Engineers</a></li>
-<li><a href="#contractors-and-managed-services">Contractors and managed services</a></li>
-</ul>
-
-
-
-## Senior Responsible Officers (SRO)
-
-## Delivery Manager
-
-## Product Manager
-
-## User Researcher
-
-## Service Designer
-
-## Interaction Designer
-
-## Content Designer
-
-## Developers
-
-## Software Testers
-
-## Architects
-
-## Performance Analysts
-
-## Data Analysts and Engineers
-
-## Contractors and managed services
+<p>Accessibility should be part of every stage of the service delivery lifecycle. It is the responsibility of everyone involved in the delivery of DfE services.</p>
+    <p>Depending on your role, there are different responsibilites.</p>
+    <h2 class="govuk-heading-l">Senior responsible officer</h2>
+    <p>The senior responsibile officer carries overall accountability for the service, including accessibility. They approve whether a service goes live or not so need to either:</p>
+    <ul class="govuk-list govuk-list--bullet">
+    <li>seek assurance that the service is accessible and so is happy to proceed, or</li>
+    <li>sign off on the risk that the service is not accessible and accepts responsibility for any legal challenges</li>
+    </ul>
+    <h2 class="govuk-heading-l">Service owner</h2>
+    <p>A service owner is accountable for the quality of their service. This includes accessibility. They adopt a portfolio view, managing end-to-end services, which include multiple products and channels. </p>
+    <p>A service owner should:</p>
+    <ul class="govuk-list govuk-list--bullet">
+    <li>make sure the necessary processes are followed</li>
+    <li>manage governance</li>
+    <li>own the budget and allocate funding to areas of the service </li>
+    <li>ultimately be responsible for the successful operation and continuous improvement of the service</li>
+    </ul>
+    <h2 class="govuk-heading-l">Delivery manager</h2>
+    <p>A delivery manager is accountable for the delivery of complex products and services that are being delivered by multiple teams or have high technical or political risk.</p>
+    <p>A delivery manager should:</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>remove blockers and manage risks, commercials, budgets and people in relation to accessibility</li>
+        <li>balance objectives and redeploy people and resources as priorities change, including people with accessibility skills and experience</li>
+        <li>be responsible for understanding, managing and communicating to complex stakeholder groups, and balancing priorities</li>
+        <li>be the initial escalation point for the programme and having an awareness of the bigger picture</li>
+    </ul>
+    <h2 class="govuk-heading-l">Product manager</h2>
+    <p>A product manager makes sure that the product you are building meets the required accessibility standards. This includes your Minimum Viable Product (MVP). A service cannot go live and implement accessibility at a later date.</p>
+    <p>A product manager should:</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>include time for accessibility testing, both automated and manual, in service plans</li>
+        <li>update the accessibility statement where necessary as part of releases</li>
+    </ul>
+    <p>Product managers need to understand the risks of building a service which is not accessible.</p>
+    <p>If the service is not accessible, then it won't pass a Beta assessment. If you put a service live and it is non-compliant, the service can be reported to the <a href="https://equalityhumanrights.com/en">Equality and Human Rights Commission</a>.</p>
+    <p>As the enforcement body, the Equality and Human Rights Commission has the power to issue enforcement notices, do investigations and take court action against the department.</p>
+    <h2 class="govuk-heading-l">User researcher</h2>
+    <p>A user researcher will help the team to understand the needs of the people who use the service, including those users who might have impairments and use assistive technologies.</p>
+    <p>Even before you have identified users in your own service, you can familiarise yourself with the <a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles">GOV.UK user profiles</a> and how different impairments might affect people using the service.</p>
+    <p>A user researcher should:</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>test a service with a range of people with different abilities</li>
+        <li>share insights with the rest of the team about how users of assisitive technology use the service</li>
+    </ul>
+   
+    <h2 class="govuk-heading-l">Design</h2>
+    <p>Design disciplines work to defined standards to make sure that DfE services are inclusive, accessible and can be used by all people.</p>
+    <p>Standards include removing risk by designing how things should work. </p>
+    <p>This can be achieved by:</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>working with other designers, researchers and developers to build and test prototypes</li>
+        <li>following inclusive design principles</li>
+        <li>ensuring design meets the component design criteria</li>
+        <li>contributing to the GOV.UK Design System backlog </li>
+        <li>sharing work with other designers across DfE</li>
+        <li>taking part in design crits, reviews and assessments to assure designs are meeting these standards</li>
+    </ul>
+   
+    <h2 class="govuk-heading-l">Developer and tester</h2>
+    <p>A developer need to work closely with interaction and content designers to make sure things like error messages, hidden text and hover states are considered.</p>
+    <p>A tester should make sure that accessibility testing is included to find obvious problems. </p>
+    <h3 class="govuk-heading-m">Definition of done</h3>
+    <p>We should not deploy code which is not accessible, otherwise we are breaking the law. So if it’s not accessible it’s not done. As part of your definition of done, the service should be checked for accessibility using both automated and manual tests.</p>
+    <p>An example of accessibility considerations in a definition of done:</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>automated accessibility tests passing in the acceptance tests</li>
+        <li>manual accessibility tests passed using <a href="https://accessibilityinsights.io">Accessibility Insights (opens in new tab)</a>
+        </li>
+        <li>manually checked usability using a screen reader</li>
+        <li>manually checked usability using a screen magnifier</li>
+        <li>manually checked usability using speech recognition</li>
+        <li>accessibility statement updated</li>
+    </ul>
+    
+    <h2 class="govuk-heading-l">Architect</h2>
+    <p>An architect is responsible for making sure that the components of the technical design for a service are able to meet accessibility standards. </p>
+    <p>This could be through technical designs they create or making sure that appropriate non-functional requirements are present when procuring a managed service.</p>
+    <p>Architects make sure that a service meets accessibility standards through internal technical assurance. For example, peer reviews for a service assessment or managed service delivery reviews. </p>
+    
+    <h2 class="govuk-heading-l">Performance analyst</h2>
+    <p>A performance analyst's considerations will be around presenting statistical data, so that they don’t exclude anybody that might not be able to perceive complex charts or tables of data.</p>
 
 
 {% endmarkdown %}
