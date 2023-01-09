@@ -1,0 +1,177 @@
+{% set pageTitle = "DfE branding standards" %}
+{% set pageDescription = "Branding standards for Department for Education services." %}
+{% set pageSection = "Design System" %}
+{% set landingPage = true %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-system/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+
+
+ <h3 class="govuk-heading-m">When to use this style</h3>
+      <ul class="govuk-list govuk-list--bullet">
+       <li>if the service is provided on the education.gov.uk domain (internal or external users)</li>
+       <li>if it is an internal service such as an admin or caseworking service</li>
+       <li>if it falls outside the <a href="https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition" target="_blank">GOV.UK Proposition</a> criteria </li>
+      </ul>
+     <h3 class="govuk-heading-m">Do</h3>
+      <ul class="govuk-list govuk-list--bullet">
+       <li>use the departmental crest logo (Lion and Unicorn)</li>
+       <li>use Department for Education as the organisation name</li>
+       <li>use a cross-platform compatible font-stack</li>
+       <li>preferably use the departmental blue color scheme</li>
+      </ul>
+     <h3 class="govuk-heading-m">Don't</h3>
+      <ul class="govuk-list govuk-list--bullet">
+       <li>use the GOV.UK logotype</li>
+       <li>use the crown in the header</li>
+       <li>use the GDS Transport typeface (it's not licensed for use outside GOV.UK)</li>
+      </ul>
+
+
+<div class="govuk-inset-text">
+  We are working on a DfE component to implement this as a single package. For now, use the following style overrides.
+</div>
+
+<h3 class="govuk-heading-m">Example header</h3>
+
+<img src="/assets/header.png" alt="Image of the DfE header">
+
+<h3 class="govuk-heading-m govuk-!-margin-top-5">HTML</h3>
+
+<p>If you are using the GOV.UK Prototype Kit, replace the contents inside the <code>{% block header %} {% endblock %}</code> in the _layout.html file with the following HTML.</p>
+
+<pre><code  class="language-html">&lt;header class=&quot;govuk-header app-header&quot; role=&quot;banner&quot; data-module=&quot;govuk-header&quot;&gt;
+  &lt;div class=&quot;govuk-header__container govuk-width-container&quot;&gt;
+   &lt;div class=&quot;govuk-header__logo&quot;&gt;
+     &lt;a href=&quot;/&quot; class=&quot;govuk-header__link govuk-header__link--homepage&quot;&gt;
+     &lt;span class=&quot;govuk-header__logotype&quot;&gt;
+      &lt;img src=&quot;/public/images/crest.png&quot; alt=&quot;Department for Education homepage&quot; class=&quot;govuk-header__logotype-crown-fallback-image&quot;&gt;
+        &lt;span class=&quot;govuk-header__logotype-text&quot;&gt;
+          Department for Education |
+        &lt;/span&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;govuk-header__product-name&quot;&gt;
+        {{serviceName}}
+      &lt;/span&gt;
+     &lt;/a&gt;     
+   &lt;/div&gt;
+   &lt;div class=&quot;govuk-header__content&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;govuk-header__menu-button govuk-js-header-toggle&quot; aria-controls=&quot;navigation&quot; aria-label=&quot;Show or hide navigation menu&quot;&gt;Menu&lt;/button&gt;
+    &lt;nav&gt;
+      &lt;ul id=&quot;navigation&quot; class=&quot;govuk-header__navigation &quot; aria-label=&quot;Navigation menu&quot;&gt;
+        &lt;li class=&quot;govuk-header__navigation-item&quot;&gt;
+          &lt;a class=&quot;govuk-header__link&quot; href=&quot;#4&quot;&gt;
+            Sign out
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+
+ <h3 class="govuk-heading-m">Font stack</h3>
+
+ <div class="govuk-inset-text">
+  Add this to the top of your application scss or css file
+</div>
+ 
+ <p>This font stack has been designed to be compatible across browsers and platforms including mobiles and other devices.</p>
+<pre><code  class="language-css">body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr {
+    font-family: 
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        'Helvetica Neue',
+        sans-serif !important;
+}
+</code></pre>
+
+ <h3 class="govuk-heading-m">Header style</h3>
+
+ <div class="govuk-inset-text">
+  Add this to your scss file. If using CSS, you'll need to replace the variables with the color codes in the individual styles.
+</div>
+
+<pre><code  class="language-css">$dfe-blue: #003a69;
+$accent: #347ca9;
+
+.dfe-template__body {
+
+    .govuk-header {
+        background-color: $dfe-blue;
+    }
+    
+    .govuk-header__container {
+        position: relative;
+        margin-bottom: -10px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        border-bottom: 10px solid $accent;
+    }
+    
+    .govuk-header__product-name, 
+    .govuk-header__logotype-text,
+    .govuk-header__content {
+        line-height: 2.5rem !important;
+        font-size: 1.2rem;
+    }
+    
+    .govuk-header__logotype-crown-fallback-image {
+        height: 45px; 
+        width: 45px;
+    }
+    
+    .govuk-header__logotype {
+        margin-right: 0;
+    }
+    
+    .govuk-header__logo {
+        @include mq ($from: desktop) {
+          width: 70%;
+        }
+      }
+      
+    .govuk-header__content {
+        @include mq ($from: desktop) {
+            width: 30%;
+            float: right;
+        }
+    }
+    
+    .govuk-header nav {
+        display: inline-block;
+        float: right;
+    }
+}</code></pre>
+
+
+ <h3 class="govuk-heading-m">Crest logo (Lion and unicorn)</h3>
+
+
+<p>You must not use the GOV.UK Crown logotype on services not provided on GOV.UK or services.gov.uk. Instead, use the department crest.</p>
+
+<p>If using the GOV.UK Prototype Kit, download the following crest file and save it to your <code>/app/assets/images</code> folder, and make sure it's named <code>crest.png</code></p>
+
+<p>The crest image is white on a transparent background, so for display purposes is shown on the blue background.</p>
+
+<a href="/assets/crest.png" target="_blank">
+
+<img src="/assets/crest.png" style="background: #003a69; padding: 20px; height: 100px; width: 100px;" alt="crest logo">
+
+<p>Image will open in a new tab to save.</p>
+
+</a>
+
+
+
+{% endblock %}

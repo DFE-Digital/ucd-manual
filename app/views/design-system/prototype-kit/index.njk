@@ -1,0 +1,67 @@
+{% set pageTitle = "GOV.UK prototype kit" %}
+{% set pageDescription = "Use the kit to build prototypes that look like a real GOV.UK or Department for Education service." %}
+{% set pageSection = "Design System" %}
+{% set landingPage = true %}
+
+{% extends "includes/app-layout.njk" %}
+
+<div class="app-index-navigation app-u-hide-desktop">
+  {% include "includes/_side-nav.njk" %}
+</div>
+
+{% block bodyContent %}
+
+{% markdown %}
+
+## Why use the prototype kit
+
+<a href="https://prototype-kit.service.gov.uk/docs/" target="_blank">Download the GOV.UK Prototype Kit</a> and find tutorials, guidance and support.
+
+The kit helps you test for usability issues in your service, and get feedback early on from users. 
+
+This helps you de-risk your service, without commiting to building the real thing in code, or needing a developer to build something for you.
+
+<div class="govuk-inset-text">Prototypes should be throwaway code, not treated like production code. You should only be building things in the kit to test assumptions or problems.</div> 
+
+## Installing the kit
+
+Whether you use a Mac or Windows device, you can run the kit locally on your device. You'll need to install some software to do this. 
+
+### Macbook users
+
+If you're using a DfE-issued Macbook, you can install all the required software yourself. 
+
+### Windows device users
+
+If you're a DfE-issued Windows device users, you'll need to submit a request to  <a href="https://dfe.service-now.com/serviceportal?id=sc_cat_item&sys_id=2f8ef25b1b76f450199d6397b04bcbc4" target="_blank" rel="noopener noreferrer">Service Now - GDS Prototyping</a>
+
+When you install the kit, create a folder on the C:\ drive called "prototypes" and extract the kit to a folder within your prototypes folder.
+
+eg: `c:\prototypes\my-first-prototype\`
+
+Do not run them from your Documents or Desktop or any folder that syncs with OneDrive.
+
+## Support with the kit.
+
+The kit is used across Government, is built by, managed and supported by a team in GDS. 
+
+- Cross-gov <a href="https://ukgovernmentdigital.slack.com/archives/C0647LW4R"  target="_blank" rel="noopener noreferrer"> #prototype-kit</a> Slack channel
+- DfE-specific <a href="https://ukgovernmentdfe.slack.com/archives/C03RS042ZB3"  target="_blank" rel="noopener noreferrer"> #prototyping-help</a> Slack channel
+
+
+## Branding your prototype
+
+### Services intended for GOV.UK
+
+You can use the kit directly as-is on install for a service that looks like GOV.UK
+
+### Services intended for education.gov.uk
+
+You should follow the <a href="/design-system/branding-standards/">branding standards</a> so that your prototype is using the correct DfE branding and styles.
+
+## Hosting and securing your prototype
+
+<a href="/design-system/prototype-kit/github-and-heroku#secure-your-prototype-from-accidental-use">Guidance for hosting and setting a password</a> to enable testing and prevent users from accidentally using your prototype.
+
+{% endmarkdown %}
+{% endblock %}

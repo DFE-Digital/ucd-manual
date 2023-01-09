@@ -1,0 +1,59 @@
+{% set pageTitle = "GitHub and Heroku" %}
+{% set pageDescription = "Storing your prototype kit code securely and using Heroku to run prototypes for testing with users." %}
+{% set pageSection = "Design System" %}
+{% set landingPage = true %}
+
+{% extends "includes/app-layout.njk" %}
+
+<div class="app-index-navigation app-u-hide-desktop">
+  {% include "includes/_side-nav.njk" %}
+</div>
+
+{% block bodyContent %}
+
+{% markdown %}
+
+
+## Storing your code in GitHub
+
+Prototypes should be stored as repositories in the <a href="https://github.com/DFE-Digital"  target="_blank" rel="noopener noreferrer">GitHub DFE-Digital</a> organisation account.
+
+You can request access to the DfE-Digital organisation GitHub through <a href="https://sites.google.com/digital.education.gov.uk/digitaltools/home" rel="nofollow" target="_blank" >Digital Tools support</a>.
+
+### Naming your prototype in GitHub
+
+You should name your prototype to prevent people getting confused with production services. Use the name of your service followed by -prototype, for example: `apply-for-funding-prototype`
+
+## Using Heroku to host your prototype
+
+Depending on what testing you plan to do with users, you might want to run your prototype as a website, rather than on your local device.
+
+We use <a href="https://www.heroku.com/"  target="_blank" rel="noopener noreferrer">Heroku</a> to host prototypes. Most teams have been set up to be able to run prototypes using Heroku Enterprise. 
+
+If you are unsure if your team has a Heroku team set up, contact: <a href="mailto:designops@digital.education.gov.uk?subject=Heroku Team enquiry&body=Team or Service name:">designops@digital.education.gov.uk</a>. We can help with getting your team created or adding you if it already exists.
+
+<div class="govuk-inset-text">
+    
+<strong>Heroku is not free</strong>
+<p>Your programme will be cross-charged approximately £6 a month for each prototype that is run in your team space.</p>
+<p>If you are unsure about using Heroku, contact <a href="mailto:designops@digital.education.gov.uk">designops@digital.education.gov.uk</a></p>
+</div>
+
+### Secure your prototype from accidental use
+
+You must use a password to protect your prototype from users accidentally thinking it's a live service.
+
+You can do this by setting environment variables in the config vars section within settings of the prototype.
+
+1. Sign in to Heroku
+2. Select your prototype from your dashboard
+3. Click on Settings
+4. Find the section called "Config Vars" (vars means variables)
+5. Click the button that says "Reveal Config Vars"
+6. Add an environment variable where the 'KEY' is NODE_ENV, and the 'VALUE' is 'production'
+7. Add another environment variable where the 'KEY' is PASSWORD, and the 'VALUE' is whatever password you would like to use.
+
+Your app will restart automatically and then next time you visit the prototype, you'll be asked to enter the password.
+
+{% endmarkdown %}
+{% endblock %}
