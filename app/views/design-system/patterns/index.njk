@@ -1,5 +1,5 @@
 {% set pageTitle = "Patterns" %}
-{% set pageDescription = "Patterns are tested and agreed solutions to common needs. You can reuse them across NHS services to make them more consistent." %}
+{% set pageDescription = "Patterns are best practice design solutions to a common user need. You can reuse them across Department for Education services to make them more consistent." %}
 {% set pageSection = "Design system" %}
 {% set subSection = "Patterns" %}
 {% set theme = "Design" %}
@@ -13,12 +13,29 @@
 
 {% block bodyContent %}
 
-  <p>We have 2 types of patterns:</p>
-  <ul>
-    <li>task patterns to help users complete a task, for example, give us different kinds of information</li>
-    <li>page type patterns to improve navigation</li>
-  </ul>
-  <p>Patterns often use more than 1 <a href="/design-system/components">component</a> and the guidance explains how to adapt them to the context.</p>
+  <p>The patterns in this section have been designed, built, tested, and implemented across several Department for Education services.</p>
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Current patterns</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Pattern</th>
+      <th scope="col" class="govuk-table__header">Summary</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/design-system/patterns/select-a-school">Select a school</a></th>
+      <td class="govuk-table__cell">A pattern for selecting a school from the list of all schools in England.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Published</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+  <p>If you have a pattern you want to contribute, <a href="/design-ops/">contact the design ops team</a>.</p>
+
 
   <div class="app-index-navigation app-u-hide-desktop">
     {% include "includes/_side-nav.njk" %}

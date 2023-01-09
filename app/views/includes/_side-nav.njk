@@ -103,10 +103,8 @@
   {
     title: "Design System",
     url: "/design-system/"
-  }, {
-    title: "Contribute to the DfE Design System",
-    url: "/design-system/contribute/"
-  },{
+  },
+  {
     title: "Branding standards",
     url: "/design-system/branding-standards/"
   }
@@ -114,16 +112,6 @@
 
 {% set ds_design = [
 {
-    title: "DfE Frontend",
-    url: "/design-system/dfe-frontend/"
-  },
-  {
-    title: "Styles",
-    url: "/design-system/styles/"
-  },{
-    title: "Components",
-    url: "/design-system/components/"
-  },{
     title: "Patterns",
     url: "/design-system/patterns/"
   }
@@ -180,19 +168,14 @@
   }
 ] %}
 
-{% set styles = [
-  { title: "Colour", url: "/design-system/styles/colour" },
-  { title: "Focus state", url: "/design-system/styles/focus-state" },
-  { title: "Icons", url: "/design-system/styles/icons" },
-  { title: "Layout", url: "/design-system/styles/layout" },
-  { title: "Page template", url: "/design-system/styles/page-template" },
-  { title: "Spacing", url: "/design-system/styles/spacing" },
-  { title: "Typography", url: "/design-system/styles/typography" }
+{% set patterns = [ 
+{ title: "Patterns", url: "/design-system/patterns/" },
+  { title: "Select a school", url: "/design-system/patterns/select-a-school" }
 ] %}
 
 <nav class="app-side-nav">
 
-  {%- if pageSection == "Design System" and subSection != "Styles"%}
+  {%- if pageSection == "Design System" and (subSection != "Styles" and subSection != "Patterns") %}
 
     <h2 class="app-side-nav__heading">Overview</h2>
     <ul class="dfeuk-list app-side-nav__list">
@@ -284,15 +267,15 @@
 
   {% endif %}
 
-    {%- if subSection == "Styles" %}
+    {%- if subSection == "Patterns" %}
     {{ backLink({
       "href": "/design-system",
       "text": "Design system",
       "classes": "app-u-hide-mobile app-side-nav__back dfeuk-u-margin-bottom-4"
     }) }}
-    <h2 class="app-side-nav__heading">Styles <span class="dfeuk-u-visually-hidden">navigation</span></h2>
+    <h2 class="app-side-nav__heading">Patterns <span class="dfeuk-u-visually-hidden">navigation</span></h2>
     <ul class="dfeuk-list app-side-nav__list">
-    {% for item in styles %}
+    {% for item in patterns %}
       <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
     </ul>

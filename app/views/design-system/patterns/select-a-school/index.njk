@@ -1,0 +1,103 @@
+{% set pageTitle = "Select a school" %}
+{% set pageDescription = "A pattern for selecting a school from the list of all schools in England." %}
+{% set pageSection = "Design System" %}
+{% set subSection = "Patterns" %}
+{% set theme = "Patterns" %}
+{% set dateUpdated = "October 2021" %}
+{% set backlog_issue_id = "169" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-system/patterns/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+  
+<p>Help users to select a school from a list of all schools in England.</p>
+
+<img src="/assets/select-a-school-example.png" alt="Screenshot showing a text field with the label 'Enter school or college name or URN'. Inside the text field, 'Five' has been entered. Below the text field, a box lists 10 schools that include the word 'Give' in their name, with the word 'Five' highlighted using bold and an underline." class="img-bordered img-bordered--no-background-colour">
+
+<h2 class="govuk-heading-l">When to use this pattern</h2>
+
+<p>Use this pattern if you need to ask users to select one or more schools in England.</p>
+
+<h2 class="govuk-heading-l">When not to use this pattern</h2>
+
+<p>Do not use this pattern if you can get the information in another way, for example by linking users with an existing account.</p>
+
+<p>Do not use this pattern if asking users which schools they attended, and they may have attended school a long time ago or outside of England. Instead, use a regular text field.</p>
+
+<h2 class="govuk-heading-l">How it works</h2>
+
+<p>The pattern uses an autocomplete. This allows users to search for a school using its name or a reference number, and then select a school from a list of matching results.</p>
+
+<p>If javascript is available the results are shown as the user types, in a list below the text input. If javascript is not available, the results are shown on a separate page after the user presses a search button.</p>
+
+<h3 class="govuk-heading-m">Data source</h3>
+
+<p>You can get a list of all schools in England (around 50,000) from the <a href="https://www.get-information-schools.service.gov.uk" target="_blank">Get information about schools</a> service.</p>
+
+<p>You can either download this data periodically and update the list in your service, or use their API to fetch updated data as a daily task.</p>
+
+<h3 class="govuk-heading-m">Using school references</h3>
+
+<p>There are many different unique references for schools, including:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+<li>Unique Reference Number (URN) – from the Edubase service</li>
+<li>UK Provider Reference Number (UKPRN) - from the <a href="https://www.ukrlp.co.uk" target="_blank">UK register of learning providers</a></li>
+<li>LAESTAB number</li>
+<li>Postcode of the school address</li>
+</ul>
+
+<p>You should research with the users of your service to see which references they may be familiar with. If one or more reference is comonly used, you can support this within your autocomplete to save users time and help avoid errors.</p>
+
+<h3 class="govuk-heading-m">Disambiguating schools</h3>
+
+<p>Lots of schools in England have the exact same name. To help users select the right school, display some information alongside the name.</p>
+
+<p>Depending on your service, you could choose to show:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+<li>postcode</li>
+<li>city or town</li>
+<li>a reference number</li>
+</ul>
+
+<h3 class="govuk-heading-m">Filtering by type of school</h3>
+
+<p>Depending on the needs of your service, you could filter the list of all schools to reduce the number of false matches.</p>
+
+<p>You could filter the list by:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+<li>phase, for example primary, secondary</li>
+<li>school funding type</li>
+<li>removing schools that have closed</li>
+<li>including or excluding multi-academy trusts (MATs)</li>
+</ul>
+
+<h2 class="govuk-heading-l">Research on this pattern</h2>
+
+<p>This pattern has been used successfully by many services.</p>
+
+<h3 class="govuk-heading-m">Services using this pattern</h3>
+
+<p>Lots of services from the Department for Education are using a variant of this pattern, including:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+<li><a href="https://schools-financial-benchmarking.service.gov.uk" target="_blank">Schools financial benchmarking</a></li>
+<li><a href="https://www.find-school-performance-data.service.gov.uk" target="_blank">Find school and college performance data in England</a></li>
+<li><a href="https://www.register-trainee-teachers.service.gov.uk" target="_blank">Register trainee teachers</a></li>
+<li><a href="https://www.publish-teacher-training-courses.service.gov.uk/sign-in" target="_blank">Publish teacher training courses</a></li>
+<li><a href="https://www.get-help-buying-for-schools.service.gov.uk" target="_blank">Get help buying for schools</a></li>
+</ul>
+
+<h2 class="govuk-heading-l">Help improve this pattern</h2>
+
+<p><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/design-system/patterns/select-a-school/index.html.md.erb" target="_blank">Contribute to this guidance</a> to help improve the pattern for others.</p>
+
+
+
+{% endblock %}

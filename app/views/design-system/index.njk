@@ -1,43 +1,42 @@
 {% set pageTitle = "Design System" %}
-{% set pageDescription = "Use the design system to understand how to design consistent Department for Education (DfE) services." %}
+{% set pageDescription = "Understand how to ensure consistent design users of Department for Education services." %}
 {% set pageSection = "Design System" %}
 {% set landingPage = true %}
 
-{% extends "includes/app-layout.njk" %} 
+{% extends "includes/app-layout.njk" %}
 
 <div class="app-index-navigation app-u-hide-desktop">
-    {% include "includes/_side-nav.njk" %}
-  </div>
+  {% include "includes/_side-nav.njk" %}
+</div>
 
 {% block bodyContent %}
 
-  <div class="govuk-inset-text"><p>Don't reinvent. Iterate based on user needs and evidence, and share.</p></div>
+  <div class="govuk-inset-text">
+    <p><strong>Don't reinvent the wheel.</strong></p>
+    <p>Iterate existing components and styles based on user needs and evidence, and share.</p>
+  </div>
 
-  <h2 class="govuk-heading-m">Start with the GOV.UK Design System</h2>
+  <h2 class="govuk-heading-m" id="start-with-govuk-design-system">Start with the GOV.UK Design System</h2>
 
-   <p>You must use the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> as a starting point for all DfE digital services.</p>
+  <p>You must use the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> as a starting point for all DfE digital services.</p>
 
   <p>If something isn't in the Design System, check the <a href="https://github.com/orgs/alphagov/projects/43/views/1" target="_blank" rel="noopener noreferrer">Design System backlog</a> to see what others have done before.</p>
 
-  <p>Before starting to build anything custom or new, ask in the <a href="https://ukgovernmentdigital.slack.com/app_redirect?channel=govuk-design-system" target="_blank" rel="noopener noreferrer">cross-government design community on Slack</a>.</p>
- 
-    <h3 class="govuk-heading-s" id="contributing-back-to-the-govuk-design-system">Contributing back to the GOV.UK Design System</h3>
+  <p>Before starting to build anything custom or new, ask what others have done in the following Slack channels:</p>
+
+  <ul class="govuk-list">
+    <li><a href="https://ukgovernmentdfe.slack.com/archives/C7JG0399S" target="_blank" rel="noopener noreferrer">#design channel in DfE Slack</a></li>
+    <li><a href="https://ukgovernmentdigital.slack.com/archives/C062GAGLW" target="_blank" rel="noopener noreferrer">#design channel in cross-government Slack</a></li>
+  </ul>
+
+  <p>You can also <a href="/design-ops/">contact the design ops team</a> for advice and guidance.</p>
+    
+
+  <h3 class="govuk-heading-s" id="contributing-back-to-the-govuk-design-system">Contributing back to the GOV.UK Design System</h3>
 
   <p>If you create or amend an existing GOV.UK frontend component, you must also <a href="https://design-system.service.gov.uk/community/contribution-criteria/" target="_blank">contribute</a> the change back, along with evidence and research to support the change. </p>
 
-  <h2 class="govuk-heading-m">Using the DfE Design System</h2>
-
-  <p>The styles, components, and patterns in this Design System have been designed to meet specific needs of users of Department for Education services.</p>
-
-  <p>Follow <a href="/design-system/dfe-frontend/">instructions for using DFE Frontend</a> in your service.</p>
-
-  <p>If you're working on DfE styles, components or patterns, you can contribute your work to this design system. You should use the <a href="">DfE Design System Project</a> to create an issue for your style, component or pattern.</p>
-
-   <h3 class="govuk-heading-s" id="contributing-back-to-the-dfe-design-system">Contributing back to the DfE Design System</h3>
-
-  <p>Read the <a href="/design-system/contribute/">DfE Design System contribution criteria</a> to ensure what you are contributing has clear, identifiable needs and can be made use of by more than one service.</p>
-
-  <p>You should also <a href="#contributing-back-to-the-govuk-design-system">contribute</a> any bespoke components or patterns to the GOV.UK Design System. It may be useful to others building government serivces.</p>
-
+<h2 class="govuk-heading-m" id="branding">Branding your service</h2>
+<p>If you are designing a service which isn't intended to be provided on GOV.UK or service.gov.uk domains, you should follow the <a href="/design-system/branding-standards/">branding standards</a> guidance.</p>
 
 {% endblock %}
