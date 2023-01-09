@@ -34,10 +34,10 @@
     "watch:assets": "cpx 'app/assets/*' public/assets/ --watch",
     "webpack": "webpack"
   },
-  "author": "https://github.com/nhsuk",
+  "author": "https://github.com/dfe-digital",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhsuk/nhsuk-service-manual.git"
+    "url": "https://github.com/DFE-Digital/ucd-manual.git"
   },
   "license": "MIT",
   "dependencies": {

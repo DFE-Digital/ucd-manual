@@ -4,7 +4,7 @@ module.exports = {
   adobeTrackingUrl: process.env.ADOBE_TRACKING_URL || '',
 
   // Base URL
-  baseURL: process.env.BASE_URL || 'https://dfe-ucd-prototype.herokuapp.com/',
+  baseURL: process.env.BASE_URL || 'https://design.education.gov.uk/',
 
   // Environment
   env: process.env.NODE_ENV || 'development',
