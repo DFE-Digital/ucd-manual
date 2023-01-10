@@ -1,11 +1,11 @@
 
 @import "node_modules/dfeuk-frontend/packages/dfefrontend";
-@import "node_modules/govuk-frontend/govuk/settings/all";
 
 // App specific styles
 @import "app/app";
 
 // Design examples
+@import "govuk-frontend-4.3.1.min.css";
 @import "design-example/design-example";
 
 /////////////////
