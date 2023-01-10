@@ -1,0 +1,60 @@
+
+{% set pageTitle = "Accessibility statements" %}
+{% set pageDescription = "Testing methods and assurance processes for ensuring Department for Education services meet accessibility standards and requirements." %}
+{% set pageSection = "Accessibility" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+
+{% block breadcrumb %}
+  {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
+
+{% block bodyContent %}
+
+{% markdown %}
+
+A link to the statement should be easy to find on the website and service homepage, or made available on every web page, for example, in the footer links. 
+
+For mobile apps, the statement should be available on the website of the public sector body that developed the app, or with other information available when downloading the app. The statement can also be made available from within the app.
+
+## Statement templates
+
+The following statements are designed to make it easier to create the correct statement for your service, and it's level of compliance to WCAG 2.1 Level AA. 
+
+ <div class="dfeuk-warning-callout">
+  <h3 class="dfeuk-warning-callout__label">
+    Important<span class="dfeuk-u-visually-hidden">:</span>
+  </h3>
+  <p>The accessibility statement contains mandatory and <a href='/accessibility/standards'>legally required</a> wording. If you are unsure of what to put in your statement, speak to the <a href='/design-ops/' target='_blank'>Design Ops team</a>.</p>
+</div>
+
+<p><a href="/design-ops/contact">Contact Design Ops</a> for statement templates. We are migrating them from the previous service and aimm to have them available here by 12 January 2023.</p>
+
+### Disproportionate burden
+
+You might judge that the benefits of making some things accessible would not justify the cost to DfE to resolve. In that case, you can claim it would not be reasonable for you to make those things accessible because it’s a disproportionate burden.
+
+You cannot take things like lack of time or knowledge into account in your assessment - or argue that making things accessible is a disproportionate burden because you’ve not given it priority.
+
+### Out of scope content
+
+<ul>
+  <li>pre-recorded audio and video published before 23 September 2020</li>
+  <li>live audio and video</li>
+  <li>heritage collections like scanned manuscripts</li>
+  <li>PDFs or other documents published before 23 September 2018 - unless users need them to use a service, for example a form that lets you request school meal preferences</li>
+  <li>maps - but you’ll need to provide essential information in an accessible format like an address</li>
+  <li>third party content that’s under someone else’s control if you did not pay for it or develop it yourself - for example, social media ‘like’ buttons</li>
+  <li>content on intranets or extranets published before 23 September 2019 (unless you make a major revision after that date)</li>
+  <li>archived websites if they’re not needed for services your organisation provides and they are not updated</li>
+</ul>
+
+Read full guidance about <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps#when-complying-with-accessibility-regulations-might-be-a-disproportionate-burden" target="_blank">disproportionate burden and out of scope content (opens in new tab)</a> on GOV.UK
+
+{% endmarkdown %}
+
+{% endblock %}
