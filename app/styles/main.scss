@@ -532,3 +532,11 @@ pre[class*=language-] {
 
 .govuk-tag{width:max-content; display: inline-block !important;}
 .govuk-inset-text{max-width: 37em;}
+
+
+
+
+.dfeuk-border-top--thick {
+  border-top: 5px solid $color_dfeuk-blue;
+  padding-top: 15px;
+}

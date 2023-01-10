@@ -4,117 +4,119 @@
 {% extends "includes/layout.njk" %}
 
 {% block body %}
-<div class="dfeuk-grid-row">
-  <div class="dfeuk-grid-column-full">
+  <div class="dfeuk-grid-row">
+    <div class="dfeuk-grid-column-full">
 
-    <div class="dfeuk-u-reading-width">
+      <div class="dfeuk-u-reading-width">
 
-      <h1>{{ pageTitle }}</h1>
+        <h1>{{ pageTitle }}</h1>
 
-      <h2>What are cookies?</h2>
-      <p>Cookies are files saved on your phone, tablet or computer when you visit a website.</p>
-      <p>They store information about how you use the website, such as the pages you visit.</p>
-      <p>Cookies are not viruses or computer programs. They are very small so do not take up much space.</p>
+        <h2>What are cookies?</h2>
+        <p>Cookies are files saved on your phone, tablet or computer when you visit a website.</p>
+        <p>They store information about how you use the website, such as the pages you visit.</p>
+        <p>Cookies are not viruses or computer programs. They are very small so do not take up much space.</p>
 
-      <h2>How we use cookies</h2>
-      <p>We only use cookies to:</p>
-      <ul>
-        <li>make our website work</li>
-        <li>measure how you use our website, such as which links you click on (analytics cookies), if you give us permission</li>
-      </ul>
-      <p>We do not use any other cookies, for example, cookies that remember your settings or cookies that help with health campaigns.</p>
-      <p>We sometimes use tools on other organisations' websites to collect data or to ask for feedback. These tools set their own cookies. </p>
+        <h2>How we use cookies</h2>
+        <p>We only use cookies to:</p>
+        <ul>
+          <li>make our website work</li>
+          <li>measure how you use our website, such as which links you click on (analytics cookies), if you give us permission</li>
+        </ul>
+        <p>We do not use any other cookies, for example, cookies that remember your settings or cookies that help with health campaigns.</p>
+        <p>We sometimes use tools on other organisations' websites to collect data or to ask for feedback. These tools set their own cookies. </p>
 
-      <h2>Cookies that make our website work</h2>
-      <p>We use cookies to keep our website secure and fast.</p>
-    </div>
+        <h2>Cookies that make our website work</h2>
+        <p>We use cookies to keep our website secure and fast.</p>
+      </div>
 
-    <details class="dfeuk-details">
-      <summary class="dfeuk-details__summary">
-        <span class="dfeuk-details__summary-text">
+      <details class="dfeuk-details">
+        <summary class="dfeuk-details__summary">
+          <span class="dfeuk-details__summary-text">
           List of cookies that make our website work
         </span>
-      </summary>
-      <div class="dfeuk-details__text">
+        </summary>
+        <div class="dfeuk-details__text">
 
-        <div class="dfeuk-table-responsive app-table-responsive--cookies">
-          <table class="dfeuk-table">
-            <caption class="dfeuk-table__caption dfeuk-u-visually-hidden">Cookie names and purposes</caption>
-            <thead class="dfeuk-table__head">
-              <tr class="dfeuk-table__row" role="row">
-                <th class="dfeuk-table__header" role="columnheader" scope="col">Cookie name</th>
-                <th class="dfeuk-table__header" role="columnheader" scope="col">Purpose</th>
-                <th class="dfeuk-table__header" role="columnheader" scope="col">Expiry</th>
-              </tr>
-            </thead>
-            <tbody class="dfeuk-table__body">
-              <tr class="dfeuk-table__row" role="row">
-                <td class="dfeuk-table__cell" role="cell" data-label="Cookie name">dfeuk-cookie-consent</td>
-                <td class="dfeuk-table__cell" role="cell" data-label="Purpose">Remembers if you used our cookies banner</td>
-                <td class="dfeuk-table__cell" role="cell" data-label="Expiry">When you close the browser (if you do not use the banner) or 1 year (if you use the banner)</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="dfeuk-table-responsive app-table-responsive--cookies">
+            <table class="dfeuk-table">
+              <caption class="dfeuk-table__caption dfeuk-u-visually-hidden">Cookie names and purposes</caption>
+              <thead class="dfeuk-table__head">
+                <tr class="dfeuk-table__row" role="row">
+                  <th class="dfeuk-table__header" role="columnheader" scope="col">Cookie name</th>
+                  <th class="dfeuk-table__header" role="columnheader" scope="col">Purpose</th>
+                  <th class="dfeuk-table__header" role="columnheader" scope="col">Expiry</th>
+                </tr>
+              </thead>
+              <tbody class="dfeuk-table__body">
+                <tr class="dfeuk-table__row" role="row">
+                  <td class="dfeuk-table__cell" role="cell" data-label="Cookie name">dfeuk-cookie-consent</td>
+                  <td class="dfeuk-table__cell" role="cell" data-label="Purpose">Remembers if you used our cookies banner</td>
+                  <td class="dfeuk-table__cell" role="cell" data-label="Expiry">When you close the browser (if you do not use the banner) or 1 year (if you use the banner)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
         </div>
+      </details>
 
+      <div class="dfeuk-u-reading-width">
+        <h2>Cookies that measure website use</h2>
+        <p>We also like to use analytics cookies. These cookies store anonymous information about how you use our website, such as which pages you visit or what you click on.</p>
       </div>
-    </details>
 
-    <div class="dfeuk-u-reading-width">
-      <h2>Cookies that measure website use</h2>
-      <p>We also like to use analytics cookies. These cookies store anonymous information about how you use our website, such as which pages you visit or what you click on.</p>
-    </div>
+      <div class="dfeuk-u-reading-width">
+        <p>We'll only use these cookies if you say it's OK. We'll use a cookie to save your settings.</p>
 
-  
-
-    <div class="dfeuk-u-reading-width">
-       <p>We'll only use these cookies if you say it's OK. We'll use a cookie to save your settings.</p>
-
-      <h3>Tell us if we can use analytics cookies</h3>
-      <fieldset class="dfeuk-fieldset" id="cookie-statistics-form" aria-describedby="cookie-statistics">
-        <div class="dfeuk-radios dfeuk-radios--inline dfeuk-u-margin-bottom-6">
-          <div class="dfeuk-radios__item">
-            <input class="dfeuk-radios__input" id="input-statistics-1" name="input-statistics" type="radio" value="on">
-            <label class="dfeuk-label dfeuk-radios__label" for="input-statistics-1">
+        <h3>Tell us if we can use analytics cookies</h3>
+        <fieldset class="dfeuk-fieldset" id="cookie-statistics-form" aria-describedby="cookie-statistics">
+          <div class="dfeuk-radios dfeuk-radios--inline dfeuk-u-margin-bottom-6">
+            <div class="dfeuk-radios__item">
+              <input class="dfeuk-radios__input" id="input-statistics-1" name="input-statistics" type="radio" value="on">
+              <label class="dfeuk-label dfeuk-radios__label" for="input-statistics-1">
             Use cookies to measure my website use
             </label>
-          </div>
-          <div class="dfeuk-radios__item">
-            <input class="dfeuk-radios__input" id="input-statistics-2" name="input-statistics" type="radio" value="yes">
-            <label class="dfeuk-label dfeuk-radios__label" for="input-statistics-2">
+            </div>
+            <div class="dfeuk-radios__item">
+              <input class="dfeuk-radios__input" id="input-statistics-2" name="input-statistics" type="radio" value="yes">
+              <label class="dfeuk-label dfeuk-radios__label" for="input-statistics-2">
             Do not use cookies to measure my website use
             </label>
+            </div>
           </div>
-        </div>
-      </fieldset>
-      <a href="/cookie-confirmation" onclick="changeConsent();" type="submit" class="dfeuk-button dfeuk-u-margin-bottom-0">
+        </fieldset>
+        <a href="/cookie-confirmation" onclick="changeConsent();" type="submit" class="dfeuk-button dfeuk-u-margin-bottom-0">
         Save my cookie settings
       </a>
 
+      </div>
+
+      <p class="dfeuk-body-s dfeuk-u-secondary-text-color dfeuk-u-margin-top-7 dfeuk-u-margin-bottom-0">Updated: April 2021</p>
+
     </div>
-
-    <p class="dfeuk-body-s dfeuk-u-secondary-text-color dfeuk-u-margin-top-7 dfeuk-u-margin-bottom-0">Updated: April 2021</p>
-
   </div>
-</div>
 {% endblock %}
 
 {% block pageScripts %}
-<script>
-  // Check the checkboxes based on status of cookie preferences
-  window.addEventListener("load", function checkCookie() {
-      document.getElementById("input-statistics-1").checked = NHSCookieConsent.getStatistics();
-      document.getElementById("input-statistics-2").checked = !NHSCookieConsent.getStatistics();
-  });
+  <script>
+    // Check the checkboxes based on status of cookie preferences
+    window.addEventListener("load", function checkCookie() {
+      document
+        .getElementById("input-statistics-1")
+        .checked = NHSCookieConsent.getStatistics();
+      document
+        .getElementById("input-statistics-2")
+        .checked = !NHSCookieConsent.getStatistics();
+    });
 
-  // Edit consent preferences based on checkbox input
-  function changeConsent() {
-  NHSCookieConsent.setStatistics(document.getElementById("input-statistics-1").checked);
+    // Edit consent preferences based on checkbox input
+    function changeConsent() {
+      NHSCookieConsent.setStatistics(document.getElementById("input-statistics-1").checked);
 
-    if(typeof NHSCookieConsent.setConsented === "function") {
-      NHSCookieConsent.setConsented(true);
+      if (typeof NHSCookieConsent.setConsented === "function") {
+        NHSCookieConsent.setConsented(true);
+      }
+
     }
-
-  }
-</script>
+  </script>
 {% endblock %}

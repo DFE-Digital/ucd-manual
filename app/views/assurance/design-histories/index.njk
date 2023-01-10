@@ -1,0 +1,57 @@
+{% set pageTitle = "Design histories" %}
+{% set pageDescription = "Design histories help designers tell a story about changes to a service over time, using evidence, research and insight." %}
+{% set pageSection = "Assurance" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block bodyContent %}
+
+    <p class="govuk-body">There are multiple ways you can document the changes to your service over time.</p>
+
+    <h2 class="govuk-heading-m">Design Ops supported content management system</h2>
+
+    <p>Design Ops have built, and also manage, a design history service using a CMS. You can find design histories from across DfE in one service.</p>
+    <p><a href="https://design-histories.education.gov.uk/get-a-design-history" target="_blank">Details of how to get access</a>.</p>
+    <p>You can reference your team or service design history directly. These are branded consistently in line with guidelines and you can make use of any GOV.UK Design System components.</p>
+
+{{ actionLink({
+  "text": "Design history service",
+  "href": "https://design-histories.education.gov.uk/"
+}) }}
+
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-9">Cross-government design history project</h2>
+
+    <p>You'll need to run this on Heroku or Netlify and you may incur costs for hosting these.</p>
+    <p>You can set this up from the GitHub repository: <a href="https://design-history.herokuapp.com/set-up-a-design-history/" target="_blank" rel="noopener noreferrer">https://design-history.herokuapp.com/set-up-a-design-history/</a>.</p>
+    <p>Visit the the <a href="https://github.com/x-govuk/govuk-design-history" target="_blank" rel="noopener noreferrer">govuk-design-history repository</a> on GitHub, and click 'Use this template' and follow the instructions to get started.</p>
+
+    <h3 class="govuk-heading-s">Published design histories using the cross-government option</h3>
+
+    <ul class="govuk-list govuk-list--spaced">
+        <li>
+            <a href="https://tra-digital-design-history.herokuapp.com/" target="_blank">Teaching Regulation Agency (TRA)</a>
+        </li>
+        <li>
+            <a href="https://fh-family-exp-design-history.herokuapp.com/" target="_blank">Family experience</a>
+        </li>
+        <li>
+            <a href="http://teacher-cpd-design-history.herokuapp.com/" target="_blank">Teacher continuing professional development (CPD) </a>
+        </li>
+        <li>
+            <a href="https://bat-design-history.netlify.app/" target="_blank">Becoming a teacher</a>
+        </li>
+        <li>
+            <a href="https://conversions-design-history.netlify.app/" target="_blank">Managing an academy conversion</a>
+        </li>
+        <li>
+            <a href="https://get-into-teaching-design-history.london.cloudapps.digital/" target="_blank">Get into teaching (GIT)</a>
+        </li>
+        <li>
+            <a href="https://sdd-design-history.netlify.app/" target="_blank">Service delivery division (SDD)</a>
+        </li>
+    </ul>
+
+{% endblock %}
