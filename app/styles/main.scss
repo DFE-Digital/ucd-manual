@@ -5,9 +5,9 @@
 @import "app/app";
 
 // Design examples
-@import "govuk-frontend-4.3.1.min.css";
-@import "design-example/design-example";
 
+@import "design-example/design-example";
+@import "node_modules/govuk-frontend/govuk/all";
 /////////////////
 // FRONTEND FIXES + UPDATES
 /////////////////
