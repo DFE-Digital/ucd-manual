@@ -6,9 +6,6 @@
     title: "Accessibility standards",
     url: "/accessibility/standards"
   },{
-    title: "Understanding WCAG",
-    url: "/accessibility/understanding-wcag"
-  },{
     title: "Roles and responsibilities",
     url: "/accessibility/roles-and-responsibilities"
   }
@@ -224,6 +221,13 @@
       {% endfor %}
     </ul>
 
+    <h2 class="app-side-nav__heading">Understanding WCAG <span class="dfeuk-u-visually-hidden">navigation</span></h2>
+    <ul class="dfeuk-list app-side-nav__list">
+    {% for item in accessibility_wcag %}
+      <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>
+
     <h2 class="app-side-nav__heading">Assurance</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in accessibility_assurance_top_level %}
@@ -310,7 +314,7 @@
     </ul>
   {% endif %}
 
-    {%- if subSection == "Understanding WCAG" %}
+    {# {%- if subSection == "Understanding WCAG" %}
     {{ backLink({
       "href": "/accessibility/",
       "text": "Accessibility",
@@ -322,7 +326,7 @@
       <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
     </ul>
-  {% endif %}
+  {% endif %} #}
 
 
 </nav>
