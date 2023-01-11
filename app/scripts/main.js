@@ -22,7 +22,7 @@ import {
   suggestion,
 } from './search';
 
-// Initialise NHS.UK frontend components
+
 AutoComplete({
   containerId: 'autocomplete-container',
   formId: 'search',
@@ -42,9 +42,16 @@ Checkboxes();
 Radios();
 Card();
 
-// Initialise NHS digital service manual components
 
 // Design examples
 document.querySelectorAll(DesignExample.selector()).forEach((el) => {
   new DesignExample(el);
 });
+
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D2V3LRNYBJ');

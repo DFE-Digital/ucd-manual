@@ -1,0 +1,19 @@
+{% set pageTitle = "Accessibility statements" %}
+{% set pageDescription = "Testing methods and assurance processes for ensuring Department for Education services meet accessibility standards and requirements." %}
+{% set pageSection = "Accessibility" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+    {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<pre><code class="">
+{% include "accessibility/accessibility-statements/accessibility-statement-full-html.njk" %}
+</code></pre>
+
+{% endblock %}

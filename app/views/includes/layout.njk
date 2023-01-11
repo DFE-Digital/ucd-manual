@@ -45,6 +45,12 @@
 
     <link rel="stylesheet" href="/css/main.css">
 
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2V3LRNYBJ"></script>
+
     <script src="/js/main.min.js" defer></script>
     <!-- Cookie consent -->
     <script src="/js/cookies.min.js" data-policy-url="/cookie-policy" defer></script>
@@ -59,7 +65,7 @@
     <meta property="og:description" content="{% if pageDescription %}{{pageDescription}}{% else %}A framework of principles, guidance, and standards to enable and support teams to deliver joined-up, effective, user-centred services for users of Department for Education services.{% endif %}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_GB"/>
-    <meta property="og:image" content='{% if BASE_URL %}{{ BASE_URL }}{% endif %}/assets/open-graph.png' />
+    <meta property="og:image" content='{% if BASE_URL %}{{ BASE_URL }}{% endif %}/assets/open-graph.png'/>
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@dfe_digital">
@@ -97,10 +103,8 @@
     {% if pageLayout != "Homepage" %}
       <div class="dfeuk-width-container app-width-container">
 
-      
-       
         <main class="dfeuk-main-wrapper app-main-wrapper" id="maincontent" role="main">
-         {% block body %}{% endblock %}
+          {% block body %}{% endblock %}
         </main>
 
       </div>
@@ -118,7 +122,9 @@
         .initAll()
     </script>
 
-    
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 
 </html>
