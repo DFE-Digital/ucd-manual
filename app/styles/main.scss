@@ -54,14 +54,6 @@
   fill: $dfeuk-focus-text-color;
 }
 
-// NEED ADDING TO THE FRONTEND
-
-/**
- * Hotfix for an issue with nested list spacing in
- * the NHS.UK frontend library
- *
- * https://github.com/nhsuk/dfeuk-frontend/issues/430
- */
 
 .dfeuk-u-nested-list {
   margin-bottom: 0;

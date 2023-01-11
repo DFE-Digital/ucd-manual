@@ -5,9 +5,9 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://dfe-ucd-manual.herokuapp.com/</loc>
+    <loc>https://design.education.gov.uk</loc>
   </url>
   <url>
-    <loc>https://dfe-ucd-manual.herokuapp.com/accessibility</loc>
+    <loc>https://design.education.gov.uk/accessibility</loc>
   </url>
 </urlset>

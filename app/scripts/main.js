@@ -1,5 +1,5 @@
 /* eslint-disable no-new */
-// NHS.UK frontend components
+// DfE frontend components
 import MenuToggle from 'dfeuk-frontend/packages/components/header/menuToggle';
 import SearchToggle from 'dfeuk-frontend/packages/components/header/searchToggle';
 import SkipLink from 'dfeuk-frontend/packages/components/skip-link/skip-link';
@@ -10,10 +10,10 @@ import Card from 'dfeuk-frontend/packages/components/card/card';
 
 import AutoComplete from './autocomplete/autoCompleteConfig';
 
-// NHS.UK frontend polyfills
+// DfE frontend polyfills
 import 'dfeuk-frontend/packages/polyfills';
 
-// NHS digital service manual components
+// DfE digital service manual components
 import DesignExample from './design-example';
 import {
   inputValue,
