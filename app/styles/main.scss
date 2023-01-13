@@ -1,5 +1,3 @@
-
-
 @import "node_modules/govuk-frontend/govuk/all";
 @import "node_modules/dfeuk-frontend/packages/dfefrontend";
 
@@ -394,8 +392,14 @@ tr {
 }
 
 
-.govuk-tag{width:max-content; display: inline-block !important;}
-.govuk-inset-text{max-width: 37em;}
+.govuk-tag {
+  width: max-content;
+  display: inline-block !important;
+}
+
+.govuk-inset-text {
+  max-width: 37em;
+}
 
 
 
@@ -409,8 +413,8 @@ pre {
   max-width: inherit;
   margin-bottom: 30px;
   padding: 0;
-  border: 3px solid rgba(0,0,0,0);
-  outline: 1px solid rgba(0,0,0,0);
+  border: 3px solid rgba(0, 0, 0, 0);
+  outline: 1px solid rgba(0, 0, 0, 0);
   color: #0b0c0c;
   background-color: #f3f2f1;
   font-size: inherit;
@@ -419,4 +423,23 @@ pre {
 
 .hljs {
   max-width: 100%;
+}
+
+
+.dfeuk-header__navigation {
+  @include mq($from: mobile, $until: desktop) {
+    background-color: $color_dfeuk-white;
+  }
+}
+
+.app-header__navigation-item__item--current {
+  @include mq($from: mobile, $until: desktop) {
+    background-color: $color_dfeuk-blue;
+    box-shadow: none !important;
+  }
+
+  >.dfeuk-header__navigation-link {
+    color: $color_dfeuk-white;
+  }
+
 }
