@@ -1,0 +1,28 @@
+{% set pageTitle = "Overview" %}
+{% set pageDescription = "The skills framework we use in the Department for Education across our design professions." %}
+{% set pageSection = "Community" %}
+{% set subSection = "Professions" %}
+{% set dateUpdated = "January 2023" %}
+{% set theme = "Professions" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "community/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<p>The skills and capability framework for design professions in DfE is based on the <a href="https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework#user-centred-design-job-family" target="_blank" rel="noopener noreferrer">GOV.UK Digital, Data and Technology Profession Capability Framework</a>.</p>
+<p>We have refined the detail of each skill area, to the way we work, and the expectations of the role in DfE.</p>   
+
+<h2 class="govuk-heading-m">Profession-specific skills and capability frameworks</h2>
+
+<ul class="govuk-list">
+    <li><a href="/community/professions/content-design/">Content design</a></li>
+    <li><a href="/community/professions/interaction-design/">Interaction design</a></li>
+    <li><a href="/community/professions/service-design/">Service design</a></li>
+</ul>
+
+{% endblock %}

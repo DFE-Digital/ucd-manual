@@ -82,8 +82,21 @@
 
 {% set communities = [
   {
-    title: "Community",
+    title: "Community overview",
     url: "/community/"
+  },{
+    title: "Themes",
+    url: "/community/themes/"
+  }
+] %}
+
+{% set professions = [
+  {
+    title: "Overview",
+    url: "/community/professions/"
+  }, {
+    title: "Content design",
+    url: "/community/professions/content-design"
   }
 ] %}
 
@@ -249,6 +262,7 @@
   {% endif %}
 
   {%- if pageSection == "Community" %}
+ <h2 class="app-side-nav__heading">Community</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in communities %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -256,6 +270,15 @@
         </li>
       {% endfor %}
     </ul>
+ {# <h2 class="app-side-nav__heading">Professions</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in professions %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul> #}
+
   {% endif %}
 
     {%- if pageSection == "Assurance" %}
