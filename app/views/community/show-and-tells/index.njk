@@ -1,0 +1,51 @@
+{% set pageTitle = "Show and tells" %}
+{% set pageDescription = "The user-centred design community show and tells in the Department for Education" %}
+{% set pageSection = "Community" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block bodyContent %}
+
+    <p>We have regular design profession show and tells. These fall on months where there is a 5th Thursday.</p>
+    <p>They are open to anyone to join from DfE, contractors working for DfE, and by invitation if from other government departments.</p>
+
+    <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Schedule</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Date</th>
+                <th scope="col" class="govuk-table__header">Time</th>
+                <th scope="col" class="govuk-table__header">Show and tell</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">30 March 2023</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Cross-design show and tell #1</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">29 June 2023</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Cross-design show and tell #2</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">31 August 2023</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Cross-design show and tell #3</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">30 November 2023</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Cross-design show and tell #4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="govuk-heading-m">Missing the invites?</h2>
+
+    <p><a href="/design-ops/contact">Contact the Design Ops team</a> to get added to the meeting invites. </p>
+
+{% endblock %}

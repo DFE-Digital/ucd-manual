@@ -1,0 +1,518 @@
+{% set pageTitle = "September 2022 results" %}
+{% set pageDescription = "Results for the Nielsen Norman UX maturity model survey for September 2022." %}
+{% set pageSection = "Design Ops" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+    {% include "design-ops/design-maturity/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+    <table class="govuk-table" id="outcome">
+        <caption class="govuk-table__caption govuk-table__caption--m">Outcome</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Maturity score</th>
+                <th scope="col" class="govuk-table__header">Responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                    <strong class="govuk-tag govuk-tag--yellow">3</strong>
+                </td>
+                <td class="govuk-table__cell">41</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller" id="1">
+        <caption class="govuk-table__caption govuk-table__caption--m">1. Does DfE have any of the following types of design goals?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No goals</th>
+                <td class="govuk-table__cell">8</td>
+                <td class="govuk-table__cell">17%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">General design-related goals describing what design should be or achieve</td>
+                <td class="govuk-table__cell">28</td>
+                <td class="govuk-table__cell">60%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Specific, well documented goals</th>
+                <td class="govuk-table__cell">8</td>
+                <td class="govuk-table__cell">17%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Prioritised goals indicating which are the most important</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">A roadmap or plan for how to achieve organisational design goals</th>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">4%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">2. When are design activities included in planning?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design is not included in planning schedules</th>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">9%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">This usually happens before a design is implemented</th>
+                <td class="govuk-table__cell">8</td>
+                <td class="govuk-table__cell">14%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">This is usually included in planning</th>
+                <td class="govuk-table__cell">21</td>
+                <td class="govuk-table__cell">37%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">This is included in planning and prioritised</th>
+                <td class="govuk-table__cell">13</td>
+                <td class="govuk-table__cell">23%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">This is always part of early project planning or to at least understand what’s required</th>
+                <td class="govuk-table__cell">10</td>
+                <td class="govuk-table__cell">18%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">3. How well is the design profession staffed?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No staff with specialised design skills or experience</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Some people with design skills or experience but it's not their main job</th>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">7%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Dedicated people in design roles, but not enough to do all the work that’s needed or external contractors hired occasionally</th>
+                <td class="govuk-table__cell">37</td>
+                <td class="govuk-table__cell">90%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Enough specialised people and skills to address current work</th>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">0%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">4. How well is design funded?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No money is spent on internal design staff, external contractors or other design resources</th>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">7%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Some design work is funded, but there is no dedicated design budget</th>
+                <td class="govuk-table__cell">17</td>
+                <td class="govuk-table__cell">41%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">There is some design budget, but it’s not enough</th>
+                <td class="govuk-table__cell">17</td>
+                <td class="govuk-table__cell">41%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">There is adequate budget, nearly adequate or even more than enough budget</th>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">10%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">5. Across DfE, what do people think design is?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">People don't know or they have a toxic or problematic understanding of design</th>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">7%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">There is an awareness of the concept of design but limited understanding of the benefits</th>
+                <td class="govuk-table__cell">17</td>
+                <td class="govuk-table__cell">41%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Some people have a good understanding, but many others don't</th>
+                <td class="govuk-table__cell">17</td>
+                <td class="govuk-table__cell">41%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">There is a consistent definition of design and is understood across DfE</th>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">10%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">The purpose of design is not only consistent across the organisation, but is applied across departments, services and processes</th>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">0%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">6. How does leadership support design?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Leadership does not support design in any way</th>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">5%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Leaders are aware of design but are indifferent to it or even hostile</th>
+                <td class="govuk-table__cell">9</td>
+                <td class="govuk-table__cell">22%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Leadership accepts the need for design but there are some skeptical leaders who aren't convinced or don't provide enough or the right support</th>
+                <td class="govuk-table__cell">25</td>
+                <td class="govuk-table__cell">61%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">There is design support at Deputy Director level upwards</th>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">12%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">7. How does DfE encourage people to develop their design career?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No formal design roles exist</th>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">5%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Few or no design role but some people are self-motivated and prioritise design work in their normal roles</th>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">10%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">There are some design roles but there are few design people in the organisation</th>
+                <td class="govuk-table__cell">11</td>
+                <td class="govuk-table__cell">27%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Job profiles and career paths exist but personal growth and development isn't tracked or understood well</th>
+                <td class="govuk-table__cell">17</td>
+                <td class="govuk-table__cell">41%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Job profiles and career paths for some design roles are well defined and understood throughout DfE</th>
+                <td class="govuk-table__cell">6</td>
+                <td class="govuk-table__cell">15%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Job profiles and career paths exist for all design roles (content, service and Interaction design) but also for supporting roles in Design Ops or Research Ops</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">8. How does DfE plan to continue to improve the design profession in future?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No design work is being done</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design work is done haphazardly, there is little to no effort to evaluate or improve how it's done</th>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">10%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Some teams are working towards improving their own work but not all teams are doing the same</th>
+                <td class="govuk-table__cell">31</td>
+                <td class="govuk-table__cell">76%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Plans are in place to repeat and improve design work across DfE in all teams</th>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">12%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">9. How and when are design methods used in DfE?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No design or research methods are used</th>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">3%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">A few are used but not consistently</th>
+                <td class="govuk-table__cell">17</td>
+                <td class="govuk-table__cell">24%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design methods are used throughout the delivery lifecycle not just at the end</th>
+                <td class="govuk-table__cell">25</td>
+                <td class="govuk-table__cell">36%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Established and documented methods are used across teams</th>
+                <td class="govuk-table__cell">9</td>
+                <td class="govuk-table__cell">13%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">A wide variety of methods are being used well</th>
+                <td class="govuk-table__cell">13</td>
+                <td class="govuk-table__cell">19%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design methods are being used outside of traditional digital teams, for example, finance teams, strategy, policy, support teams, operational teams</th>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">6%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">10. How do non-design people perceive design?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No design work is done or it's not talked about</th>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">7%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Among non-design roles, design is noted but not accepted or supported</th>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">12%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Some people in non-design roles are curious and want to be involved but most don't support it</th>
+                <td class="govuk-table__cell">14</td>
+                <td class="govuk-table__cell">34%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Most non-design roles accept and support design but it varies across DfE</th>
+                <td class="govuk-table__cell">16</td>
+                <td class="govuk-table__cell">39%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Non-design roles have strong respect for design and work alongside design roles on various activities</th>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">7%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">11. How is design work kept consistent across teams and projects?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">It isn't: The only common thread is not knowing or caring about it</th>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">5%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Inconsistently: there are many inconsistencies across design within and across projects</th>
+                <td class="govuk-table__cell">31</td>
+                <td class="govuk-table__cell">76%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Consistently: Design process is similar or consistent across teams and projects</th>
+                <td class="govuk-table__cell">7</td>
+                <td class="govuk-table__cell">17%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Systematically: There are established, successful frameworks across DfE which are shared, maintained and improved by everyone</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">12. How does design impact the final outcome?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Not at all, there is no design work being done so there is no impact</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Weak: Design does not have a strong impact or positive outcome on design quality due to politics, constraints or lack of experience</th>
+                <td class="govuk-table__cell">10</td>
+                <td class="govuk-table__cell">24%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Moderate: Teams are trying to produce high quality work and many are successful</th>
+                <td class="govuk-table__cell">19</td>
+                <td class="govuk-table__cell">46%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Strong: Many or all of the design work produced is of high quality and meets required standards</th>
+                <td class="govuk-table__cell">10</td>
+                <td class="govuk-table__cell">24%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Very strong: Designs are good, the lead industry and design community standards</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="govuk-table govuk-!-margin-top-9 dfeuk-table--smaller">
+        <caption class="govuk-table__caption govuk-table__caption--m">13. How are quantitative metrics used to measure design quality?</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Measure</th>
+                <th scope="col" class="govuk-table__header">Response</th>
+                <th scope="col" class="govuk-table__header">% of responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">No measurable indicators of design quality are defined</th>
+                <td class="govuk-table__cell">17</td>
+                <td class="govuk-table__cell">31%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">At least a few design metrics are collected and discussed</th>
+                <td class="govuk-table__cell">21</td>
+                <td class="govuk-table__cell">38%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design metrics are collected regularly and tracked over time</th>
+                <td class="govuk-table__cell">8</td>
+                <td class="govuk-table__cell">15%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design metrics are shared throughout DfE</th>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">2%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design metrics are shared with decision makers</th>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">7%</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Design metrics influence decisions</th>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">7%</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

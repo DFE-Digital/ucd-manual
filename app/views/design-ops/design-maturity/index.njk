@@ -1,0 +1,58 @@
+{% set pageTitle = "Design maturity" %}
+{% set pageDescription = "How we measure how well we are performing as a design-led organisation." %}
+{% set pageSection = "Design Ops" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+    {% include "design-ops/design-maturity/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+    <p>We measure our maturity against the <a href="https://www.nngroup.com/articles/ux-maturity-model/" target="_blank" rel="noopener noreferrer">Nielsen Normal Group - User Experience (UX) Maturity Model</a>. We run the survey every 6 months in March and September.</p>
+
+    <p>The 6 maturity levels are:</p>
+
+    <ol class="govuk-list govuk-list--number">
+        <li>
+            <strong>Absent:</strong> UX is ignored or nonexistent.</li>
+        <li>
+            <strong>Limited:</strong> UX work is rare, done haphazardly, and lacking importance.</li>
+        <li>
+            <strong>Emergent:</strong> The UX work is functional and promising but done inconsistently and inefficiently.</li>
+        <li>
+            <strong>Structured:</strong> The organization has semisystematic UX-related methodology that is widespread, but with varying degrees of effectiveness and efficiency.</li>
+        <li>
+            <strong>Integrated:</strong> UX work is comprehensive, effective, and pervasive.</li>
+        <li>
+            <strong>User-driven:</strong> Dedication to UX at all levels leads to deep insights and exceptional user-centered–design outcomes.</li>
+    </ol>
+
+    <p>We ran the first maturity survey in September 2022. This gave us a baseline measure and to identify any areas we need to focus on immediately.</p>
+
+    <p>You can view more details of the results by clicking on a month.</p>
+
+    <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Summary results</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Survey period</th>
+                <th scope="col" class="govuk-table__header">Maturity score</th>
+                <th scope="col" class="govuk-table__header">Responses</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="/design-ops/design-maturity/september-2022">September 2022</a></th>
+                <td class="govuk-table__cell">
+                    <strong class="govuk-tag govuk-tag--yellow">3</strong>
+                </td>
+                <td class="govuk-table__cell">41</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

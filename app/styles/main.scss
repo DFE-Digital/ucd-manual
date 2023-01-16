@@ -443,3 +443,28 @@ pre {
   }
 
 }
+
+td, th{padding-left: 10px !important; padding-right: 10px !important; }
+
+  thead > tr {
+    background: $color_dfeuk-grey-4;
+  }
+
+
+
+.dfeuk-table--smaller {
+
+  thead > tr {
+    background: $color_dfeuk-grey-4;
+  }
+
+
+  th,
+  td {
+    @include dfeuk-typography-responsive(16);
+  }
+
+  caption {
+    @include dfeuk-typography-responsive(24);
+  }
+}
