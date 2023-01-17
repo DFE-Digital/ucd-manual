@@ -2,78 +2,73 @@
 {% set pageDescription = "The design board helps teams get advice and recommendations on design and accessibility problems and de-risk services in a safe environment." %}
 {% set pageSection = "Assurance" %}
 {% set dateUpdated = "January 2023" %}
-{% set backlog_issue_id = "" %}
+{% set backlog_issue_id = "35" %}
 
 {% extends "includes/app-layout.njk" %}
 {% block breadcrumb %}
   {% include "assurance/design-board/_breadcrumb.njk" %}
 {% endblock %}
 {% block bodyContent %}
-{% markdown %}
+  {% markdown %}
 
-<table class="govuk-table">
-        <thead class="govuk-table__head">
-          <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header"><img src="/assets/user-group.svg" alt style="width: 20px; margin-right: 10px">People</th>
-            <th scope="col" class="govuk-table__header"><img src="/assets/clock.svg" alt style="width: 20px; margin-right: 10px">Time</th>
-          </tr>
-        </thead>
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Up to 4 people</td>
-            <td class="govuk-table__cell">Up to 50 minutes</td>
-          </tr>
-        </tbody>
-      </table>
-   <h2 class="govuk-heading-l">Why use a design board</h2>
-    <p>You can make use of the accessibility and design board to:</p>
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header"><img src="/assets/user-group.svg" alt style="width: 20px; margin-right: 10px">People</th>
+        <th scope="col" class="govuk-table__header"><img src="/assets/clock.svg" alt style="width: 20px; margin-right: 10px">Time</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Up to 4 people</td>
+        <td class="govuk-table__cell">Up to 50 minutes</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 class="govuk-heading-l">Why use a design board</h2>
+  <p>You can make use of the accessibility and design board to:</p>
 
-    <ul class="govuk-list govuk-list--bullet">
-      <li>get advice on a problem to do with any element of design or accessibility</li>
-      <li>get support with escalating a problem or risk</li>
-      <li>ask for feedback or recommendations or decisions on your design</li>
-      <li>take part in a light-touch audit and understanding any accessibility issues you may have</li>
-      <li>get help in putting together a brief for getting an accessibility audit</li>
-    </ul>
-    
-     <h2 class="govuk-heading-l">Upcoming boards</h2>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>get advice on a problem to do with any element of design or accessibility</li>
+    <li>get support with escalating a problem or risk</li>
+    <li>ask for feedback or recommendations or decisions on your design</li>
+    <li>take part in a light-touch audit and understanding any accessibility issues you may have</li>
+    <li>get help in putting together a brief for getting an accessibility audit</li>
+  </ul>
 
-    <p>Design boards are being held on the following dates, other times may become available and be listed below, they will also be shared into the DfE <a href="https://ukgovernmentdfe.slack.com/archives/C7JG0399S" target="_blank">#Design slack channel</a>.</p>
+  <h2 class="govuk-heading-l">Upcoming boards</h2>
 
+  <p>Design boards are being held on the following dates, other times may become available and be listed below, they will also be shared into the DfE <a href="https://ukgovernmentdfe.slack.com/archives/C7JG0399S" target="_blank">#Design slack channel</a>.</p>
 
-<div class="govuk-inset-text">There are no scheduled design boards. Contact <a href="/design-ops/">design ops</a> if you want to have a design review.</div>
+  <div class="govuk-inset-text">There are no scheduled design boards. Contact <a href="/design-ops/">design ops</a> if you want to have a design review.</div>
 
-    <h2 class="govuk-heading-l">Prepare for a board</h2>
+  <h2 class="govuk-heading-l">Prepare for a board</h2>
 
-    <p>When you bring a problem to a board, come with the following questions:</p>
+  <p>When you bring a problem to a board, come with the following questions:</p>
 
-    <h3 class="govuk-heading-m">What is the problem</h3>
-    <p class="govuk-body">Be able to articulate what's wrong and the evidence, or, if you're stuck on a design, what are you trying to do.</p>
-    <p class="govuk-body">Bring sketches, prototypes. For example, HTML, Kit, Figma, Lucid.</p>
+  <h3 class="govuk-heading-m">What is the problem</h3>
+  <p class="govuk-body">Be able to articulate what's wrong and the evidence, or, if you're stuck on a design, what are you trying to do.</p>
+  <p class="govuk-body">Bring sketches, prototypes. For example, HTML, Kit, Figma, Lucid.</p>
 
-    <h3 class="govuk-heading-m">What outcome are you looking for</h3>
-    <p class="govuk-body">Do you want a solution, advice on what to do, recommendations for next steps, ideas on how you can achieve your outcome?</p>
+  <h3 class="govuk-heading-m">What outcome are you looking for</h3>
+  <p class="govuk-body">Do you want a solution, advice on what to do, recommendations for next steps, ideas on how you can achieve your outcome?</p>
 
-    <h3 class="govuk-heading-m">What have you tried already</h3>
-    <p class="govuk-body">Talk about what you've considered, looked at, researched - and why some of these haven't worked.</p>
+  <h3 class="govuk-heading-m">What have you tried already</h3>
+  <p class="govuk-body">Talk about what you've considered, looked at, researched - and why some of these haven't worked.</p>
 
-    <h3 class="govuk-heading-m">Timescales and constraints</h3>
-    <p class="govuk-body">What are your timescales for implementing a solution and what constraints are you working with? </p>
+  <h3 class="govuk-heading-m">Timescales and constraints</h3>
+  <p class="govuk-body">What are your timescales for implementing a solution and what constraints are you working with? </p>
 
-    <h3 class="govuk-heading-m">Pressures</h3>
-    <p class="govuk-body">The board is a safe space to talk. If you are being pressured into a particular solution or outcome you don't agree with, talk about this, where the pressure is coming from and why, this may be a problem with ways of working and how we expect people to behave in DfE.</p>
+  <h3 class="govuk-heading-m">Pressures</h3>
+  <p class="govuk-body">The board is a safe space to talk. If you are being pressured into a particular solution or outcome you don't agree with, talk about this, where the pressure is coming from and why, this may be a problem with ways of working and how we expect people to behave in DfE.</p>
 
-     <h2 class="govuk-heading-l">Board follow-up</h2>
+  <h2 class="govuk-heading-l">Board follow-up</h2>
 
-    <p>The board aims to work out next steps based on the outcome you're after and the problem.</p>
+  <p>The board aims to work out next steps based on the outcome you're after and the problem.</p>
 
-    <p>You'll get an email after the board, usually within a few hours, confirming what's been discussed and any actions.</p>
+  <p>You'll get an email after the board, usually within a few hours, confirming what's been discussed and any actions.</p>
 
-    <p>If you have raised any concerns or pressures, we will not include these in the follow-up email. This may be followed up separately if needed, or if there is a concern about ways of working.</p>
+  <p>If you have raised any concerns or pressures, we will not include these in the follow-up email. This may be followed up separately if needed, or if there is a concern about ways of working.</p>
 
-
-
-
-
-{% endmarkdown %}
+  {% endmarkdown %}
 {% endblock %}

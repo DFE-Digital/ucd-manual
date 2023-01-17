@@ -1,104 +1,115 @@
-
 {% set pageTitle = "Training" %}
 {% set pageDescription = "Accessibility training and resources." %}
 {% set pageSection = "Accessibility" %}
 {% set dateUpdated = "January 2023" %}
-{% set backlog_issue_id = "" %}
+{% set backlog_issue_id = "23" %}
 
 {% extends "includes/app-layout.njk" %}
-
 
 {% block breadcrumb %}
   {% include "accessibility/_breadcrumb.njk" %}
 {% endblock %}
 
-
 {% block bodyContent %}
 
-{% markdown %}
-<p>There are lots of free online training services around accessibility.</p>
+  {% markdown %}
+  <p>There are lots of free online training services around accessibility.</p>
 
-<table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header govuk-!-width-one-third">Course or material</th>
-      <th scope="col" class="govuk-table__header">Provider</th>
-      <th scope="col" class="govuk-table__header">Method</th>
-      <th scope="col" class="govuk-table__header">Cost</th>
-    </tr>
-  </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header"><a href="https://www.coursera.org/learn/accessibility" target="_blank" rel="noopener noreferrer">An introduction to accessibility and inclusive design</a></th>
-      <td class="govuk-table__cell">Coursera</td> 
-      <td class="govuk-table__cell">Online</td>
-      <td class="govuk-table__cell">Free</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header"><a href="https://www.edx.org/course/web-accessibility-introduction" target="_blank" rel="noopener noreferrer">Introduction to Web Accessibility</a></th>
-      <td class="govuk-table__cell">EDX</td> 
-      <td class="govuk-table__cell">Online</td>
-      <td class="govuk-table__cell">Free</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header"><a href="https://pressbooks.library.ryerson.ca/pwaa/" target="_blank" rel="noopener noreferrer">Professional Web Accessibility Auditing Made Easy</a></th>
-      <td class="govuk-table__cell">Ryerson University, Canada</td> 
-      <td class="govuk-table__cell">Online material</td>
-      <td class="govuk-table__cell">Free</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header"><a href="https://www.a11y-collective.com/product/masterclass-web-accessbility-the-business-case/" target="_blank" rel="noopener noreferrer">Web Accessibility; the business case</a></th>
-      <td class="govuk-table__cell">The A11y Collective</td> 
-      <td class="govuk-table__cell">Online</td>
-      <td class="govuk-table__cell">Free and paid for</td>
-    </tr>
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
       <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header"><a href="https://abilitynet.org.uk/training" target="_blank" rel="noopener noreferrer">AbilityNet - Various free and paid for courses for designers, developers, project managers, HR and Leads</a></th>
-      <td class="govuk-table__cell">AbilityNet</td> 
-      <td class="govuk-table__cell">Online</td>
-      <td class="govuk-table__cell">Free and paid for</td>
-    </tr>
-  </tbody>
-</table>
+        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Course or material</th>
+        <th scope="col" class="govuk-table__header">Provider</th>
+        <th scope="col" class="govuk-table__header">Method</th>
+        <th scope="col" class="govuk-table__header">Cost</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">
+          <a href="https://www.coursera.org/learn/accessibility" target="_blank" rel="noopener noreferrer">An introduction to accessibility and inclusive design</a>
+        </th>
+        <td class="govuk-table__cell">Coursera</td>
+        <td class="govuk-table__cell">Online</td>
+        <td class="govuk-table__cell">Free</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">
+          <a href="https://www.edx.org/course/web-accessibility-introduction" target="_blank" rel="noopener noreferrer">Introduction to Web Accessibility</a>
+        </th>
+        <td class="govuk-table__cell">EDX</td>
+        <td class="govuk-table__cell">Online</td>
+        <td class="govuk-table__cell">Free</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">
+          <a href="https://pressbooks.library.ryerson.ca/pwaa/" target="_blank" rel="noopener noreferrer">Professional Web Accessibility Auditing Made Easy</a>
+        </th>
+        <td class="govuk-table__cell">Ryerson University, Canada</td>
+        <td class="govuk-table__cell">Online material</td>
+        <td class="govuk-table__cell">Free</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">
+          <a href="https://www.a11y-collective.com/product/masterclass-web-accessbility-the-business-case/" target="_blank" rel="noopener noreferrer">Web Accessibility; the business case</a>
+        </th>
+        <td class="govuk-table__cell">The A11y Collective</td>
+        <td class="govuk-table__cell">Online</td>
+        <td class="govuk-table__cell">Free and paid for</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">
+          <a href="https://abilitynet.org.uk/training" target="_blank" rel="noopener noreferrer">AbilityNet - Various free and paid for courses for designers, developers, project managers, HR and Leads</a>
+        </th>
+        <td class="govuk-table__cell">AbilityNet</td>
+        <td class="govuk-table__cell">Online</td>
+        <td class="govuk-table__cell">Free and paid for</td>
+      </tr>
+    </tbody>
+  </table>
 
- <h2 class="govuk-heading-l">Communities and blogs</h2>
+  <h2 class="govuk-heading-l">Communities and blogs</h2>
 
-<p>There are accessibility communities across the public sector, as well as in DfE.</p>
+  <p>There are accessibility communities across the public sector, as well as in DfE.</p>
 
-<ul class="govuk-list govuk-list--bullet">
-<li><a href="https://ukgovernmentdfe.slack.com/archives/CADP1R39Q" target="_blank" rel="noopner noreferrer">Accessibility Slack community</a></li>
-<li><a href="https://ukgovernmentdigital.slack.com/archives/C28AJTE07" target="_blank" rel="noopner noreferrer">Cross-GOV Accessibility Slack community</a></li>
-<li><a href="https://accessibility.blog.gov.uk/" target="_blank" rel="noopner noreferrer">Accessibility in government blog</a></li>
-</ul>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>
+      <a href="https://ukgovernmentdfe.slack.com/archives/CADP1R39Q" target="_blank" rel="noopner noreferrer">Accessibility Slack community</a>
+    </li>
+    <li>
+      <a href="https://ukgovernmentdigital.slack.com/archives/C28AJTE07" target="_blank" rel="noopner noreferrer">Cross-GOV Accessibility Slack community</a>
+    </li>
+    <li>
+      <a href="https://accessibility.blog.gov.uk/" target="_blank" rel="noopner noreferrer">Accessibility in government blog</a>
+    </li>
+  </ul>
 
- <h2 class="govuk-heading-l">Empathy and experience labs</h2>
+  <h2 class="govuk-heading-l">Empathy and experience labs</h2>
 
-<p>Labs allow you to test your services using assisitvive technology or equipment which simulates disabilities or impairments.</p>
+  <p>Labs allow you to test your services using assisitvive technology or equipment which simulates disabilities or impairments.</p>
 
-<p>Labs should not be used as the only means to test your service meets accessibility requirements. </p>
+  <p>Labs should not be used as the only means to test your service meets accessibility requirements. </p>
 
- <h3 class="govuk-heading-m">Sheffield Experience lab</h3>
+  <h3 class="govuk-heading-m">Sheffield Experience lab</h3>
 
-<p>Located on the 4th floor of St. James's House, St Paul's Place, Sheffield.</p>
+  <p>Located on the 4th floor of St. James's House, St Paul's Place, Sheffield.</p>
 
-<p>The Lab contains:</p>
+  <p>The Lab contains:</p>
 
-<ul class="govuk-list govuk-list--bullet">
-<li>a Windows laptop with JAWS and NVDA screen readers, Dragon NaturallySpeaking (voice recognition and activation), ZoomText (screen magnification), Fusion (a hybrid of JAWS and Zoomtext), and Read and Write software.</li>
-<li>an iPhone (for using the VoiceOver screen reader, Seeing AI and other accessibility settings)</li>
-<li>a set of glasses that simulate different visual impairments</li>
-<li>a high strength magnifying glass</li>
-<li>sound defender headphones to simulate loss of hearing</li>
-</ul>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>a Windows laptop with JAWS and NVDA screen readers, Dragon NaturallySpeaking (voice recognition and activation), ZoomText (screen magnification), Fusion (a hybrid of JAWS and Zoomtext), and Read and Write software.</li>
+    <li>an iPhone (for using the VoiceOver screen reader, Seeing AI and other accessibility settings)</li>
+    <li>a set of glasses that simulate different visual impairments</li>
+    <li>a high strength magnifying glass</li>
+    <li>sound defender headphones to simulate loss of hearing</li>
+  </ul>
 
-<p>If you want to use the lab, <a href="mailto:accessibility.support@education.gov.uk">email the accessibility support team</a>.</p>
+  <p>If you want to use the lab, <a href="mailto:accessibility.support@education.gov.uk">email the accessibility support team</a>.</p>
 
- <h3 class="govuk-heading-m">GDS empathy lab</h3>
+  <h3 class="govuk-heading-m">GDS empathy lab</h3>
 
-<p>The GDS/CDDO empathy lab at White Chapel has closed.</p>
+  <p>The GDS/CDDO empathy lab at White Chapel has closed.</p>
 
-
-
-{% endmarkdown %}
+  {% endmarkdown %}
 
 {% endblock %}
