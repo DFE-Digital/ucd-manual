@@ -7,6 +7,7 @@ module.exports = (config) => (req, res, next) => { // eslint-disable-line arrow-
 
   // Adobe Analytics
   res.locals.adobeTrackingUrl = config.adobeTrackingUrl;
+  res.locals.githubrepo = config.githubrepo
 
   // Datalayer info
   res.locals.digitalData = digitalData(req);

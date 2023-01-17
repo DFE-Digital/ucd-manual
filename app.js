@@ -18,6 +18,7 @@ const fileHelper = require('./middleware/file-helper');
 const locals = require('./app/locals');
 const routing = require('./middleware/routing');
 const PageIndex = require('./middleware/page-index');
+const { getRandomValues } = require('crypto');
 
 const pageIndex = new PageIndex(config);
 
@@ -145,6 +146,7 @@ app.get('/suggestions', (req, res) => {
   res.set({ 'Content-Type': 'application/json' });
   res.send(JSON.stringify(slicedResults));
 });
+
 
 // Automatically route pages
 app.get(/^([^.]+)$/, (req, res, next) => {

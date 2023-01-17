@@ -12,7 +12,9 @@ module.exports = {
   // Port to run local development server on
   port: process.env.PORT || 3000,
 
-  mtype: 'design'
+  mtype: 'design',
+
+  githubrepo: 'https://github.com/DFE-Digital/ucd-manual'
   
 };
 
