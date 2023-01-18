@@ -468,3 +468,15 @@ td, th{padding-left: 10px !important; padding-right: 10px !important; }
     @include dfeuk-typography-responsive(24);
   }
 }
+
+.dfeuk-img-bordered{
+
+  border: 1px solid $dfeuk-border-color;
+  background: $color_dfeuk-grey-4;
+  padding: 15px;
+  margin: 25px 0px;
+
+  &.dfeuk-img-bordered--no-background-colour{
+    background: none;
+   }
+}
