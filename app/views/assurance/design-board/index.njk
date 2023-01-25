@@ -1,12 +1,13 @@
 {% set pageTitle = "Design board" %}
 {% set pageDescription = "The design board helps teams get advice and recommendations on design and accessibility problems and de-risk services in a safe environment." %}
-{% set pageSection = "Assurance" %}
+{% set pageSection = "Design" %}
 {% set dateUpdated = "January 2023" %}
 {% set backlog_issue_id = "35" %}
+{% set subSection = "Assurance" %}
 
 {% extends "includes/app-layout.njk" %}
 {% block breadcrumb %}
-  {% include "assurance/design-board/_breadcrumb.njk" %}
+  {% include "assurance/_breadcrumb.njk" %}
 {% endblock %}
 {% block bodyContent %}
   {% markdown %}

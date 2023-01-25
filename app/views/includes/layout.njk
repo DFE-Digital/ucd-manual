@@ -43,7 +43,7 @@
       {% if pageTitle %}{{ pageTitle }} - DfE User Centered Design{% else %}DfE User Centered Design{% endif %}
     </title>
 
-    <meta name="google-site-verification" content="78BmMoejRsC4auIyTs5JLkClgxvWYGDAYMIikFxTNPA" />
+    <meta name="google-site-verification" content="78BmMoejRsC4auIyTs5JLkClgxvWYGDAYMIikFxTNPA"/>
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -85,7 +85,28 @@
     </script>
 
     <a class="dfeuk-skip-link" href="#maincontent">Skip to main content</a>
-
+    <nav class="dfeuk-topnav" name="Other services navigation">
+      <div class="dfeuk-width-container">
+        <div class="flex-nav">
+          <ul class="flex-left">
+            <li>
+              <a href="/" class=" active" id="nav-public-and-players">UCD Manual</a>
+            </li>
+            <li>
+              <a href="https://apply-the-service-standard.education.gov.uk/" class="" target="_blank" id=""><span class="govuk-visually-hidden">Visit the </span>Standards Manual</a>
+            </li>
+            <li>
+              <a href="https://design-histories.education.gov.uk/" class="" target="_blank" id="">Design Histories</a>
+            </li>
+          </ul>
+          <ul class="flex-right">
+            <li>
+              <a href="https://forms.gle/WfLUr8K6SDVERwzbA" target="_blank" class="feedback-tab">Give us feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     {% include "includes/_header-prototype.njk" %}
 
     {% block breadcrumb %}

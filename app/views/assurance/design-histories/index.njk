@@ -1,10 +1,15 @@
 {% set pageTitle = "Design histories" %}
 {% set pageDescription = "Design histories help designers tell a story about changes to a service over time, using evidence, research and insight." %}
-{% set pageSection = "Assurance" %}
+{% set pageSection = "Design" %}
 {% set dateUpdated = "January 2023" %}
 {% set backlog_issue_id = "36" %}
+{% set subSection = "Assurance" %}
 
 {% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "assurance/_breadcrumb.njk" %}
+{% endblock %}
 
 {% block bodyContent %}
 

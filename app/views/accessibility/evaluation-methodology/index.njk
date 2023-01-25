@@ -1,0 +1,45 @@
+{% set pageTitle = "Evaluation methodology" %}
+{% set pageDescription = "Using the WCAG Evaluation Methodology (WCAG-EM) to define, scope and report accessibility compliance against WCAG Success Criteria." %}
+{% set pageSection = "Accessibility" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "52" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+    {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+    <p>The conformance of your service is required to be stated in <a href="/accessibility/accessibility-statements">accessibility statements</a> so it's important that it's correct.</p>
+
+    <p>WCAG-EM is for evaluating <a href="/accessibility/determine-conformance">conformance</a> of websites.</p>
+
+    <div class="govuk-inset-text">Accessibility assurance should not be left until carrying out an evaluation. Manual and automated ccessibility testing, testing with users with access needs and design reviews should be done throughout the service delivery lifecycle.</div>
+
+    <div class="dfeuk-timeline">
+        <ol>
+            <li>
+                <h2 class="govuk-heading-m">Scope of audit</h2>
+                <p>The name and areas of the website to be audited.</p>
+                <p>Scope also includes the WCAG version and conformance to be tested </p>
+            </li>
+            <li>
+                <h2 class="govuk-heading-m">Understand the website</h2>
+                
+            </li>
+            <li>
+                <h2 class="govuk-heading-m">Define the sample</h2>
+                </li>
+            <li>
+                <h2 class="govuk-heading-m">Audit the website</h2>
+               
+            </li>
+            <li>
+                <h2 class="govuk-heading-m">Report findings</h2>
+                  </li>
+        </ol>
+    </div>
+
+{% endblock %}

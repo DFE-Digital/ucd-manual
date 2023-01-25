@@ -1,17 +1,19 @@
-{% set pageTitle = "Design System" %}
+{% set pageTitle = "Design" %}
 {% set pageDescription = "Understand how to ensure consistent design users of Department for Education services." %}
-{% set pageSection = "Design System" %}
+{% set pageSection = "Design" %}
 {% set landingPage = true %}
 {% set dateUpdated = "January 2023" %}
 {% set backlog_issue_id = "24" %}
 
 {% extends "includes/app-layout.njk" %}
 
+
+{% block bodyContent %}
+
 <div class="app-index-navigation app-u-hide-desktop">
   {% include "includes/_side-nav.njk" %}
 </div>
 
-{% block bodyContent %}
 
   <div class="govuk-inset-text">
     <p><strong>Don't reinvent the wheel.</strong></p>

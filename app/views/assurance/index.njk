@@ -1,14 +1,27 @@
 {% set pageTitle = "Assurance" %}
 {% set pageDescription = "There are many ways to get feedback and measure good design, use our guides to learn more about design assurance." %}
-{% set pageSection = "Assurance" %}
+{% set pageSection = "Design" %}
 {% set dateUpdated = "January 2023" %}
 {% set backlog_issue_id = "34" %}
+{% set subSection = "Assurance" %}
 
 {% extends "includes/app-layout.njk" %}
 
+{% block breadcrumb %}
+  {% include "assurance/_breadcrumb.njk" %}
+{% endblock %}
 
 {% block bodyContent %}
 
-We're working on this page
+<p>Assurance is a key part of the design lifecycle and ensures we are desinging things the right way. Design can be assured in several ways:</p>
+
+<ul>
+    <li>at alpha and beta <a href="https://apply-the-service-standard.education.gov.uk/service-assessments/when-to-have-an-assessment.html#content">service assessments</a> (opens in new tab)</li>
+    <li><a href="/assurance/design-board/">design review board</a></li>
+    <li>design crits</li>
+    <li>show and tells</li>
+    <li>peer reviews / 2i</li>
+</ul>
+
 
 {% endblock %}
