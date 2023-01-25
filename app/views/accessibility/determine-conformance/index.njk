@@ -1,0 +1,74 @@
+{% set pageTitle = "Determine conformance" %}
+{% set pageDescription = "How to understand and determine the right level of accessibility conformance for services against WCAG Success Criteria." %}
+{% set pageSection = "Accessibility" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "51" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "accessibility/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<p>The conformance of your service is required to be stated in <a href="/accessibility/accessibility-statements">accessibility statements</a> so it's important that it's correct.</p>
+
+<div class="govuk-inset-text">To conform to WCAG 2.1 you must satisfy all the Success Criteria and that there are no violations of <a href="/accessibility/understanding-wcag/">WCAG Success Criteria</a></div>
+
+<p>If there is no content to which a success criterion applies, the success criterion is satisfied.</p>
+
+<p>For example, if a website has no audio or video content, then <a href="/accessibility/understanding-wcag/perceivable#1-2-x">Success Criteria 1.2x</a> do not apply and are therefore satisfied.</p>
+
+<p>WCAG 2.1 has three levels of conformance, Level A, AA and AAA. In DfE, we aim to meet Level AA of the Success Criteria which includes Level A.</p>
+
+<h2 class="govuk-heading-m" id="wcag-em">Evaluation methodology</h2>
+
+<p>You can use the <a href="/accessibility/evaluation-methodology">WCAG Evaluation Methodology (WCAG-EM)</a> to define, scope, and report accessibility conformance.</p>
+
+<h2 class="govuk-heading-m" id="conformance-requirements">5 conformance requirements</h2>
+
+<h3 class="govuk-heading-s">Requirement 1 - Conformance Level</h3>
+
+<p>You must meet the stated conformance level in full.</p>
+
+<h3 class="govuk-heading-s">Requirement 2 - Full pages</h3>
+
+<p>All conformance is for full web pages. You cannot acheive success if any part of a web page is excluded.</p>
+
+<p>For example: if a page contains an iframe of a PowerBI report and the PowerBI report is not accessible, you cannot say the page conforms if the content outside the iframe conforms.</p>
+
+<h3 class="govuk-heading-s">Requirement 3 - Complete process</h3>
+
+<p>When a web page is one of a series of pages presenting a process, for example, in a transactional service, all pages in the process must conform to the specified level or better.</p>
+
+<p>You cannot state conformance if any particular page in the process does not conform at the stated level or better.</p>
+
+<h3 class="govuk-heading-s">Requirement 4 - Only accessibility-supported ways of using technologies</h3>
+
+<p>This means providing content or functionality using web technology which can also work for assisitive technolgies. For example: using aria controls to support screen readers or voice control.</p>
+
+<p>Examples of web technologies include HTML, CSS, SVG, PNG, PDF, and JavaScript.</p>
+
+<p>If content is not accessible with assisitve technolgies turned off, then you cannot satisfy this requirement.</p>
+
+<h3 class="govuk-heading-s">Requirement 5 - Non-interference</h3>
+
+<p>If you use technolgy that is not accessibility supported or supported by assisitive technolgies, then the content must be presented in an accessibility-supported way. The non-accessible content must not interfere with the accessible content.</p>
+
+<p>An example of this could be presenting a chart or infographic which is not accessible, but having an accessible version of the same information in a table or plain content.</p>
+
+<p>In addition to this, the following criterion apply to all content on the page:</p>
+
+<ul class="govuk-list">
+  <li><a href="/accessibility/understanding-wcag/perceivable#1-4-2">1.4.2 - Audio Control</a></li>
+  <li><a href="/accessibility/understanding-wcag/operable#2-1-2">2.1.2 - No Keyboard Trap</a></li>
+  <li><a href="/accessibility/understanding-wcag/operable#2-2-2">2.2.2 - Pause, Stop, Hide</a></li>
+  <li><a href="/accessibility/understanding-wcag/operable#2-3-1">2.3.1 - Three Flashes or Below Threshold</a></li>
+</ul>
+
+<h2 class="govuk-heading-m">More detailed information</h2>
+
+<p>You can find <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html" target="_blank">more details about conformance on the W3C website</a>.</p>
+
+{% endblock %}

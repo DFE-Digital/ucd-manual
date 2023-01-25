@@ -380,13 +380,13 @@ tr {
     display: inline-block;
     margin-bottom: 0;
     padding-right: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     >a {
       margin-right: 0px;
       text-decoration: underline;
-      font-size: 1rem;
-      padding: 10px;
+      font-size: 1.3rem;
+      padding: 12px;
     }
   }
 }
@@ -479,4 +479,233 @@ td, th{padding-left: 10px !important; padding-right: 10px !important; }
   &.dfeuk-img-bordered--no-background-colour{
     background: none;
    }
+}
+
+
+.dfeuk-topnav{
+  background: $color_dfeuk-secondary-blue;
+}
+
+.dfeuk-topnav li a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-right {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.flex-left {
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+.dfeuk-topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 1.4em;
+}
+
+.dfeuk-topnav li a {
+  display: block;
+  text-align: center;
+  padding: 8px 12px 8px 12px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (min-width: 40.0625em) {
+  .dfeuk-topnav li a {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media print {
+  .dfeuk-topnav li a {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.dfeuk-topnav li {
+  float: left;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.dfeuk-topnav li a:focus {
+  background: #ffdd00;
+  color: #171b1f !important;
+}
+
+.dfeuk-topnav li a:hover {
+  background-color: $color_dfeuk-blue;
+  color: #ffffff;
+}
+
+.dfeuk-topnav li a:hover:focus {
+  color: #ffffff !important;
+}
+
+.dfeuk-topnav li a:hover {
+  color: #ffffff;
+}
+
+.dfeuk-topnav .active {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: $color_dfeuk-blue;
+}
+
+.dfeuk-topnav .active:focus {
+  color: #171b1f;
+}
+
+.dfeuk-topnav ul.right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+@media (max-width: 61.865em) {
+  .dfeuk-topnav {
+    display: none;
+  }
+}
+
+@media (min-width: 61.875em) {
+  .dfeuk-topnav {
+    display: block;
+  }
+}
+
+
+.dfeuk-timeline {
+  padding: calc(2 * 5px);
+}
+
+.dfeuk-timeline .action_needed {
+  border: 5px solid #354973;
+  padding: 5px 20px 5px 15px;
+  box-shadow: none;
+  margin-bottom: 30px;
+  display: block;
+  background: #fff;
+}
+
+.dfeuk-timeline .action_needed h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dfeuk-timeline .action_needed:before {
+  display: block;
+  width: calc(2 * 10px);
+  height: calc(2 * 10px);
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 4px solid #354973;
+  position: absolute;
+  z-index: 2;
+  left: -37px;
+  top: 5px;
+}
+
+.dfeuk-timeline h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.dfeuk-timeline ol {
+  list-style-type: none;
+  position: relative;
+  padding: 0 0 0 10px;
+  margin: 0 0 20px 0;
+}
+
+.dfeuk-timeline ol:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -4.5px;
+  bottom: 0;
+  border-left: 4px solid #b1b4b6;
+  height: 102%;
+}
+
+.dfeuk-timeline ol > li {
+  margin: 4px 0 20px 10px;
+  padding-left: 15px;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #DEE0E2;
+}
+
+.dfeuk-timeline ol > li:last-child {
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+
+.dfeuk-timeline ol > li .dfeuk-timeline-reference {
+  display: table;
+  position: relative;
+}
+
+.dfeuk-timeline ol > li .dfeuk-timeline-reference:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 20px;
+  top: 9px;
+  z-index: -1;
+}
+
+.dfeuk-timeline ol > li:before {
+  content: "";
+  display: block;
+  width: calc(2 * 10px);
+  height: calc(2 * 10px);
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 4px solid #b1b4b6;
+  position: absolute;
+  z-index: 2;
+  left: -32px;
+  top: 5px;
+}
+
+.dfeuk-timeline ol ul li a {
+  text-decoration: underline;
+}
+
+.dfeuk-timeline-details {
+  margin: 10px 0;
+}
+
+.dfeuk-timeline-details summary {
+  font-size: 0.9em;
+}
+
+.dfeuk-timeline-details span {
+  display: block;
+  font-size: 0.8em;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-left: 4px solid #005EA5;
 }

@@ -11,7 +11,6 @@
   }
 ] %}
 
-
 {% set accessibility_wcag = [
   {
     title: "Overview",
@@ -42,13 +41,20 @@
     title: "Audits",
     url: "/accessibility/audits"
   },{
+    title: "Evaluation methodology",
+    url: "/accessibility/evaluation-methodology"
+  },
+  {
+    title: "Determine conformance",
+    url: "/accessibility/determine-conformance/"
+  },{
     title: "Accessibility statements",
     url: "/accessibility/accessibility-statements"
   }
 ] %}
 
 {% set accessibility_tools = [
-   {
+  {
     title: "Training",
     url: "/accessibility/training"
   }
@@ -123,7 +129,7 @@
 
 {% set ds_getting_started = [
   {
-    title: "Design System",
+    title: "Design",
     url: "/design-system/"
   },
   {
@@ -185,6 +191,22 @@
   }
 ] %}
 
+{% set professions = [
+  {
+    title: "Professions",
+    url: "/professions/"
+  },{
+    title: "Content design",
+    url: "/professions/content-design"
+  },{
+    title: "Interaction design",
+    url: "/professions/interaction-design"
+  },{
+    title: "Service design",
+    url: "/professions/service-design"
+  }
+] %}
+
 {% set design_ops_contact = [
   {
     title: "Contact Design Ops",
@@ -199,9 +221,8 @@
 
 <nav class="app-side-nav">
 
-  {%- if pageSection == "Design System" and (subSection != "Styles" and subSection != "Patterns") %}
+  {%- if pageSection == "Design" and (subSection != "Styles" and subSection != "Patterns") %}
 
-    <h2 class="app-side-nav__heading">Overview</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in ds_getting_started %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -210,9 +231,18 @@
       {% endfor %}
     </ul>
 
-    <h2 class="app-side-nav__heading">Design</h2>
+    <h2 class="app-side-nav__heading">Design System</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in ds_design %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="app-side-nav__heading">Assurance</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in tl_assurance %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
@@ -231,7 +261,6 @@
   {% endif %}
 
   {%- if pageSection == "Accessibility" and subSection != "Understanding WCAG"%}
-    <h2 class="app-side-nav__heading">What everyone needs to know</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in accessibility %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -242,9 +271,11 @@
 
     <h2 class="app-side-nav__heading">Understanding WCAG <span class="dfeuk-u-visually-hidden">navigation</span></h2>
     <ul class="dfeuk-list app-side-nav__list">
-    {% for item in accessibility_wcag %}
-      <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
+      {% for item in accessibility_wcag %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
 
     <h2 class="app-side-nav__heading">Assurance</h2>
@@ -268,7 +299,6 @@
   {% endif %}
 
   {%- if pageSection == "Community" %}
- <h2 class="app-side-nav__heading">Community</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in communities %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -276,7 +306,7 @@
         </li>
       {% endfor %}
     </ul>
- {# <h2 class="app-side-nav__heading">Professions</h2>
+    {# <h2 class="app-side-nav__heading">Professions</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in professions %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -287,18 +317,7 @@
 
   {% endif %}
 
-    {%- if pageSection == "Assurance" %}
-    <ul class="dfeuk-list app-side-nav__list">
-      {% for item in tl_assurance %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-
-   {%- if pageSection == "Content guidelines" %}
+  {%- if pageSection == "Content guidelines" %}
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in content_guidelines %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -308,8 +327,17 @@
     </ul>
   {% endif %}
 
+  {%- if pageSection == "Professions" %}
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in professions %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
   {%- if pageSection == "Design Ops" %}
-    <h2 class="app-side-nav__heading">About us</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in design_ops %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -329,7 +357,7 @@
 
   {% endif %}
 
-    {%- if subSection == "Patterns" %}
+  {%- if subSection == "Patterns" %}
     {{ backLink({
       "href": "/design-system",
       "text": "Design system",
@@ -337,26 +365,12 @@
     }) }}
     <h2 class="app-side-nav__heading">Patterns <span class="dfeuk-u-visually-hidden">navigation</span></h2>
     <ul class="dfeuk-list app-side-nav__list">
-    {% for item in patterns %}
-      <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
+      {% for item in patterns %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
   {% endif %}
 
-    {# {%- if subSection == "Understanding WCAG" %}
-    {{ backLink({
-      "href": "/accessibility/",
-      "text": "Accessibility",
-      "classes": "app-u-hide-mobile app-side-nav__back dfeuk-u-margin-bottom-4"
-    }) }}
-    <h2 class="app-side-nav__heading">Understanding WCAG <span class="dfeuk-u-visually-hidden">navigation</span></h2>
-    <ul class="dfeuk-list app-side-nav__list">
-    {% for item in accessibility_wcag %}
-      <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}"><a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-    </ul>
-  {% endif %} #}
-
-
 </nav>
-
