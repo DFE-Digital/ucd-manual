@@ -12,33 +12,60 @@
 
 {% block bodyContent %}
 
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
     <p>The conformance of your service is required to be stated in <a href="/accessibility/accessibility-statements">accessibility statements</a> so it's important that it's correct.</p>
 
     <p>WCAG-EM is for evaluating <a href="/accessibility/determine-conformance">conformance</a> of websites.</p>
 
-    <div class="govuk-inset-text">Accessibility assurance should not be left until carrying out an evaluation. Manual and automated ccessibility testing, testing with users with access needs and design reviews should be done throughout the service delivery lifecycle.</div>
+    <div class="govuk-inset-text">Design Ops are working on a service to complete conformance assurance reports.</div>
+
+     <h2 class="govuk-heading-m">Methodology</h2>
 
     <div class="dfeuk-timeline">
         <ol>
             <li>
-                <h2 class="govuk-heading-m">Scope of audit</h2>
+                <h3 class="govuk-heading-m">Scope of audit</h3>
                 <p>The name and areas of the website to be audited.</p>
                 <p>Scope also includes the WCAG version and conformance to be tested </p>
             </li>
             <li>
-                <h2 class="govuk-heading-m">Understand the website</h2>
-                
+                <h3 class="govuk-heading-m">Understand the website</h3>
+                <p>Review pages in the website and identify any web technologies to test. Including:</p>
+                <ul class="govuk-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>ARIA</li>
+                    <li>JavaScript</li>
+                    <li>SVG</li>
+                    <li>PDF</li>
+                </ul>
             </li>
             <li>
-                <h2 class="govuk-heading-m">Define the sample</h2>
-                </li>
-            <li>
-                <h2 class="govuk-heading-m">Audit the website</h2>
-               
+                <h3 class="govuk-heading-m">Define the sample</h3>
+                <p>What pages of the user journey are to be tested based on the scope.</p>
+                <p>Select a random sample of 5 pages that are not part of the main journey to test.</p>
             </li>
             <li>
-                <h2 class="govuk-heading-m">Report findings</h2>
-                  </li>
+                <h3 class="govuk-heading-m">Audit the website</h3>
+                <p>Audit each page against each of the success criteria for the selected WCAG version and conformance level.</p>
+                <p>Record findings for pages tested/</p>
+            </li>
+            <li>
+                <h3 class="govuk-heading-m">Report findings</h3>
+                <p>Generate and publish report identifying risks and opportunities.</p>
+            </li>
         </ol>
     </div>
 

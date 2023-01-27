@@ -14,6 +14,19 @@
 
 {% block bodyContent %}
 
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
 {% markdown %}
 
 <div class="dfeuk-warning-callout">
@@ -25,6 +38,8 @@
   </h3>
   <p>We have created guidance on understanding and applying the <a href="/accessibility/understanding-wcag/draft-2-2">9 new criteria in WCAG 2.2</a>.</p>
 </div>
+
+    <div class="govuk-inset-text">Accessibility assurance should not be left until carrying out an evaluation. Manual and automated ccessibility testing, testing with users with access needs and design reviews should be done throughout the service delivery lifecycle.</div>
 
 <p>We are <a href='/accessibility/standards'>legally required</a> to ensure all content available through a browser (websites, services, and apps) are accessible, regardless of whether they are for staff internal use, or external users.</p>
 

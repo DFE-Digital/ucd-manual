@@ -13,6 +13,19 @@
 
 {% block bodyContent %}
 
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
   <h2 id="before-you-start">Before you start</h2>
   <p>To make prototypes you will need to install the <a href="https://dfeuk-prototype-kit.azurewebsites.net/docs">NHS.UK prototype kit</a> which has been built to work with the service manual.</p>
 

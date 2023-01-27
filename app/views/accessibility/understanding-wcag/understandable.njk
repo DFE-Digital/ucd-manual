@@ -14,6 +14,19 @@
 {% endblock %}
 
 {% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
   <h2 class="govuk-heading-l" id="summary">Summary of this set of standards</h2>
        <p>Users must be able to understand the content.</p>
         <p>Content must be understandable by different types of users, must appear and behave in predictable ways and users should be helped to correct mistakes.</p>

@@ -8,6 +8,19 @@
 
 {% block bodyContent %}
 
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
     <p>We have regular profession-specific and all-design profession community meetups each month. We've chosen this schedule to allow people from other communities to join meetups and avoid clashes.</p>
 
     <table class="govuk-table">

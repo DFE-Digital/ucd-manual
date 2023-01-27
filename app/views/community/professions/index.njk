@@ -14,6 +14,19 @@
 
 {% block bodyContent %}
 
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
 <p>The skills and capability framework for design professions in DfE is based on the <a href="https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework#user-centred-design-job-family" target="_blank" rel="noopener noreferrer">GOV.UK Digital, Data and Technology Profession Capability Framework</a>.</p>
 <p>We have refined the detail of each skill area, to the way we work, and the expectations of the role in DfE.</p>   
 

@@ -14,6 +14,19 @@
 {% endblock %}
 
 {% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
  <h2 class="govuk-heading-l" id="summary">Summary of this set of standards</h2>
         <p>All interactive components and page navigations must be operable via different input modalities.</p>
         <p>Users should be able to easily navigate around the site and have enough time to interact with the content without discomfort or physical reactions.</p>

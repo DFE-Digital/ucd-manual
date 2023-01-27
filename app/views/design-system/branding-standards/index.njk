@@ -12,11 +12,20 @@
 
 {% block bodyContent %}
 
-<div class="app-index-navigation app-u-hide-desktop">
-    {% include "includes/_side-nav.njk" %}
+  <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+    <details class="dfeuk-details dfeuk-expander">
+      <summary class="dfeuk-details__summary">
+        <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+      </summary>
+      <div class="dfeuk-details__text  govuk-!-margin-left-5">
+        {% include "includes/_side-nav.njk" %}
+      </div>
+    </details>
   </div>
 
-    <h2 class="govuk-heading-m">When to use GOV.UK branding</h2>
+  <h2 class="govuk-heading-m">When to use GOV.UK branding</h2>
 
   <p>Use GOV.UK branding and styles if your service is: </p>
 
@@ -25,28 +34,22 @@
     <li>provided on gov.uk or service.gov.uk</li>
   </ul>
 
-  <p><a href="https://design-system.service.gov.uk/styles/page-template/" target="_blank">GOV.UK branding and styles</a> are default in the prototype kit and when you use GOV.UK frontend design system</p>
+  <p>
+    <a href="https://design-system.service.gov.uk/styles/page-template/" target="_blank">GOV.UK branding and styles</a> are default in the prototype kit and when you use GOV.UK frontend design system</p>
 
   <h2 class="govuk-heading-m">When to use DfE branding</h2>
 
   <p>Use DfE branding and styles if your service: </p>
 
   <ul class="govuk-list govuk-list--bullet">
-       <li>is provided on the education.gov.uk domain (internal or external users)</li>
-       <li>an internal service such as an admin or caseworking service</li>
-       <li>falls outside the <a href="https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition" target="_blank">GOV.UK Proposition</a> criteria </li>
-    </ul>
+    <li>is provided on the education.gov.uk domain (internal or external users)</li>
+    <li>an internal service such as an admin or caseworking service</li>
+    <li>falls outside the <a href="https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition" target="_blank">GOV.UK Proposition</a> criteria </li>
+  </ul>
 
-{{ actionLink({
+  {{ actionLink({
   "text": "Detailed guidance for using and applying DfE branding",
   "href": "/design-system/branding-standards/dfe-branding"
 }) }}
 
-
 {% endblock %}
-
-
-
-
-
-

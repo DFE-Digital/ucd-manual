@@ -12,6 +12,19 @@
 
 {% block bodyContent %}
 
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
 <p>The conformance of your service is required to be stated in <a href="/accessibility/accessibility-statements">accessibility statements</a> so it's important that it's correct.</p>
 
 <div class="govuk-inset-text">To conform to WCAG 2.1 you must satisfy all the Success Criteria and that there are no violations of <a href="/accessibility/understanding-wcag/">WCAG Success Criteria</a></div>

@@ -11,6 +11,19 @@
 {% endblock %}
 
 {% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
   <h2 class="govuk-heading-l">Understanding who your users are</h2>
   <p>These tools and resources can help you uncover problems in your services and websites. You should use these tools to understand what problems or barriers you may be introducing to your services. </p>
 

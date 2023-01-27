@@ -13,6 +13,19 @@
 
 {% block bodyContent %}
 
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
   <h2 id="include-dfeuk-frontend-in-your-project">Include the NHS.UK frontend library in your project</h2>
   <p>To start using the NHS website styles, components and patterns contained here, you’ll need to include the NHS.UK frontend library in your project.</p>
   <p>There are 2 ways to do this. You can either install it using node package manager (npm) or include the compiled files in your application.</p>
