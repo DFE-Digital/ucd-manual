@@ -12,38 +12,81 @@
 
 {% block bodyContent %}
 
-<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
-   <details class="dfeuk-details dfeuk-expander">
+    <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+        <details class="dfeuk-details dfeuk-expander">
             <summary class="dfeuk-details__summary">
                 <span class="dfeuk-details__summary-text ">
         Section menu
       </span>
             </summary>
             <div class="dfeuk-details__text  govuk-!-margin-left-5">
-                 {% include "includes/_side-nav.njk" %}
+                {% include "includes/_side-nav.njk" %}
             </div>
         </details>
-</div>
+    </div>
 
-    <p>The conformance of your service is required to be stated in <a href="/accessibility/accessibility-statements">accessibility statements</a> so it's important that it's correct.</p>
+    <p>The conformance of your service is required to be stated in <a href="/accessibility/accessibility-statements">accessibility statements</a> so it's important that it's correct. You should use the WCAG evaluation methodology when auditing websites and services.</p>
 
-    <p>WCAG-EM is for evaluating <a href="/accessibility/determine-conformance">conformance</a> of websites.</p>
+    <section class="dfeuk-c-attachment govuk-!-display-none-print" id="audit-template">
+        <div class="dfeuk-c-attachment__thumbnail">
+            <a class="govuk-link" target="_blank" tabindex="-1" aria-hidden="true" href="https://docs.google.com/document/d/1kk-pvLIqwMAvpgXdljE9PRuef3_9ZSX9rSCthebWckM/copy">
+                <svg class="dfeuk-c-attachment__thumbnail-image" version="1.1" viewBox="0 0 99 140" width="99" height="140" aria-hidden="true">
+                    <path d="M12 12h75v27H12zM12 59h9v9h-9zM12 77h9v9h-9zM12 95h9v9h-9zM12 113h9v9h-9zM30 59h57v9H30zM30 77h39v9H30zM30 95h57v9H30zM30 113h48v9H30z" stroke-width="0"></path>
+                </svg>
 
-    <div class="govuk-inset-text">Design Ops are working on a service to complete conformance assurance reports.</div>
+            </a>
+        </div>
+        <div class="dfeuk-c-attachment__details">
+            <h2 class="dfeuk-c-attachment__title">
+                <a class="govuk-link dfeuk-c-attachment__link" target="_blank" href="https://docs.google.com/document/d/1kk-pvLIqwMAvpgXdljE9PRuef3_9ZSX9rSCthebWckM/copy">WCAG-EM autit and reporting template</a>
+            </h2>
 
-     <h2 class="govuk-heading-m">Methodology</h2>
+            <p class="dfeuk-c-attachment__metadata">
+                <span class="dfeuk-c-attachment__attribute">
+                       Google Document
+                    </span></p>
+        </div>
+    </section>
+
+    <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-margin-bottom-3">Template change history</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Version</th>
+                <th scope="col" class="govuk-table__header">Date published</th>
+                <th scope="col" class="govuk-table__header">Comments</th>
+                <th scope="col" class="govuk-table__header">Template</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">1.0</th>
+                <td class="govuk-table__cell">27 January 2023</td>
+                <td class="govuk-table__cell">Initital version</td>
+                <td class="govuk-table__cell">
+                    <a href="https://docs.google.com/document/d/1kk-pvLIqwMAvpgXdljE9PRuef3_9ZSX9rSCthebWckM/copy" target="_blank">Google Doc</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="govuk-heading-m">Evaluation methodology</h2>
 
     <div class="dfeuk-timeline">
         <ol>
             <li>
                 <h3 class="govuk-heading-m">Scope of audit</h3>
-                <p>The name and areas of the website to be audited.</p>
-                <p>Scope also includes the WCAG version and conformance to be tested </p>
+                <p>The name and areas of the website to be audited, for example:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>all pages in the user journey to apply for a bursary</li>
+                    <li>all pages under <i>service-name.education.gov.uk</i>.</li>
+                </ul>
+                <p>Scope also includes the WCAG version and conformance to be tested.</p>
             </li>
             <li>
                 <h3 class="govuk-heading-m">Understand the website</h3>
                 <p>Review pages in the website and identify any web technologies to test. Including:</p>
-                <ul class="govuk-list">
+                <ul class="govuk-list govuk-list--bullet">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>ARIA</li>
@@ -54,19 +97,23 @@
             </li>
             <li>
                 <h3 class="govuk-heading-m">Define the sample</h3>
-                <p>What pages of the user journey are to be tested based on the scope.</p>
-                <p>Select a random sample of 5 pages that are not part of the main journey to test.</p>
+                <p>List all the pages to be tested based on the scope.</p>
+                <p>In addition to the pages to be tested, also select a random sample of 5 pages that are not part of the main journey to test.</p>
             </li>
             <li>
                 <h3 class="govuk-heading-m">Audit the website</h3>
                 <p>Audit each page against each of the success criteria for the selected WCAG version and conformance level.</p>
-                <p>Record findings for pages tested/</p>
+                <p>Record findings for pages tested</p>
             </li>
             <li>
                 <h3 class="govuk-heading-m">Report findings</h3>
                 <p>Generate and publish report identifying risks and opportunities.</p>
+                <p>Use the <a href="#audit-template">DfE audit report template</a> to conform to reporting standards.</p>
             </li>
         </ol>
+
     </div>
+
+   
 
 {% endblock %}
