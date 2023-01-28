@@ -14,7 +14,7 @@ assignees: ''
   - the discussion space on GitHub: https://github.com/orgs/DFE-Digital/projects/22/views/3
   - an existing Github issue: https://github.com/DFE-Digital/ucd-manual/issues
 
-  If you are proposing a new component or pattern, please follow the instructions here: https://design-system.service.gov.uk/community/propose-a-component-or-pattern/
+  If you are proposing a new component or pattern, please follow the instructions here: https://design.education.gov.uk/design-system/contribute/
 -->
 
 ## Context
