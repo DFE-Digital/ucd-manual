@@ -1,5 +1,5 @@
 {% set pageTitle = "Design" %}
-{% set pageDescription = "Understand how to ensure consistent design users of Department for Education services." %}
+{% set pageDescription = "Understand how to ensure we design consistent services for Department for Education users." %}
 {% set pageSection = "Design" %}
 {% set landingPage = true %}
 {% set dateUpdated = "January 2023" %}
@@ -7,50 +7,45 @@
 
 {% extends "includes/app-layout.njk" %}
 
-
 {% block bodyContent %}
 
-<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
-   <details class="dfeuk-details dfeuk-expander">
-            <summary class="dfeuk-details__summary">
-                <span class="dfeuk-details__summary-text ">
+  <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+    <details class="dfeuk-details dfeuk-expander">
+      <summary class="dfeuk-details__summary">
+        <span class="dfeuk-details__summary-text ">
         Section menu
       </span>
-            </summary>
-            <div class="dfeuk-details__text  govuk-!-margin-left-5">
-                 {% include "includes/_side-nav.njk" %}
-            </div>
-        </details>
-</div>
-
-
-
-  <div class="govuk-inset-text">
-    <p><strong>Don't reinvent the wheel.</strong></p>
-    <p>Iterate existing components and styles based on user needs and evidence, and share.</p>
+      </summary>
+      <div class="dfeuk-details__text  govuk-!-margin-left-5">
+        {% include "includes/_side-nav.njk" %}
+      </div>
+    </details>
   </div>
 
-  <h2 class="govuk-heading-m" id="start-with-govuk-design-system">Start with the GOV.UK Design System</h2>
+  <h2 class="govuk-heading-m" id="start-with-govuk-design-system">GOV.UK Design System first</h2>
 
-  <p>You must use the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> as a starting point for all DfE digital services.</p>
+  <p>If you are building a digital service, you must use the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> as a starting point for all DfE digital services.</p>
 
   <p>If something isn't in the Design System, check the <a href="https://github.com/orgs/alphagov/projects/43/views/1" target="_blank" rel="noopener noreferrer">Design System backlog</a> to see what others have done before.</p>
 
   <p>Before starting to build anything custom or new, ask what others have done in the following Slack channels:</p>
 
   <ul class="govuk-list">
-    <li><a href="https://ukgovernmentdfe.slack.com/archives/C7JG0399S" target="_blank" rel="noopener noreferrer">#design channel in DfE Slack</a></li>
-    <li><a href="https://ukgovernmentdigital.slack.com/archives/C062GAGLW" target="_blank" rel="noopener noreferrer">#design channel in cross-government Slack</a></li>
+    <li>
+      <a href="https://ukgovernmentdfe.slack.com/archives/C7JG0399S" target="_blank" rel="noopener noreferrer">#design channel in DfE Slack</a>
+    </li>
+    <li>
+      <a href="https://ukgovernmentdigital.slack.com/archives/C062GAGLW" target="_blank" rel="noopener noreferrer">#design channel in cross-government Slack</a>
+    </li>
   </ul>
 
   <p>You can also <a href="/design-ops/">contact the design ops team</a> for advice and guidance.</p>
-    
 
   <h3 class="govuk-heading-s" id="contributing-back-to-the-govuk-design-system">Contributing back to the GOV.UK Design System</h3>
 
   <p>If you create or amend an existing GOV.UK frontend component, you must also <a href="https://design-system.service.gov.uk/community/contribution-criteria/" target="_blank">contribute</a> the change back, along with evidence and research to support the change. </p>
 
-<h2 class="govuk-heading-m" id="branding">Branding your service</h2>
-<p>If you are designing a service which isn't intended to be provided on GOV.UK or service.gov.uk domains, you should follow the <a href="/design-system/branding-standards/">branding standards</a> guidance.</p>
+  <h2 class="govuk-heading-m" id="branding">Branding your service</h2>
+  <p>If you are designing a service which isn't intended to be provided on GOV.UK or service.gov.uk domains, you should follow the <a href="/design-system/branding-standards/">branding standards</a> guidance.</p>
 
 {% endblock %}
