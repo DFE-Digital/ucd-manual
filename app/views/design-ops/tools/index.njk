@@ -1,0 +1,276 @@
+{% set pageTitle = "Tools" %}
+{% set pageDescription = "Tools that can and cannot be used in the Department for Education." %}
+{% set pageSection = "Design Ops" %}
+{% set dateUpdated = "February 2023" %}
+{% set backlog_issue_id = "63" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+    {% include "design-ops/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+    <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+        <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+    </div>
+
+    <h2 class="govuk-heading-m">Tools we use</h2>
+
+    <p>These tools are approved for use. Find out how to <a href="#request-access">request access</a> to these tools if you need it.</p>
+
+    <h3 class="govuk-heading-s">Design and development tools</h3>
+
+    <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Azure
+    </dt>
+            <dd class="govuk-summary-list__value">
+    Cloud platform hosting. See <a href="https://technical-guidance.education.gov.uk/infrastructure/hosting/azure-cip/" target="_blank">additional guidance for using Azure</a>.
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Azure Data Studio
+    </dt>
+            <dd class="govuk-summary-list__value">
+     IDE for querying and managing databases
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" id="figma">
+      Figma and FigJam
+    </dt>
+            <dd class="govuk-summary-list__value">
+      Prototyping, workshop boards, diagrams, and wireframing
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      GitHub
+    </dt>
+            <dd class="govuk-summary-list__value">
+     Source code hosting. See <a href="/design-system/prototype-kit/github-and-heroku">additional guidance for using GitHub</a>.
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" id="hemingway">
+      Hemingway
+    </dt>
+            <dd class="govuk-summary-list__value">
+     Service for checking the quality of content and readability
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Heroku
+    </dt>
+            <dd class="govuk-summary-list__value">
+     Prototype hosting. See <a href="/design-system/prototype-kit/github-and-heroku">additional guidance for using Heroku</a>.
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      logit.io
+    </dt>
+            <dd class="govuk-summary-list__value">
+     Monitoring and logging for websites and applications
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Smaply
+    </dt>
+            <dd class="govuk-summary-list__value">
+    Digital service for user journey mapping and service blueprints
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      VS Code
+    </dt>
+            <dd class="govuk-summary-list__value">
+     IDE for code development
+    </dd>
+        </div>
+    </dl>
+
+    <h3 class="govuk-heading-s">Work and task tracking</h3>
+
+    <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Confluence
+    </dt>
+            <dd class="govuk-summary-list__value">
+    Cloud service for documentation alongside Jira
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Jira
+    </dt>
+            <dd class="govuk-summary-list__value">
+    Cloud service for managing projects and tracking work
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Trello
+    </dt>
+            <dd class="govuk-summary-list__value">
+    Task and work management
+    </dd>
+        </div>
+    </dl>
+
+    <h3 class="govuk-heading-s">Collaboration and communication</h3>
+
+    <dl class="govuk-summary-list">
+
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Figjam
+    </dt>
+            <dd class="govuk-summary-list__value">
+      Jam board included as part of Figma licence
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" id="google">
+      G Suite
+    </dt>
+            <dd class="govuk-summary-list__value">
+     Google account with docs, drive and additional Google tools
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" id="lucid">
+      Lucidspark and Lucidchart
+    </dt>
+            <dd class="govuk-summary-list__value">
+      Online collaboartion, whitboarding, and diagramming
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" id="microsoft">
+      Microsoft 365 Suite
+    </dt>
+            <dd class="govuk-summary-list__value">
+      Full suite of Microsoft products and services
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Slack
+    </dt>
+            <dd class="govuk-summary-list__value">
+    Messaging and discussion channels
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Slido
+    </dt>
+            <dd class="govuk-summary-list__value">
+    Tool for capturing questions in online events
+    </dd>
+        </div>
+
+    </dl>
+
+    <h3 class="govuk-heading-s">Research activity</h3>
+
+    <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Calendly
+    </dt>
+            <dd class="govuk-summary-list__value">
+   Online calendar
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Lookback
+    </dt>
+            <dd class="govuk-summary-list__value">
+   User research session recoding
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Loop11
+    </dt>
+            <dd class="govuk-summary-list__value">
+   Usability testing service
+    </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Optimal Workshop
+    </dt>
+            <dd class="govuk-summary-list__value">
+   Online card sorting
+    </dd>
+        </div>
+    </dl>
+
+    <h2 class="govuk-heading-m">Tools that cannot be used</h2>
+
+    <p>These tools have not been approved in the Department for Education and must not be used.</p>
+
+    <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Grammarly
+    </dt>
+            <dd class="govuk-summary-list__value">
+   Content readability service. Use <a href="#hemingway">Hemingway</a>
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Miro
+    </dt>
+            <dd class="govuk-summary-list__value">
+   Online whitboard and collaboration. Use <a href="#lucid">Lucidspark</a> or <a href="#figma">FigJam</a>
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Mural
+    </dt>
+            <dd class="govuk-summary-list__value">
+  Prototyping and graphics. Use <a href="#figma">Figma</a>
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+      Zoom
+    </dt>
+            <dd class="govuk-summary-list__value">
+   Online  meetings. Use <a href="#microsoft">Microsoft Teams</a> or <a href="#google">Google Meet</a>
+            </dd>
+        </div>
+    </dl>
+
+    <p>Requests to use these services will not be considered.</p>
+
+    <h2 class="govuk-heading-m" id="request-access">Requesting digital tools access</h2>
+
+    <p>You can request access to tools and enquire about new tools on the <a href="https://sites.google.com/digital.education.gov.uk/digitaltools/tools?authuser=0" target="_blank">Digital Tools Support page (internal only)</a>
+    </p>
+
+{% endblock %}

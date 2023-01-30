@@ -179,6 +179,13 @@
   }
 ] %}
 
+{% set design_ops_g = [
+  {
+    title: "Tools",
+    url: "/design-ops/tools"
+  }
+] %}
+
 {% set content_guidelines = [
   {
     title: "Content guidelines",
@@ -344,6 +351,17 @@
   {%- if pageSection == "Design Ops" %}
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in design_ops %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    
+
+    <h2 class="app-side-nav__heading">Guidance for people working in DfE</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in design_ops_g %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
