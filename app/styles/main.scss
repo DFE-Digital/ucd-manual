@@ -143,6 +143,13 @@ h1+.dfeuk-lede-text {
   }
 }
 
+.dfeuk-header__navigation-link {
+  @include mq($until: desktop) {
+ 
+  color: #ffffff !important;
+  }
+}
+
 // Custom style for home page hero card
 .app-card--transparent {
   background: transparent;
@@ -885,3 +892,4 @@ td, th{padding-left: 10px !important; padding-right: 10px !important; }
   font-size:80px;
   font-size:5rem
 }
+
