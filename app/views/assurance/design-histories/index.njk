@@ -1,75 +1,57 @@
 {% set pageTitle = "Design histories" %}
 {% set pageDescription = "Design histories help designers tell a story about changes to a service over time, using evidence, research and insight." %}
 {% set pageSection = "Design" %}
-{% set dateUpdated = "January 2023" %}
+{% set dateUpdated = "February 2023 by the Design Ops team" %}
 {% set backlog_issue_id = "36" %}
 {% set subSection = "Assurance" %}
 
 {% extends "includes/app-layout.njk" %}
 
 {% block breadcrumb %}
-  {% include "assurance/_breadcrumb.njk" %}
+    {% include "assurance/_breadcrumb.njk" %}
 {% endblock %}
 
 {% block bodyContent %}
 
-<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
-   <details class="dfeuk-details dfeuk-expander">
+    <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+        <details class="dfeuk-details dfeuk-expander">
             <summary class="dfeuk-details__summary">
                 <span class="dfeuk-details__summary-text ">
         Section menu
       </span>
             </summary>
             <div class="dfeuk-details__text  govuk-!-margin-left-5">
-                 {% include "includes/_side-nav.njk" %}
+                {% include "includes/_side-nav.njk" %}
             </div>
         </details>
-</div>
+    </div>
 
-    <p class="govuk-body">There are multiple ways you can document the changes to your service over time.</p>
+    <p class="govuk-body">Design histories can be used to:</p>
 
-    <h2 class="govuk-heading-m">Design Ops supported content management system</h2>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>demonstrate how you have iterated a service from user research activity</li>
+        <li>share decisions and changes with new people joining the team</li>
+        <li>help others across DfE and across other government departments identify solutions to similar problems</li>
+        <li>support showing your work at peer reviews and service assessments</li>
+    </ul>
 
-    <p>Design Ops have built, and also manage, a design history service using a CMS. You can find design histories from across DfE in one service.</p>
-    <p>
-        <a href="https://design-histories.education.gov.uk/get-a-design-history" target="_blank">Details of how to get access</a>.</p>
+    <p class="govuk-body">In DfE, we have built a design history service, which uses an open-source CMS and is supported by the <a href="/design-ops/">Design Ops team</a>.</p>
+
     <p>You can reference your team or service design history directly. These are branded consistently in line with guidelines and you can make use of any GOV.UK Design System components.</p>
+
+    <p>The DfE design history service is free. There are no costs associated with using this service, and you don't need to set up hosting or deploy changes manually.</p>
 
     {{ actionLink({
   "text": "Design history service",
   "href": "https://design-histories.education.gov.uk/"
 }) }}
 
-    <h2 class="govuk-heading-m govuk-!-margin-top-9">Cross-government design history project</h2>
+    <h2 class="govuk-heading-m govuk-!-margin-top-9 govuk-!-margin-bottom-0">Cross-government design history project</h2>
 
-    <p>You'll need to run this on Heroku or Netlify and you may incur costs for hosting these.</p>
-    <p>You can set this up from the GitHub repository: <a href="https://design-history.herokuapp.com/set-up-a-design-history/" target="_blank" rel="noopener noreferrer">https://design-history.herokuapp.com/set-up-a-design-history/</a>.</p>
-    <p>Visit the the <a href="https://github.com/x-govuk/govuk-design-history" target="_blank" rel="noopener noreferrer">govuk-design-history repository</a> on GitHub, and click 'Use this template' and follow the instructions to get started.</p>
+    <div class="govuk-inset-text">We do not recommend using this in DfE</div>
 
-    <h3 class="govuk-heading-s">Published design histories using the cross-government option</h3>
+    <p>There is a x-gov design history service, but we do not recommend using it in DfE. This is because it requires additional support if you are unfamiliar with GitHub and using Heroku or Netlify.</p>
+    <p>Additionally, you may also incurr costs for hosting, </p>
+    <p>You can find out more about this project in the <a href="https://x-govuk.github.io/govuk-design-history/" target="_blank" rel="noopener noreferrer">x-gov design history repository</a>
 
-    <ul class="govuk-list govuk-list--spaced">
-        <li>
-            <a href="https://tra-digital-design-history.herokuapp.com/" target="_blank">Teaching Regulation Agency (TRA)</a>
-        </li>
-        <li>
-            <a href="https://fh-family-exp-design-history.herokuapp.com/" target="_blank">Family experience</a>
-        </li>
-        <li>
-            <a href="http://teacher-cpd-design-history.herokuapp.com/" target="_blank">Teacher continuing professional development (CPD) </a>
-        </li>
-        <li>
-            <a href="https://bat-design-history.netlify.app/" target="_blank">Becoming a teacher</a>
-        </li>
-        <li>
-            <a href="https://conversions-design-history.netlify.app/" target="_blank">Managing an academy conversion</a>
-        </li>
-        <li>
-            <a href="https://get-into-teaching-design-history.london.cloudapps.digital/" target="_blank">Get into teaching (GIT)</a>
-        </li>
-        <li>
-            <a href="https://design-histories.education.gov.uk/team/regional-services-division" target="_blank">Regional service division (RSD)</a>
-        </li>
-    </ul>
-
-{% endblock %}
+    {% endblock %}
