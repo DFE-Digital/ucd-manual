@@ -1,0 +1,33 @@
+{% set pageTitle = "Design maturity" %}
+{% set pageDescription = "How we're working on design maturity in the Department for Education" %}
+{% set pageSection = "Design Ops" %}
+{% set dateUpdated = "February 2023" %}
+{% set backlog_issue_id = "48" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-ops/_breadcrumb.njk" %}
+{% endblock %}
+
+
+
+{% block bodyContent %}
+
+  <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+    <details class="dfeuk-details dfeuk-expander">
+      <summary class="dfeuk-details__summary">
+        <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+      </summary>
+      <div class="dfeuk-details__text  govuk-!-margin-left-5">
+        {% include "includes/_side-nav.njk" %}
+      </div>
+    </details>
+  </div>
+
+  <p>We're currently working on publishing design maturity survey results from September 2022.</p>
+
+
+{% endblock %}
