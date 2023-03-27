@@ -896,3 +896,12 @@ td, th{padding-left: 10px !important; padding-right: 10px !important; }
 
 // Overrides
 
+
+
+.dfeuk-panel{
+  background: $color_dfeuk-grey-5;
+  @include dfeuk-responsive-padding(4);
+  @include dfeuk-responsive-padding(2, "bottom");
+  @include dfeuk-responsive-margin(5, "bottom");
+  border: 1px solid $color_dfeuk-grey-2;
+}

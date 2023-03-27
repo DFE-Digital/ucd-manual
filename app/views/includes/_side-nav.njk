@@ -202,18 +202,19 @@
   }
 ] %}
 
-{% set professions = [
-  {
-    title: "Professions",
-    url: "/professions/"
+
+{% set professions = [{
+    title: "Design professions",
+    url: "/professions"
   },{
-    title: "Content design",
+    title: "Becoming a content designer",
     url: "/professions/content-design"
-  },{
-    title: "Interaction design",
+  },
+  {
+    title: "Becoming an interaction designer",
     url: "/professions/interaction-design"
-  },{
-    title: "Service design",
+  }, {
+    title: "Becoming a service designer",
     url: "/professions/service-design"
   }
 ] %}
@@ -224,6 +225,14 @@
     url: "/design-ops/contact"
   }
 ] %}
+
+{% set design_thinking = [
+  {
+    title: "Design sprint",
+    url: "/design-thinking/design-sprint"
+  }
+] %}
+
 
 {% set patterns = [ 
 { title: "Patterns", url: "/design-system/patterns/" },
@@ -236,6 +245,15 @@
 
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in ds_getting_started %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+        <h2 class="app-side-nav__heading">Design thinking</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in design_thinking %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
@@ -347,6 +365,9 @@
       {% endfor %}
     </ul>
   {% endif %}
+
+
+  
 
   {%- if pageSection == "Design Ops" %}
     <ul class="dfeuk-list app-side-nav__list">

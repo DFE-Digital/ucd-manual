@@ -1,7 +1,7 @@
-{% set pageTitle = "Professions" %}
-{% set pageDescription = "Guidance for the design professions in the Department for Education and what we do." %}
+{% set pageTitle = "Design professions" %}
+{% set pageDescription = "Learn about the different design professions in the Department for Education." %}
 {% set pageSection = "Professions" %}
-{% set dateUpdated = "January 2023" %}
+{% set dateUpdated = "March 2023" %}
 {% set backlog_issue_id = "" %}
 
 {% extends "includes/app-layout.njk" %}
@@ -25,17 +25,49 @@
         </details>
 </div>
 
-<p>We want to help people understand what it's like to work in a design profession in the Department for Education.</p>
+{% markdown %}
 
-<p>Read our guidance and expectations of people working in the following roles:</p>
+There are 3 design professions in the department:
 
-<ul class="govuk-list govuk-list--bullet">
-  <li><a href="/professions/content-design">content design</a></li>
-  <li><a href="/professions/interaction-design">interaction design</a></li>
-  <li><a href="/professions/service-design">service design</a></li>
-</ul>
+    <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/professions/content-design">Content design</a></li>
+        <li><a href="/professions/interaction-design">Interaction design</a></li>
+        <li><a href="/professions/service-design">Service design</a></li>
+    </ul>
 
-<p>We encourage people in design professions to get involved in <a href="/community">communities of practice</a>.</p>
-<p>Communities of practice enable us to grow the profession capability, share knowledge, skills, and be a supportive place to get help, advice and support.</p>
+
+<h2 class="govuk-heading-m" id="team">Design leadership</h2>
+
+<p>The professions are led by the heads of design.</p>
+
+  <ul class="dfeuk-grid-row dfeuk-card-group">
+
+    <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+      <div class="dfeuk-card">
+        <img class="dfeuk-card__img" src="/assets/profile.jpg" alt="">
+        <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+           Vacant
+          </h2>
+          <p class="dfeuk-card__description">Head of Content Design</p>
+            <p class="dfeuk-card__description">Currently being covered by Andy Jones.</p>
+        </div>
+      </div>
+    </li>
+    <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+      <div class="dfeuk-card">
+        <img class="dfeuk-card__img" src="/assets/andy.jpg" alt="Picture of Andy Jones, Head of Design">
+        <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+            Andy Jones
+          </h2>
+          <p class="dfeuk-card__description">Head of Interaction and Service Design</p>
+           <p class="dfeuk-card__description"><a href="/design-ops/contact">Contact Andy</a></p>
+        </div>
+      </div>
+    </li>
+    </ul>
+
+{% endmarkdown%}
 
 {% endblock %}
