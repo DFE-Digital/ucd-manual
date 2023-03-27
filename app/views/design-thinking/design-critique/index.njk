@@ -1,0 +1,83 @@
+
+{% set pageTitle = "Design critique" %}
+{% set pageDescription = "Design sprints are a time-boxed, collaborative design process aimed at solving complex problems." %}
+{% set pageSection = "Design" %}
+{% set dateUpdated = "March 2023" %}
+{% set backlog_issue_id = "" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "professions/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
+{% markdown %}
+
+Design sprints often take place over the course of 5 days, for example using the following approach on each day. However, a design sprint can also run over a longer period of time.
+
+<p><a href="http://www.gv.com/sprint/" target="_blank">Resources for running a 5 day design sprint</a></p>
+
+## Running a design sprint
+
+To run a successful design sprint, you'll need to gather together a team. The team should be comprised of people who understand the problem, and people who can design and test solutions.
+
+You should include users and other stakeholders that may be impacted by the problem.
+
+
+
+<div class="dfeuk-timeline">
+  <ol>
+    <li>
+      <h3 class="govuk-heading-m">Define the problem</h3>
+      <p>Define the problem you want to solve and make sure everyone on the team understands it. Use a problem statement to help focus the team's efforts.</p>
+    </li>
+      <li>
+      <h3 class="govuk-heading-m">Conduct research</h3>
+      <p>Conduct research to understand the problem and identify potential solutions. This may include user research, market research, and competitor analysis.</p>
+      <p>Examples of outputs:  User personas, user journey maps, competitive analysis reports.</p>
+    </li>
+      <li>
+      <h3 class="govuk-heading-m">Sketch ideas</h3>
+      <p> Encourage the team to sketch their ideas and solutions. This can be done individually or as a group.</p>
+      <p>Examples of outputs: Sketches of potential solutions, mind maps, notes.</p>
+    </li>
+      <li>
+      <h3 class="govuk-heading-m">Decide on solutions</h3>
+      <p>Review the sketches and decide on the best solutions. This may involve voting, discussion, or a combination of both.</p>
+      <p>Examples of outputs: Dot voting results, decision matrix</p>
+    </li>
+      <li>
+      <h3 class="govuk-heading-m">Build a prototype</h3>
+      <p>Build a prototype of the chosen solution. This can be a low-fidelity or high-fidelity prototype, depending on the complexity of the solution.</p>
+      <p>Examples of outputs: Low or high-fidelity prototypes, wireframes, storyboards.</p>
+    </li>
+      <li>
+      <h3 class="govuk-heading-m">Test with users</h3>
+      <p>Test the prototype with users and gather feedback. This can be done through user testing, surveys, or interviews.</p>
+      <p>Examples of outputs: User testing results, feedback notes, survey results.</p>
+    </li>
+  </ol>
+</div>
+
+By following these steps, you can run a design sprint and create a solution to a complex problem. 
+
+The artifacts produced during the sprint can be used to communicate ideas, make decisions, and track progress throughout the process.
+
+{% endmarkdown%}
+
+{% endblock %}
