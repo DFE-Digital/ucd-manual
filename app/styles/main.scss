@@ -944,3 +944,9 @@ thead>tr {
     }
   }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){
+.govuk-footer__copyright-logo {
+    background-image: url(/assets/govuk-crest-2x.png);
+}
+}
