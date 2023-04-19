@@ -6,7 +6,7 @@ Guidance for designing and building digital services for DfE. Things you need to
 
 ### Prerequisite
 
-Install the long-term support (LTS) version of <a href="https://nodejs.org/en/">Node.js</a>, which includes npm.
+Install the long-term support (LTS) version of <a href="https://nodejs.org/en/">Node.js</a>, which includes npm, this is version 18 currently. 
 
 ### Cloning and running the application
 
@@ -16,9 +16,7 @@ install the required npm packages with: `npm install`.
 
 Run the project in development mode `npm run watch` and visit <a href="http://localhost:3000">http://localhost:3000</a>.
 
-
 ## Get in touch
-
 
 ## Licence
 
