@@ -55,7 +55,7 @@
     "js-beautify": "^1.14.0",
     "lunr": "^2.3.9",
     "marked": "^4.0.12",
-    "nunjucks": "^3.2.3",
+    "nunjucks": "^3.2.4",
     "nunjucks-markdown": "^2.0.1"
   },
   "devDependencies": {
