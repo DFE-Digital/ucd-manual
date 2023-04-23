@@ -22,5 +22,5 @@ github:
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 3000
+  - port: 3090
     onOpen: open-preview

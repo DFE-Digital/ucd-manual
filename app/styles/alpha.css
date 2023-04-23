@@ -2,26 +2,6 @@
 /* stylelint-disable color-no-hex */
 /* stylelint-enable color-no-hex */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-span,
-div,
-table,
-th,
-td,
-blockquote,
-li,
-tr {
-  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue" !important;
-}
-
 /* stylelint-disable string-quotes, order/properties-alphabetical-order */
 /* stylelint-disable indentation */
 /* stylelint-disable color-no-hex */
@@ -367,7 +347,7 @@ caption {
  */
 .dfe-width-container {
   margin: 0 16px; /* [1] */
-  max-width: 1600px; /* [2] */
+  max-width: 1200px; /* [2] */
   /* [4] */
 }
 @media (min-width: 48.0625em) {
@@ -1360,11 +1340,9 @@ b {
 }
 
 p,
-.govuk-body, .govuk-inset-text, .dfeuk-warning-callout, .govuk-list {
+.govuk-body {
   max-width: 44em;
 }
-
-
 
 /* ==========================================================================
    COMPONENTS / #HEADER
@@ -1967,7 +1945,7 @@ p,
     background-color: #003a69;
     display: block;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1264px;
     /* [11] */
   }
 }

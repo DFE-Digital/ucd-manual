@@ -1,5 +1,6 @@
 @import "node_modules/govuk-frontend/govuk/all";
 @import "node_modules/dfeuk-frontend/packages/dfefrontend";
+
 @import "alpha";
 // App specific styles
 @import "app/app";
@@ -15,7 +16,7 @@
 .dfeuk-o-hero {
   display: flex;
   position: relative;
-  max-width: 1600px;
+  max-width: 1200px;
   min-height: 10rem;
   margin: 0 auto;
   overflow: hidden;
@@ -216,7 +217,7 @@
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 50% 50%;
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0;
 }
@@ -1027,7 +1028,7 @@ input[type=submit].dfeuk-a-button {
 .dfeuk-o-banner {
   display: flex;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1200px;
   min-height: 10rem;
   margin: 0 auto;
 }
@@ -1389,7 +1390,7 @@ h1+.dfeuk-lede-text {
 .app-header__navigation,
 .app-width-container,
 .app-breadcrumb .dfeuk-width-container {
-  max-width: 1600px;
+  max-width: 1200px;
 }
 
 .dfeuk-card--feature {

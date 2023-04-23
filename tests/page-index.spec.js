@@ -4,7 +4,7 @@ const PageIndex = require('../middleware/page-index');
 const config = {
   baseURL: 'http://localhost',
   env: 'development',
-  port: 3000,
+  port: 3090,
 };
 
 test('test parse page description', () => {
