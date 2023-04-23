@@ -89,16 +89,16 @@
 {% set communities = [
   {
     title: "Community overview",
-    url: "/community/"
+    url: "/professions/community/"
   },{
     title: "Meetups",
-    url: "/community/meetups/"
+    url: "/professions/community/meetups/"
   },{
     title: "Show and tells",
-    url: "/community/show-and-tells/"
+    url: "/professions/community/show-and-tells/"
   },{
     title: "Themes",
-    url: "/community/themes/"
+    url: "/professions/community/themes/"
   }
 ] %}
 
@@ -129,7 +129,7 @@
 
 {% set ds_getting_started = [
   {
-    title: "Design",
+    title: "Design system",
     url: "/design-system/"
   },
   {
@@ -143,6 +143,20 @@
 ] %}
 
 {% set ds_design = [
+ {
+    title: "Design system",
+    url: "/design-system/"
+  },{
+    title: "DfE Frontend",
+    url: "/design-system/dfe-frontend"
+  },{
+    title: "Styles",
+    url: "/design-system/styles/"
+  },
+{
+    title: "Components",
+    url: "/design-system/components/"
+  },
 {
     title: "Patterns",
     url: "/design-system/patterns/"
@@ -152,6 +166,13 @@
     url: "/design-system/contribute/"
   }
 ] %}
+
+{# {% set ds_technical = [
+ {
+    title: "DfE Frontend API",
+    url: "/design-system/dfe-frontend/api/"
+  }
+] %} #}
 
 {% set ds_prototyping = [
   {
@@ -202,7 +223,6 @@
   }
 ] %}
 
-
 {% set professions = [{
     title: "Design professions",
     url: "/professions"
@@ -226,6 +246,13 @@
   }
 ] %}
 
+{% set design_ops_maturity = [
+  {
+    title: "Design maturity",
+    url: "/design-ops/design-maturity"
+  }
+] %}
+
 {% set design_thinking = [
   {
     title: "Design sprint",
@@ -233,45 +260,28 @@
   }
 ] %}
 
+{% set components = [ 
+ { title: "Components", url: "/design-system/components/" },
+ { title: "Card", url: "/design-system/components/card" },
+  { title: "Header", url: "/design-system/components/header" }
+] %} 
 
-{% set patterns = [ 
+{% set styles = [ 
+ { title: "Styles", url: "/design-system/styles/" },
+ { title: "Colour", url: "/design-system/styles/colour" }
+] %} 
+
+{# {% set patterns = [ 
 { title: "Patterns", url: "/design-system/patterns/" },
   { title: "Select a school", url: "/design-system/patterns/select-a-school" }
-] %}
+] %} #}
 
 <nav class="app-side-nav">
 
-  {%- if pageSection == "Design" and (subSection != "Styles" and subSection != "Patterns") %}
+  {%- if pageSection == "Design system" and subSection != "Components" and subSection != "Styles"%}
 
-    <ul class="dfeuk-list app-side-nav__list">
-      {% for item in ds_getting_started %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-        <h2 class="app-side-nav__heading">Design thinking</h2>
-    <ul class="dfeuk-list app-side-nav__list">
-      {% for item in design_thinking %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <h2 class="app-side-nav__heading">Design System</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in ds_design %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <h2 class="app-side-nav__heading">Assurance</h2>
-    <ul class="dfeuk-list app-side-nav__list">
-      {% for item in tl_assurance %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
@@ -327,7 +337,17 @@
 
   {% endif %}
 
-  {%- if pageSection == "Community" %}
+  {%- if pageSection == "Professions" %}
+
+    <h2 class="app-side-nav__heading">Professions</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in professions %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <h2 class="app-side-nav__heading">Communities</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in communities %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
@@ -335,14 +355,6 @@
         </li>
       {% endfor %}
     </ul>
-    {# <h2 class="app-side-nav__heading">Professions</h2>
-    <ul class="dfeuk-list app-side-nav__list">
-      {% for item in professions %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul> #}
 
   {% endif %}
 
@@ -356,19 +368,6 @@
     </ul>
   {% endif %}
 
-  {%- if pageSection == "Professions" %}
-    <ul class="dfeuk-list app-side-nav__list">
-      {% for item in professions %}
-        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
-          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-
-  
-
   {%- if pageSection == "Design Ops" %}
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in design_ops %}
@@ -378,11 +377,18 @@
       {% endfor %}
     </ul>
 
-    
-
     <h2 class="app-side-nav__heading">Guidance for people working in DfE</h2>
     <ul class="dfeuk-list app-side-nav__list">
       {% for item in design_ops_g %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="app-side-nav__heading">Design maturity</h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in design_ops_maturity %}
         <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
           <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
@@ -400,7 +406,7 @@
 
   {% endif %}
 
-  {%- if subSection == "Patterns" %}
+  {# {%- if subSection == "Patterns" %}
     {{ backLink({
       "href": "/design-system",
       "text": "Design system",
@@ -415,5 +421,38 @@
       {% endfor %}
     </ul>
   {% endif %}
+#}
+
+  {%- if subSection == "Components" %}
+    {{ backLink({
+      "href": "/design-system",
+      "text": "Design system",
+      "classes": "app-u-hide-mobile app-side-nav__back dfeuk-u-margin-bottom-4"
+    }) }}
+    <h2 class="app-side-nav__heading">Components <span class="dfeuk-u-visually-hidden">navigation</span></h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in components %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %} 
+
+   {%- if subSection == "Styles" %}
+    {{ backLink({
+      "href": "/design-system",
+      "text": "Design system",
+      "classes": "app-u-hide-mobile app-side-nav__back dfeuk-u-margin-bottom-4"
+    }) }}
+    <h2 class="app-side-nav__heading">Styles <span class="dfeuk-u-visually-hidden">navigation</span></h2>
+    <ul class="dfeuk-list app-side-nav__list">
+      {% for item in styles %}
+        <li class="app-side-nav__item{% if item.title == pageTitle %} app-side-nav__item--current{% endif %}">
+          <a class="app-side-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %} 
 
 </nav>

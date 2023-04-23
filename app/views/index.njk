@@ -1,6 +1,7 @@
 {% set pageDescription = "A framework of principles, guidance, and standards to enable and support teams to deliver joined-up, effective, user-centred services for users of Department for Education services." %}
 {% set pageLayout = "Homepage" %}
-{% set pageTitle = "Guidance for good design in the Department for Education"%}
+{% set pageTitle = "User-centred design in the Department for Education"%}
+{% set pageSection = "Home" %}
 
 {% extends "includes/layout.njk" %}
 
@@ -10,61 +11,188 @@
 
   <main id="maincontent" role="main">
 
-    <section class="dfeuk-hero">
-      <div class="dfeuk-width-container dfeuk-hero--border app-width-container">
+    <div class="dfeuk-o-hero dfeuk-o-hero--image-accented dfeuk-!t-text-align-left dfeuk-light-blue-tint">
+      <div class="dfeuk-o-hero__content-container">
+        <div class="dfeuk-o-hero__inner-content-container">
+          <h1 class="govuk-heading-xl govuk-margin-bottom-0">{{pageTitle}}</h1>
+          <div class="govuk-body-l govuk-margin-top-5 govuk-margin-bottom-0">{{pageDescription}}</div>
+
+        
+
+
+               <div class="dfeuk-action-link">
+            <a class="dfeuk-action-link__link" href="/design-system/">
+              <svg class="dfeuk-icon dfeuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+              </svg>
+              <span class="dfeuk-action-link__text">Design system</span>
+            </a>
+          </div>
+
+          <div class="dfeuk-action-link govuk-!-margin-bottom-0">
+            <a class="dfeuk-action-link__link" href="/accessibility">
+              <svg class="dfeuk-icon dfeuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+              </svg>
+              <span class="dfeuk-action-link__text">Accessible and inclusive design</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="dfeuk-o-hero__image-container">
+        <figure class="dfeuk-a-image " style="">
+          <picture class="dfeuk-a-image__picture">
+            <img src="/assets/teacher.jpg" alt="Teacher with a child reading a book">
+          </picture>
+        </figure>
+      </div>
+    </div>
+
+    <section>
+      <div class="dfeuk-width-container app-width-container govuk-!-margin-top-9">
         <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
-            <div class="dfeuk-hero__wrapper app-hero__wrapper">
-              <h1 class="dfeuk-u-margin-bottom-4">{{pageTitle}}</h1>
-              <p class="dfeuk-body-l dfeuk-u-margin-bottom-1">{{pageDescription}}</p>
-            </div>
+          <div class="govuk-grid-column-full">
+
+            <ul class="dfeuk-grid-row dfeuk-card-group">
+
+              <li class="dfeuk-grid-column-one-quarter dfeuk-card-group__item">
+                <div class="dfeuk-card dfeuk-card--clickable">
+                  <img class="dfeuk-card__img" src="/assets/imgdes.png" alt="">
+                  <div class="dfeuk-card__content">
+                    <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="/design-system/">Design system</a>
+          </h2>
+                    <p class="dfeuk-card__description">We use a combination of the GOV.UK Design System and DfE Frontend to create consistent looking services.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="dfeuk-grid-column-one-quarter dfeuk-card-group__item">
+               <div class="dfeuk-card dfeuk-card--clickable">
+                  <img class="dfeuk-card__img" src="/assets/imgcon.png" alt="">
+                  <div class="dfeuk-card__content">
+                    <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="/content-guidelines/">Content guidelines</a>
+          </h2>
+                    <p class="dfeuk-card__description">Writing in plain language, to create clear and consistent content for the departments digital services. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="dfeuk-grid-column-one-quarter dfeuk-card-group__item">
+                <div class="dfeuk-card dfeuk-card--clickable">
+                  <img class="dfeuk-card__img" src="/assets/cop.png" alt="">
+                  <div class="dfeuk-card__content">
+                    <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="professions/community/">Communities of practice</a>
+          </h2>
+                    <p class="dfeuk-card__description">We have strong communities of practice which help grow professions and skills.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="dfeuk-grid-column-one-quarter dfeuk-card-group__item">
+                <div class="dfeuk-card dfeuk-card--clickable">
+                  <img class="dfeuk-card__img" src="/assets/imgops.png" alt="">
+                  <div class="dfeuk-card__content">
+                    <h2 class="dfeuk-card__heading dfeuk-heading-m">
+              <a href="/design-ops/">Design Ops</a>
+          </h2>
+                    <p class="dfeuk-card__description">Designers across the department are supported by a core design operations team.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="dfeuk-width-container app-width-container govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+
+      <div class="dfeuk-width-container app-width-container">
         <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
-
-            <div class="dfeuk-panel dfeuk-panel-promo">
-              <strong class="govuk-tag govuk-tag--red">Awareness</strong>
-              <h2 class="govuk-heading-m govuk-!-margin-top-3">Upcoming changes to accessibility standards</h2>
-              <p>9 new standards are being introduced to the accessibility standards.</p>
-              <ul class="govuk-list">
-                <li>
-                  <a href="/accessibility/understanding-wcag/draft-2-2">Understand what's changing</a> and how the new standards will impact your design thinking.
-                </li>
-
-              </ul>
-            </div>
-            <h2 class="govuk-heading-l">Principles</h2>
+          <div class="govuk-grid-column-full">
 
             <ul class="dfeuk-grid-row dfeuk-card-group">
-              <li class="dfeuk-grid-column-full dfeuk-card-group__item">
-                <div class="dfeuk-card dfeuk-card--clickable">
-                  <div class="dfeuk-card__content">
-                    <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                      <a href="https://www.gov.uk/guidance/government-design-principles" target="_blank">Government Design Principles</a>
-                    </h2>
-                    <p class="dfeuk-card__description">Understand the design principles we work to in DfE.</p>
+                <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                  <div class="dfeuk-card dfeuk-card--clickable">
+                    <div class="dfeuk-card__content">
+                      <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                        <a href="/professions/community/themes/">Our themes and objectives</a>
+                      </h2>
+                      <p class="dfeuk-card__description">Out 8 design themes which aim to continually improve design in DfE.</p>
+                    </div>
                   </div>
-                </div>
-              </li>
+                </li>
+                <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                  <div class="dfeuk-card dfeuk-card--clickable">
+                    <div class="dfeuk-card__content">
+                      <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                        <a href="/design-ops/design-maturity">Design maturity</a>
+                      </h2>
+                      <p class="dfeuk-card__description">Find out how we're doing at raising design maturity across DfE.</p>
+                    </div>
+                  </div>
+                </li>
+                </ul>
 
-             
+          </div>
+        </div>
+      </div>
 
-            </ul>
-            <h2 class="govuk-heading-l">Guidance</h2>
+    </section>
 
-            <div class="dfeuk-width-container app-width-container">
+    <section>
+      <div class="dfeuk-o-banner dfeuk-o-banner--mirrored govuk-!-margin-top-2">
+
+        <div class="dfeuk-o-banner__content-container dfeuk-light-blue-tint">
+          <div class="dfeuk-o-banner__inner-content-container">
+
+            <h2 class="govuk-heading-l">Apply the Service Standard</h2>
+            <p>We’ve built a companion service to the Government Service Standard.</p>
+            <p>This service helps teams follow standards to build accessible, usable, safe, secure, and trusted services.</p>
+
+            <div class="dfeuk-action-link govuk-!-margin-bottom-0">
+              <a class="dfeuk-action-link__link" href="https://apply-the-service-standard.education.gov.uk/" target="_blank" >
+                <svg class="dfeuk-icon dfeuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="dfeuk-action-link__text">Use the service</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dfeuk-o-banner__image-container">
+          <figure class="dfeuk-a-image dfeuk-a-image--cover">
+            <picture class="dfeuk-a-image__picture">
+              <img src="/assets/assidfe.png" alt="">
+            </picture>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+   
+
+      <section>
+        <div class="dfeuk-width-container app-width-container govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h2 class="govuk-heading-l">Other UCD professions across DfE</h2>
+
+              <p>Our other research, product, and technical professions work with design professionals to provide an all round user-centred design approach to service delivery.</p>
+
               <ul class="dfeuk-grid-row dfeuk-card-group">
                 <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
                   <div class="dfeuk-card dfeuk-card--clickable">
                     <div class="dfeuk-card__content">
                       <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                        <a href="/accessibility/">Accessibility</a>
+                        <a href="https://user-research.education.gov.uk/" target="_blank">User research</a>
                       </h2>
                       <p class="dfeuk-card__description">Ensure that DfE services work for everyone</p>
                     </div>
@@ -74,20 +202,9 @@
                   <div class="dfeuk-card dfeuk-card--clickable">
                     <div class="dfeuk-card__content">
                       <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                        <a href="/design-system">Design</a>
+                        <a href="https://technical-guidance.education.gov.uk/" target="_blank">Technical</a>
                       </h2>
-                      <p class="dfeuk-card__description">Build consistent, accessible user interfaces</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
-                  <div class="dfeuk-card dfeuk-card--clickable">
-                    <div class="dfeuk-card__content">
-
-                      <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                        <a href="/content-guidelines">Content guidelines</a>
-                      </h2>
-                      <p class="dfeuk-card__description">How to write for digital DfE services</p>
+                      <p class="dfeuk-card__description">Ensure that DfE services work for everyone</p>
                     </div>
                   </div>
                 </li>
@@ -95,97 +212,205 @@
                   <div class="dfeuk-card dfeuk-card--clickable">
                     <div class="dfeuk-card__content">
                       <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                        <a href="/professions">Professions</a>
+                        <a href="https://dfe-digital.github.io/architecture/#dfe-architecture" target="_blank">Architecture</a>
                       </h2>
-                      <p class="dfeuk-card__description">Design professions in the Department for Education and what we do.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
-                  <div class="dfeuk-card dfeuk-card--clickable">
-                    <div class="dfeuk-card__content">
-                      <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                        <a href="/community">Community</a>
-                      </h2>
-                      <p class="dfeuk-card__description">Communities of Practice and professions in DfE</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
-                  <div class="dfeuk-card dfeuk-card--clickable">
-                    <div class="dfeuk-card__content">
-                      <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                        <a href="/design-ops">Design Ops</a>
-                      </h2>
-                      <p class="dfeuk-card__description">How the Design Operations team support design professions in DfE</p>
+                      <p class="dfeuk-card__description">Ensure that DfE services work for everyone</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <hr class="dfeuk-u-margin-top-2 dfeuk-u-margin-bottom-6">
-              <div class="dfeuk-grid-row">
-                <div class="dfeuk-grid-column-two-thirds">
-
-                  <h2>Support</h2>
-                  <p>The manual is maintained by the <a href="/design-ops">Design Ops team</a>. If you've got a question or want to feedback, you can <a href="/design-ops/contact">get in touch</a>.</p>
-                </div>
-              </div>
             </div>
+            <div class="govuk-grid-column-one-third">
 
-          </div>
-          <div class="govuk-grid-column-one-third">
-            <div class="dfeuk-panel">
-              <h2 class="govuk-heading-m">Recent updates</h2>
-              <ul class="govuk-list">
+              <h2 class="govuk-heading-l">Themes and design maturity</h2>
+              <ul class="govuk-list govuk-list--spaced">
                 <li>
-                  <a href="/professions">Design professions and pathways</a>
+                  <a href="/community/themes/">Community themes and profession development</a>
                 </li>
                 <li>
-                  <a href="/design-thinking/design-sprint">Running a design sprint</a>
+                  <a href="/design-ops/design-maturity/" target="_blank">Design maturity survey and responses</a>
                 </li>
               </ul>
-            </div>
-            <div class="dfeuk-card">
-              <div class="dfeuk-card__content">
-                <h2 class="dfeuk-card__heading dfeuk-heading-m">Design Histories</h2>
-                <p class="dfeuk-card__description">Use the new service to publish and maintain a design history for your team and service.</p>
-                <p>
-                  <a href="/assurance/design-histories/">Find out more <span class="govuk-visually-hidden"> about design histories</span></a>
-                </p>
-              </div>
+              <h2 class="govuk-heading-l">Contribute</h2>
+              <p>We welcome contributions to this manual from people across DfE or externally.</p>
+
+              <ul class="govuk-list govuk-list--spaced">
+                <li>
+                  <a href="https://github.com/DFE-Digital/ucd-manual" target="_blank">Source code on GitHub</a>
+                </li>
+                <li>
+                  <a href="https://github.com/orgs/DFE-Digital/projects/22" target="_blank">UCD manual backlog</a>
+                </li>
+              </ul>
+
             </div>
 
-            <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick govuk-!-margin-top-5 govuk-!-margin-bottom-5">
-            <h3 class="govuk-heading-s">Additional guidance across DfE</h3>
-            <ul class="govuk-list govuk-list--spaced">
-              <li>
-                <a href="https://apply-the-service-standard.education.gov.uk/" target="_blank">Apply the Service Standard in DfE</a>
-              </li>
-              <li>
-                <a href="https://user-research.education.gov.uk/" target="_blank">User Research in DfE</a>
-              </li>
-              <li>
-                <a href="https://technical-guidance.education.gov.uk/" target="_blank">DfE Technical Guidance</a>
-              </li>
-              <li>
-                <a href="https://dfe-digital.github.io/architecture/#dfe-architecture" target="_blank">DfE Architecture</a>
-              </li>
-            </ul>
-            <h3 class="govuk-heading-s">GOV.UK resources</h3>
-            <ul class="govuk-list govuk-list--spaced">
-              <li>
-                <a href="https://design-system.service.gov.uk/" target="_blank">GOV.UK Design System</a>
-              </li>
-              <li>
-                <a href="https://www.gov.uk/service-manual" target="_blank">GOV.UK Service Manual</a>
-              </li>
-            </ul>
           </div>
         </div>
 
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <section style="display: none">
+        <div class="dfeuk-width-container app-width-container govuk-!-margin-top-9 govuk-!-margin-bottom-9">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
 
-{% endblock %}
+              <div class="dfeuk-panel dfeuk-panel-promo">
+                <strong class="govuk-tag govuk-tag--red">Awareness</strong>
+                <h2 class="govuk-heading-m govuk-!-margin-top-3">Upcoming changes to accessibility standards</h2>
+                <p>9 new standards are being introduced to the accessibility standards.</p>
+                <ul class="govuk-list">
+                  <li>
+                    <a href="/accessibility/understanding-wcag/draft-2-2">Understand what's changing</a> and how the new standards will impact your design thinking.
+                </li>
+
+                </ul>
+              </div>
+              <h2 class="govuk-heading-l">Principles</h2>
+
+              <ul class="dfeuk-grid-row dfeuk-card-group">
+                <li class="dfeuk-grid-column-full dfeuk-card-group__item">
+                  <div class="dfeuk-card dfeuk-card--clickable">
+                    <div class="dfeuk-card__content">
+                      <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                        <a href="https://www.gov.uk/guidance/government-design-principles" target="_blank">Government Design Principles</a>
+                      </h2>
+                      <p class="dfeuk-card__description">Understand the design principles we work to in DfE.</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+              <h2 class="govuk-heading-l">Guidance</h2>
+
+              <div class="dfeuk-width-container app-width-container">
+                <ul class="dfeuk-grid-row dfeuk-card-group">
+                  <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                    <div class="dfeuk-card dfeuk-card--clickable">
+                      <div class="dfeuk-card__content">
+                        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                          <a href="/accessibility/">Accessibility</a>
+                        </h2>
+                        <p class="dfeuk-card__description">Ensure that DfE services work for everyone</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                    <div class="dfeuk-card dfeuk-card--clickable">
+                      <div class="dfeuk-card__content">
+                        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                          <a href="/design-system">Design</a>
+                        </h2>
+                        <p class="dfeuk-card__description">Build consistent, accessible user interfaces</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                    <div class="dfeuk-card dfeuk-card--clickable">
+                      <div class="dfeuk-card__content">
+
+                        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                          <a href="/content-guidelines">Content guidelines</a>
+                        </h2>
+                        <p class="dfeuk-card__description">How to write for digital DfE services</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                    <div class="dfeuk-card dfeuk-card--clickable">
+                      <div class="dfeuk-card__content">
+                        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                          <a href="/professions">Professions</a>
+                        </h2>
+                        <p class="dfeuk-card__description">Design professions in the Department for Education and what we do.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                    <div class="dfeuk-card dfeuk-card--clickable">
+                      <div class="dfeuk-card__content">
+                        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                          <a href="/community">Community</a>
+                        </h2>
+                        <p class="dfeuk-card__description">Communities of Practice and professions in DfE</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+                    <div class="dfeuk-card dfeuk-card--clickable">
+                      <div class="dfeuk-card__content">
+                        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                          <a href="/design-ops">Design Ops</a>
+                        </h2>
+                        <p class="dfeuk-card__description">How the Design Operations team support design professions in DfE</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <hr class="dfeuk-u-margin-top-2 dfeuk-u-margin-bottom-6">
+                <div class="dfeuk-grid-row">
+                  <div class="dfeuk-grid-column-two-thirds">
+
+                    <h2>Support</h2>
+                    <p>The manual is maintained by the <a href="/design-ops">Design Ops team</a>. If you've got a question or want to feedback, you can <a href="/design-ops/contact">get in touch</a>.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <div class="dfeuk-panel">
+                <h2 class="govuk-heading-m">Recent updates</h2>
+                <ul class="govuk-list">
+                  <li>
+                    <a href="/professions">Design professions and pathways</a>
+                  </li>
+                  <li>
+                    <a href="/design-thinking/design-sprint">Running a design sprint</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dfeuk-card">
+                <div class="dfeuk-card__content">
+                  <h2 class="dfeuk-card__heading dfeuk-heading-m">Design Histories</h2>
+                  <p class="dfeuk-card__description">Use the new service to publish and maintain a design history for your team and service.</p>
+                  <p>
+                    <a href="/assurance/design-histories/">Find out more <span class="govuk-visually-hidden"> about design histories</span></a>
+                  </p>
+                </div>
+              </div>
+
+              <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick govuk-!-margin-top-5 govuk-!-margin-bottom-5">
+              <h3 class="govuk-heading-s">Additional guidance across DfE</h3>
+              <ul class="govuk-list govuk-list--spaced">
+                <li>
+                  <a href="https://apply-the-service-standard.education.gov.uk/" target="_blank">Apply the Service Standard in DfE</a>
+                </li>
+                <li>
+                  <a href="https://user-research.education.gov.uk/" target="_blank">User Research in DfE</a>
+                </li>
+                <li>
+                  <a href="https://technical-guidance.education.gov.uk/" target="_blank">DfE Technical Guidance</a>
+                </li>
+                <li>
+                  <a href="https://dfe-digital.github.io/architecture/#dfe-architecture" target="_blank">DfE Architecture</a>
+                </li>
+              </ul>
+              <h3 class="govuk-heading-s">GOV.UK resources</h3>
+              <ul class="govuk-list govuk-list--spaced">
+                <li>
+                  <a href="https://design-system.service.gov.uk/" target="_blank">GOV.UK Design System</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.uk/service-manual" target="_blank">GOV.UK Service Manual</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+  {% endblock %}

@@ -1,0 +1,49 @@
+{% set pageTitle = "Styles" %}
+{% set pageDescription = "Styles you can us in Department for Education services to make them more consistent." %}
+{% set pageSection = "Design system" %}
+{% set subSection = "Styles" %}
+{% set theme = "Design system" %}
+{% set dateUpdated = "April 2023" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-system/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
+{% include "design-system/_use-gov-first.njk" %}
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Current styles</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Style</th>
+      <th scope="col" class="govuk-table__header">Summary</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/design-system/styles/colour">Colour</a></th>
+      <td class="govuk-table__cell">Colour palette for Department for Education services.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Published</strong></td>
+    </tr>
+  </tbody>
+</table>
+ 
+{% endblock %}

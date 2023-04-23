@@ -7,18 +7,18 @@
 
 {% block bodyContent %}
 
-<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
-   <details class="dfeuk-details dfeuk-expander">
-            <summary class="dfeuk-details__summary">
-                <span class="dfeuk-details__summary-text ">
+  <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+    <details class="dfeuk-details dfeuk-expander">
+      <summary class="dfeuk-details__summary">
+        <span class="dfeuk-details__summary-text ">
         Section menu
       </span>
-            </summary>
-            <div class="dfeuk-details__text  govuk-!-margin-left-5">
-                 {% include "includes/_side-nav.njk" %}
-            </div>
-        </details>
-</div>
+      </summary>
+      <div class="dfeuk-details__text  govuk-!-margin-left-5">
+        {% include "includes/_side-nav.njk" %}
+      </div>
+    </details>
+  </div>
 
   <ul>
     <li>
@@ -78,19 +78,32 @@
     <li>
       <a href="/design-system/">Design System</a>
       <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/design-system/branding-standards/">Branding standards</a>
+  <li>
+          <a href="/design-system/dfe-frontend/">DfE Frontend</a>
+          </li>
+      <li>
+          <a href="/design-system/styles/">Styles</a>
+          <ul class="dfeuk-u-nested-list">
+            <li>
+              <a href="/design-system/styles/colour">Colour</a>
+            </li>
+          </ul>
         </li>
-        <li>
-          <a href="/design-system/branding-standards/dfe-branding">DfE branding standards</a>
+           <li>
+          <a href="/design-system/components/">Components</a>
+          <ul class="dfeuk-u-nested-list">
+            <li>
+              <a href="/design-system/components/header">Header</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="/design-system/patterns/">Patterns</a>
-           <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/design-system/patterns/select-a-school">Select a school</a>
-        </li>
-        </ul>
+          <ul class="dfeuk-u-nested-list">
+            <li>
+              <a href="/design-system/patterns/select-a-school">Select a school</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="/design-system/contribute/">Propose a component or pattern</a>
@@ -128,7 +141,7 @@
         </li>
       </ul>
     </li>
-       <li>
+    <li>
       <a href="/professions/">Professions</a>
       <ul class="dfeuk-u-nested-list">
         <li>
@@ -137,24 +150,10 @@
         <li>
           <a href="/professions/interaction-design">Interaction design</a>
         </li>
-          <li>
+        <li>
           <a href="/professions/service-design">Service design</a>
         </li>
       </ul>
-    </li>
-    <li>
-      <a href="/community/">Community</a>
-      <ul class="dfeuk-u-nested-list">
-        <li>
-          <a href="/community/meetups/">Meetups</a>
-        </li>
-        <li>
-          <a href="/community/show-and-tells/">Show and tells</a>
-        </li>
-        <li>
-          <a href="/community/themes/">Themes</a>
-        </li>
-        </ul>
     </li>
     <li>
       <a href="/design-ops/">Design Ops</a>

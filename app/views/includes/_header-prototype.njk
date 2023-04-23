@@ -1,86 +1,86 @@
-{% from 'header/macro.njk' import header %}
-
-{% set mainNav = [  { title: "Home", url: "/" },
-  { title: "Accessibility", url: "/accessibility/" },
-  { title: "Design", url: "/design-system/" },
-  { title: "Content guidelines", url: "/content-guidelines/" },
-  { title: "Professions", url: "/professions/" },
-  { title: "Community", url: "/community/" },
-  { title: "Design Ops", url: "/design-ops/"}
-] %}
-
-<header class="dfeuk-header" role="banner">
-  <div class="dfeuk-width-container dfeuk-header__container app-width-container">
-    <div class="dfeuk-header__logo">
-      <a class="dfeuk-header__link dfeuk-header__link--service " href="/" aria-label="DfE digital service manual homepage">
-        <img src="/assets/dfe-logo.png" alt="Back to the homepage" class="dfeuk-header__logo-img"></img>
-        <span class="dfeuk-header__service-name">User-centred design</span></a>
-    </div>
-    <div class="dfeuk-header__content" id="content-header">
-      <div class="dfeuk-header__menu">
-        <button class="dfeuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+<header class="dfe-header" role="banner">
+   <div class="dfe-width-container dfe-header__container">
+      <div class="dfe-header__logo">
+         <a class="dfe-header__link dfe-header__link--service " href="/" aria-label="DfE homepage">
+         <img src="/assets/dfe-logo.png" class="dfe-logo" alt="DfE Homepage">
+         <img src="/assets/dfe-logo-alt.png" class="dfe-logo-hover" alt="DfE Homepage">
+         <span class="dfe-header__service-name">
+         User-centred design manual
+         </span>
+         </a>
       </div>
-      <div class="dfeuk-header__search">
-        <button class="dfeuk-header__search-toggle" id="toggle-search" aria-controls="search" aria-label="Open search">
-          <svg class="dfeuk-icon dfeuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" height="40" width="100">
-            <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
-          </svg>
-          <span class="dfeuk-u-visually-hidden">Search</span>
-        </button>
-        <div class="dfeuk-header__search-wrap" id="wrap-search">
-          <form class="dfeuk-header__search-form" id="search" action="/search/" method="get" role="search">
-            <label class="dfeuk-u-visually-hidden" for="search-field">Search the DfE digital service manual</label>
-            <div class="autocomplete-container" id="autocomplete-container"></div>
-            <input class="dfeuk-search__input" id="search-field" name="search-field" type="search" placeholder="Search" autocomplete="off">
-
-            <button class="dfeuk-search__submit" type="submit">
-              <svg class="dfeuk-icon dfeuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
-                <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
-              </svg>
-              <span class="dfeuk-u-visually-hidden">Search</span>
+      <div class="dfe-header__content" id="content-header">
+         <div class="dfeuk-header__username">
+            <a href="#" class="govuk-link govuk-link--inverse">My account</a>
+         </div>
+         <div class="dfe-header__menu">
+            <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+         </div>
+         <div class="dfe-header__search">
+            <button class="dfe-header__search-toggle" id="toggle-search" aria-controls="search" aria-label="Open search">
+               <svg class="dfe-icon dfe-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                  <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+               </svg>
+               <span class="govuk-visually-hidden">Search</span>
             </button>
-            <button class="dfeuk-search__close" id="close-search">
-              <svg class="dfeuk-icon dfeuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
-                <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
-              </svg>
-              <span class="dfeuk-u-visually-hidden">Close search</span>
-            </button>
-          </form>
-        </div>
+            <div class="dfe-header__search-wrap" id="wrap-search">
+               <form class="dfe-header__search-form" id="search" action="/search/" method="get" role="search">
+                  <label class="govuk-visually-hidden" for="search-field">Search this website</label>
+                  <input class="dfe-search__input" id="search-field" name="search-field" type="search" placeholder="Search" autocomplete="off">
+                  <button class="dfe-search__submit" type="submit">
+                     <svg class="dfe-icon dfe-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                        <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+                     </svg>
+                     <span class="govuk-visually-hidden">Search</span>
+                  </button>
+                  <button class="dfe-search__close" id="close-search">
+                     <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                        <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+                     </svg>
+                     <span class="govuk-visually-hidden">Close search</span>
+                  </button>
+               </form>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-  <nav class="dfeuk-header__navigation app-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
-    <div class="dfeuk-width-container app-width-container">
-      <p class="dfeuk-header__navigation-title">
-        <span id="label-navigation">Menu</span>
-        <button class="dfeuk-header__navigation-close" id="close-menu">
-          <svg class="dfeuk-icon dfeuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
-          </svg>
-          <span class="dfeuk-u-visually-hidden">Close menu</span>
-        </button>
-      </p>
-      <ul class="dfeuk-header__navigation-list">
-        <li class="dfeuk-header__navigation-item dfeuk-header__navigation-item--for-mobile">
-          <a class="dfeuk-header__navigation-link" href="/">
-              Home
-              <svg class="dfeuk-icon dfeuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="27" height="27">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </a>
-        </li>
-        {% for item in mainNav %}
-          <li class="dfeuk-header__navigation-item{% if item.title == pageSection %} app-header__navigation-item__item--current{% endif %}">
-            <a class="dfeuk-header__navigation-link" href="{{ item.url }}">
-              {{ item.title }}
-              <svg class="dfeuk-icon dfeuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
-                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-              </svg>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
+   </div>
+   <nav class="dfe-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+      <div class="dfe-width-container">
+         <p class="dfe-header__navigation-title">
+            <span id="label-navigation">Menu</span>
+            <button class="dfe-header__navigation-close" id="close-menu">
+               <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+                  <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+               </svg>
+               <span class="govuk-visually-hidden">Close menu</span>
+            </button>
+         </p>
+         <ul class="dfe-header__navigation-list">
+            <li class="dfe-header__navigation-item {% if pageNav === 'Home'%}dfe-header__navigation-item--current{% endif %}">
+               <a class="dfe-header__navigation-link" href="#">
+                  Navigation link 1 {{pageNav}}
+                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                  </svg>
+               </a>
+            </li>
+            <li class="dfe-header__navigation-item ">
+               <a class="dfe-header__navigation-link" href="#">
+                  Navigation link 2
+                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                  </svg>
+               </a>
+            </li>
+            <li class="dfe-header__navigation-item ">
+               <a class="dfe-header__navigation-link" href="#">
+                  Navigation link 3
+                  <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
 </header>

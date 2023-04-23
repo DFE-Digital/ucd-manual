@@ -1,26 +1,164 @@
 {% set pageTitle = "DfE Frontend" %}
 {% set pageDescription = "Using the frontend styles, components, and patterns in DfE services." %}
-{% set pageSection = "Design" %}
+{% set pageSection = "Design system" %}
 
-{% extends "includes/app-layout.njk" %} 
+{% extends "includes/app-layout.njk" %}
 
 <div class="app-index-navigation app-u-hide-desktop">
-    {% include "includes/_side-nav.njk" %}
-  </div>
+  {% include "includes/_side-nav.njk" %}
+</div>
 
 {% block bodyContent %}
 
-<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
-   <details class="dfeuk-details dfeuk-expander">
-            <summary class="dfeuk-details__summary">
-                <span class="dfeuk-details__summary-text ">
+  <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+    <details class="dfeuk-details dfeuk-expander">
+      <summary class="dfeuk-details__summary">
+        <span class="dfeuk-details__summary-text ">
         Section menu
       </span>
-            </summary>
-            <div class="dfeuk-details__text  govuk-!-margin-left-5">
-                 {% include "includes/_side-nav.njk" %}
-            </div>
-        </details>
-</div>
+      </summary>
+      <div class="dfeuk-details__text  govuk-!-margin-left-5">
+        {% include "includes/_side-nav.njk" %}
+      </div>
+    </details>
+  </div>
+
+  <p>Use this guide to help you:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>install DfE Frontend</li>
+    <li>update the prototype to include the DfE Header</li>
+  </ul>
+
+
+  <h2 class="govuk-heading-l">Install with Node.js package manager (npm)</h2>
+
+  <div class="govuk-inset-text">
+    <p>This guidance is based on a clean install of the GOV.UK Prototype Kit - version 13.<p>
+        <p>
+          <a href="https://prototype-kit.service.gov.uk/docs/create-new-prototype" target="_blank">Instructions for setting up a new prototype kit</a>.</p>
+        <p>If you are installing into a production service or other prototype, you may need to adjust where files are copied to or updated  based on your project structure.</p>
+      </div>
+
+      <div class="custom-dfe-panel">
+        <div class="custom-dfe-panel--content">
+          <code class="govuk-body monospace">npm install dfe-frontend-alpha --save</code>
+        </div>
+      </div>
+
+      <p>Once installed you'll see dfe-frontend-alpha in your package.json file and node_modules folder.</p>
+
+      <h2 class="govuk-heading-l">Get the CSS and Javascript working</h2>
+
+      <h3 class="govuk-heading-m">Import the styles scss file</h3>
+
+      <p>Add the following code to the top of your <code>/app/assets/sass/application.scss</code> file:</p>
+
+      <div class="custom-dfe-panel">
+        <div class="custom-dfe-panel--content">
+          <code class="govuk-body monospace">@import 'node_modules/dfe-frontend-alpha/packages/dfefrontend';</code>
+        </div>
+      </div>
+
+      <h3 class="govuk-heading-m">Setting page max width</h3>
+
+      <p>The DfE Frontend uses a 1200px max width. If you want to use this across your service, add this code to your <code>/app/assets/sass/application.scss</code> file:</p>
+
+      <div class="custom-dfe-panel">
+        <div class="custom-dfe-panel--content">
+          <code class="govuk-body monospace">.govuk-width-container {max-width: 1200px;}</code>
+        </div>
+      </div>
+
+      <p>If you want to use the GOV.UK template, 960px max width, add this code to your <code>/app/assets/sass/application.scss</code> file:</p>
+
+      <div class="custom-dfe-panel">
+        <div class="custom-dfe-panel--content">
+          <code class="govuk-body monospace">.dfe-width-container {max-width: 960px;}</code>
+        </div>
+      </div>
+
+      <h3 class="govuk-heading-m">Copy the javascript file</h3>
+
+      <p>Copy <code>/node_modules/dfe-frontend-alpha/dist/dfefrontend.js</code> file to your <code>/app/assets/scripts</code> folder.</p>
+
+      <h2 class="govuk-heading-l">The DfE logo</h2>
+
+      <p>There might not be an <code>/app/assets/images</code> folder, so create this first.</p>
+
+      <p>Copy <code>/node_modules/dfe-frontend-alpha/packages/assets/dfe-logo.png</code> and <code>/node_modules/dfe-frontend-alpha/packages/assets/dfe-logo-alt.png</code>  to your <code>/app/assets/images</code> folder.</p>
+
+      <h2 class="govuk-heading-l">Change the GOV.UK header to the DfE Header</h2>
+
+      <p>Open the <code>/app/views/layouts/main.html</code> file.</p>
+
+      <p>Delete the contents of the file and replace with:</p>
+
+      <div class="custom-dfe-panel">
+        <div class="custom-dfe-panel--content">
+          <code class="govuk-body monospace">
+            {%raw %}
+              <pre><code>{# 1 #} 
+{% from 'node_modules/dfe-frontend-alpha/packages/components/header/macro.njk' import header %}
+
+{# 2 #}
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+{# 3 #}
+{% block header %}
+  {{ header({
+    "showNav": "false",
+    "showSearch": "false",
+    "showUserName": "false",
+    "userName": "",
+    "userNameURL": "",
+    "selectedNav": pageNav,
+    "logoPath": "public/images",
+    "service": {
+      "name": "My service"
+    },
+    "primaryLinks": [
+      {
+        "url"  : "",
+        "label" : ""
+      }
+    ]
+  })
+}}
 
 {% endblock %}
+
+{# 4 #} 
+{% block scripts %}
+  {{ super() }}
+  &lt;script src=&quot;/public/javascripts/dfefrontend.js&quot;&gt;&lt;/script&gt;
+{% endblock %}</code></pre>{%endraw%}
+              <p>In this code:<p>
+
+                  <ol class="govuk-list govuk-list--number">
+                    <li>the DfE nunjucks header template is being imported</li>
+                    <li>the standard GOV.UK page layout is being used</li>
+                    <li>the header of the template is being overridden to use the DfE Header</li>
+                    <li>the javascript is being imported globally</li>
+                  </ol>
+
+                </div>
+              </div>
+
+              <h2 class="govuk-heading-l">Run your prototype</h2>
+
+              <p>Run in VS Code terminal:</p>
+
+              <div class="custom-dfe-panel">
+                <div class="custom-dfe-panel--content">
+                  <code class="govuk-body monospace">npm run dev</code>
+                </div>
+              </div>
+
+              <p>In the VS Code terminal, you may be asked to send anonymous data to the design system team, select Y or N and press enter to continue.</p>
+
+              <p>In your browser, go to: <code>http://localhost:3000</code> you should see the blue DfE header and content from your <code>/app/views/index.html</code> file.</p>
+
+              <p>You can customise the header using the <a href="/design-system/components/header/">guidance on the header component page</a>.</p>
+
+            {% endblock %}

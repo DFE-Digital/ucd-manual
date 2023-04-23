@@ -1,26 +1,32 @@
-{% set pageTitle = "Design" %}
+{% set pageTitle = "Design system" %}
 {% set pageDescription = "Understand how to ensure we design consistent services for Department for Education users." %}
-{% set pageSection = "Design" %}
+{% set pageSection = "Design system" %}
 {% set landingPage = true %}
 {% set dateUpdated = "January 2023" %}
 {% set backlog_issue_id = "24" %}
 
 {% extends "includes/app-layout.njk" %}
 
+{% block breadcrumb %}
+  {% include "design-system/_breadcrumb.njk" %}
+{% endblock %}
+
 {% block bodyContent %}
 
-  <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
-    <details class="dfeuk-details dfeuk-expander">
-      <summary class="dfeuk-details__summary">
-        <span class="dfeuk-details__summary-text ">
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
         Section menu
       </span>
-      </summary>
-      <div class="dfeuk-details__text  govuk-!-margin-left-5">
-        {% include "includes/_side-nav.njk" %}
-      </div>
-    </details>
-  </div>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
+
 
   <h2 class="govuk-heading-m" id="start-with-govuk-design-system">GOV.UK Design System first</h2>
 

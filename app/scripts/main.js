@@ -13,6 +13,10 @@ import AutoComplete from './autocomplete/autoCompleteConfig';
 // DfE frontend polyfills
 import 'dfeuk-frontend/packages/polyfills';
 
+import './step-by-step-navigation';
+import './step-by-step-polyfills'
+
+
 // DfE digital service manual components
 import DesignExample from './design-example';
 import {

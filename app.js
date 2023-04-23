@@ -43,10 +43,10 @@ app.use(
   }),
 );
 
-// Middleware to serve static assets
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/dfeuk-frontend', express.static(path.join(__dirname, '/node_modules/dfeuk-frontend/dist')));
 app.use('/dfeuk-frontend', express.static(path.join(__dirname, '/node_modules/dfeuk-frontend/packages')));
+app.use('/dfe-frontend', express.static(path.join(__dirname, '/node_modules/dfe-frontend-alpha/packages')));
 app.use('/iframe-resizer', express.static(path.join(__dirname, 'node_modules/iframe-resizer/')));
 
 // View engine (nunjucks)
@@ -56,6 +56,7 @@ app.set('view engine', 'njk');
 const appViews = [
   path.join(__dirname, '/app/views/'),
   path.join(__dirname, '/node_modules/dfeuk-frontend/packages/components'),
+  path.join(__dirname, '/node_modules/dfe-frontend-alpha/packages/components'),
 ];
 
 const env = nunjucks.configure(appViews, {
@@ -117,6 +118,7 @@ app.get('/design-example/:group/:item/:type', (req, res) => {
 });
 
 app.get('/search', (req, res) => {
+  console.log(req.query['search-field'])
   const query = req.query['search-field'] || '';
   const resultsPerPage = 10;
   let currentPage = parseInt(req.query.page, 10);

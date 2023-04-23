@@ -1,0 +1,43 @@
+{% set pageTitle = "Card" %}
+{% set pageDescription = "The card component groups content together into grids for easier visual cues and navigation." %}
+{% set pageSection = "Design system" %}
+{% set subSection = "Components" %}
+{% set theme = "Design system" %}
+{% set dateUpdated = "April 2023" %}
+{% set backlog_issue_id = "26" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+   {% include "design-system/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+   <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+      <details class="dfeuk-details dfeuk-expander">
+         <summary class="dfeuk-details__summary">
+            <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+         </summary>
+         <div class="dfeuk-details__text  govuk-!-margin-left-5">
+            {% include "includes/_side-nav.njk" %}
+         </div>
+      </details>
+   </div>
+
+   <div class="app-index-navigation app-u-hide-desktop">
+      {% include "includes/_side-nav.njk" %}
+   </div>
+
+   <p>The <a href="https://ukgovernmentdfe.slack.com/archives/C04JZ5YL8F7" target="_blank">components and patterns working group</a> is currently considering this component.</p>
+
+   <h2 class="govuk-heading-l" id="improve">Help us work on this component</h2>
+
+   <ul class="govuk-list govuk-list--bullet">
+      <li>join the conversation on the <a href="https://github.com/DFE-Digital/ucd-manual/issues/75" target="_blank">GitHub issue #75</a>
+      </li>
+   </ul>
+
+{% endblock %}

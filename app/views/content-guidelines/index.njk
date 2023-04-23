@@ -6,6 +6,10 @@
 
 {% extends "includes/app-layout.njk" %}
 
+{% block breadcrumb %}
+  {% include "content-guidelines/_breadcrumb.njk" %}
+{% endblock %}
+
 {% block bodyContent %}
 
 <div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">

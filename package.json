@@ -47,6 +47,7 @@
     "browser-sync": "^2.27.5",
     "cheerio": "^1.0.0-rc.10",
     "compression": "^1.7.4",
+    "dfe-frontend-alpha": "^0.0.7",
     "dfeuk-frontend": "^2.1.4",
     "express": "^4.17.1",
     "govuk-frontend": "^4.4.0",

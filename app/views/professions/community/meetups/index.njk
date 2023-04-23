@@ -1,0 +1,68 @@
+{% set pageTitle = "Meetups" %}
+{% set pageDescription = "The user-centred design community meetups in the Department for Education" %}
+{% set pageSection = "Professions" %}
+{% set dateUpdated = "January 2023" %}
+{% set backlog_issue_id = "38" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+    {% include "professions/community/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div>
+
+    <p>We have regular profession-specific and all-design profession community meetups each month. We've chosen this schedule to allow people from other communities to join meetups and avoid clashes.</p>
+
+    <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Schedule</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Date</th>
+                <th scope="col" class="govuk-table__header">Time</th>
+                <th scope="col" class="govuk-table__header">Community</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">First Thursday of the month</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Cross-design community</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">2nd Thursday of the month</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Content design</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">3rd Thursday of the month</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Interaction design</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">4th Thursday of the month</th>
+                <td class="govuk-table__cell">1pm to 2pm</td>
+                <td class="govuk-table__cell">Service design</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="govuk-heading-m">Missing the invites?</h2>
+
+    <p>
+        <a href="/design-ops/contact">Contact the Design Ops team</a> to get added to the meeting invites. </p>
+
+{% endblock %}

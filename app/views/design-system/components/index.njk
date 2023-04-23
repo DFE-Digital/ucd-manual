@@ -1,0 +1,67 @@
+{% set pageTitle = "Components" %}
+{% set pageDescription = "" %}
+{% set pageSection = "Design system" %}
+{% set subSection = "Components" %}
+{% set theme = "Design system" %}
+{% set dateUpdated = "April 2023" %}
+{% set backlog_issue_id = "26" %}
+
+{% extends "includes/app-layout.njk" %}
+
+{% block breadcrumb %}
+  {% include "design-system/_breadcrumb.njk" %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<div class="app-index-navigation app-u-hide-desktop govuk-!-margin-bottom-3">
+   <details class="dfeuk-details dfeuk-expander">
+            <summary class="dfeuk-details__summary">
+                <span class="dfeuk-details__summary-text ">
+        Section menu
+      </span>
+            </summary>
+            <div class="dfeuk-details__text  govuk-!-margin-left-5">
+                 {% include "includes/_side-nav.njk" %}
+            </div>
+        </details>
+</div> 
+
+
+
+
+  <p>Components are the building blocks for consistent looking, accessible, usable services.</p>
+
+
+  <p>The components in this section have been designed, built, tested, and implemented across several Department for Education services.</p>
+
+  <div class="govuk-inset-text">
+    To use these component <a href="/design-system/dfe-frontend">install DfE Frontend into your project</a> using the <abbr title="Node Package Manager">NPM</abbr> package or compiled CSS and Javascript.
+  </div>
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Current component</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Component</th>
+      <th scope="col" class="govuk-table__header">Summary</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/design-system/components/card">Card</a></th>
+      <td class="govuk-table__cell">Card component for grouping similar pieces of content together.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">In development</strong></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a href="/design-system/components/header">Header</a></th>
+      <td class="govuk-table__cell">Component for the blue DfE header for websites and services on education.gov.uk domains.</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Published</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}
