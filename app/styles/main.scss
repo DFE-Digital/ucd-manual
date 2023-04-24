@@ -16,7 +16,7 @@
 .dfeuk-o-hero {
   display: flex;
   position: relative;
-  max-width: 1200px;
+  max-width: 1600px !important;
   min-height: 10rem;
   margin: 0 auto;
   overflow: hidden;
@@ -217,7 +217,7 @@
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 50% 50%;
-  max-width: 1600px;
+  max-width: 100px;
   margin: 0 auto;
   padding: 0;
 }
