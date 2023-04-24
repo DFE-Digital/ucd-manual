@@ -43,10 +43,10 @@ app.use(
   }),
 );
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use('/dfeuk-frontend', express.static(path.join(__dirname, '/node_modules/dfeuk-frontend/dist')));
 app.use('/dfeuk-frontend', express.static(path.join(__dirname, '/node_modules/dfeuk-frontend/packages')));
-app.use('/dfe-frontend', express.static(path.join(__dirname, '/node_modules/dfe-frontend-alpha/packages')));
+app.use('/dfe-frontend-alpha', express.static(path.join(__dirname, '/node_modules/dfe-frontend-alpha/packages')));
 app.use('/iframe-resizer', express.static(path.join(__dirname, 'node_modules/iframe-resizer/')));
 
 // View engine (nunjucks)
