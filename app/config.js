@@ -14,8 +14,9 @@ module.exports = {
 
   mtype: 'design',
 
-  githubrepo: 'https://github.com/DFE-Digital/ucd-manual'
+  githubrepo: 'https://github.com/DFE-Digital/ucd-manual',
   
+  assetPath: process.env.assetPath
 };
 
 
